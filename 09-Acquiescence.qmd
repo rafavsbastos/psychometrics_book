@@ -1,0 +1,367 @@
+# Acquiescence Bias {#sec-acquiescence}
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
+Numerous studies in psychology, education, and marketing involving human subjects are conducted through questionnaires (Bruner et al., 2001). It is assumed that participants will truthfully respond to the items in such research, thus accurately representing their behaviors, thoughts, and feelings with minimal measurement errors. However, it is known that this type of research comes with a host of issues, such as response biases or method effects (e.g., Weijters et al., 2010). In 1942, Cronbach proposed that participants respond to a true-or-false test. From his data, he observed that some respondents tended to choose the "true" option more frequently than others. This style of responding to a questionnaire is termed **acquiescence** and is commonly defined as **the positive endorsement of the item, regardless of its content** (Robinson et al., 1973), while disagreement is endorsing the item negatively. Thus, those who are more acquiescent tend to mark higher response options on the questions. @tbl-acquiescence provides an example of responding to an extroversion questionnaire. In this example, note that the respondent tends to mark closer to the extremes (indicated in bold), which would indicate an acquiescent person.
+
+
+| Item                                                        | Totally Disagree | Partially Disagree | Partially agree | I totally agree |
+|---------------|---------------|---------------|---------------|---------------|
+| I am a communicative person                                 | 1                   | 2                     | 3                     | ***4***             |
+| I like interacting with people                           | 1                   | 2                     | ***3***               | 4                   |
+| I don't feel energized when I have large social interactions | 1                   | 2                     | 3                     | ***4***             |
+:Hypothetical Acquiescence Responses in Extroversion Items {#tbl-acquiescence}
+
+## Acquiescence: trait or state?
+
+Acquiescence is a response style correlated with individual and cultural variables. Literature suggests that individuals with high levels of acquiescence tend to be young, non-depressed, and have a high sense of coherence (Hinz et al., 2007), as well as possessing lower educational levels (Soto et al., 2008). A study investigating whether acquiescence is an inherited trait found no relationship between acquiescence and genetic sharing among monozygotic and dizygotic siblings, suggesting it is also influenced by environmental factors (Kam et al., 2013). Further evidence of its environmental influence includes research indicating that respondents from collectivist cultures tend to be more compliant than those from individualistic cultures (Chen et al., 1995).
+
+Studies suggest that a portion of acquiescence remains stable over time (Billiet & Davidov, 2008). However, employing a latent state-trait modeling approach, Danner et al. (2015) uncovered that acquiescence exhibits trait-like characteristics (i.e., stable over time) as well as state-like features (i.e., subject to situational changes), indicating that both individual traits, such as cognitive ability or personality, and situational factors, such as fatigue, should be taken into account when investigating acquiescence. Some critics of acquiescence research, such as Ferrando et al. (2004), argue that acquiescence should not represent a personality trait because this latent trait cannot be measured through scales. This notion is flawed, and we will delve into this further later. Nonetheless, the authors found that acquiescence is consistent across different domains, present both in studies of personality factors and attitudes (Ferrando et al., 2004).
+
+## Problems Related to Acquiescence: Control Through Inverted Items
+
+Acquiescence poses a myriad of challenges for analyses pertaining to a psychological instrument, even when it explains little of the data variance (Danner et al., 2015; Savalei & Falk, 2014). In a simulation study with random intercepts, it was found that acquiescence affects validity coefficients, overestimating positive regressions and underestimating negative regressions (Valentini and Hauck Filho, 2020). Furthermore, through simulation studies, the influence of acquiescence on factor analysis was observed, leading to poor performance of extraction methods with data uncontrolled for acquiescence (Valentini, 2017). The same acquiescence issue can be encountered in studies with real data. In studies employing personality and attitude scales, it was found that not only was the scale's structural factor affected, but also the dimensionality and magnitude of relationships (Kam et al., 2012). Thus, the importance of attempting to control or eliminate this type of bias from analyses becomes evident.
+
+The most common and recommended method for controlling acquiescence bias is to compose the scale with items in the direction of the construct, also known as positive items (e.g., "I am depressed") and inverted items (e.g., by negation: "I am not depressed" or by using an antagonistic adjective: "I am happy"; Baumgartner and Steenkamp, 2001). There are three considerations to bear in mind when conducting item inversion. The first is that inverted items are known to slow response speed and compel participants to read and process items more carefully (Podsakoff et al., 2003). The second, often overlooked, is to verify whether positive and inverted items are complementary and measure the same construct at different levels (Marsh, 1986), which is not always the case (Chang, 1995). The third consideration arises from the process of recoding inverted items to obtain the total scale score. This process assumes that the two extremes (e.g., "Strongly Disagree" and "Strongly Agree") have the same score (with one being the inverse of the other) and carry the same semantic meaning (Suárez-Alvez et al., 2018). However, agreeing with an item is not the same as disagreeing with its inverted counterpart (Enos, 2000), furthermore, some constructs (e.g., resilience) are conceptually unsuitable for inversion as they are of a positive nature (Luthar and Zigler, 1991). Thus, the inclusion of inverted items depends greatly on the feasibility of manipulation and how this manipulation is related to the response scale and the construct.
+
+Item inversion alters how people respond to that item (Pilotte & Gable, 1990). This may occur because participants' cognitive processing for each type of item is not necessarily the same (Suárez-Alvez et al., 2018), especially when individuals' reading skills are lower (Marsh, 1996). Therefore, if understanding inverted items requires better linguistic ability, then these items favor respondents with better verbal skills (Suárez-Alvez et al., 2018), and the construct being measured may be contaminated by other variables that have little relation to the study's objective, such as lack of attention and confusion when responding to the item (Van Sonderen et al., 2013). Additionally, in some cases, participants respond inconsistently to scales that contain inverted items with antagonistic adjectives (Zhang et al., 2016). This occurs because participants may not interpret antonyms used in inverted items as contradictory to the construct of interest, thus they may agree with both the positive item and the inverted item (Weijters & Baumgartner, 2012).
+
+Some studies suggest that the combination of positive and inverted items does not reduce acquiescence bias (Sauro & Lewis, 2011; cf. Primi et al., 2020), and that the proportion of extreme responses for both types of items is similar (Sauro & Lewis, 2011). Salazar's study (2015) demonstrated that inverted items do not alter the response pattern of positive items when combined on the same scale, and that the data better fit the theorized factorial structure using only positive items. Additionally, inverted items bring about methodological issues, such as the emergence of different factors for positive and inverted items (Knight et al., 1988). Woods (2006) showed that if at least 10% of participants respond carelessly to 10 inverted items (on a scale of 23 items), researchers are likely to reject the unidimensional model. Meanwhile, Hughes (2009), through a simulation study, found that even a small percentage of incorrect responses to inverted items leads to significant differences in scale means, thus altering subsequent analyses. Other issues include positive items correlating more with each other than inverted items (Hinz et al., 2007), scales with only positive items providing more precise descriptions both practically and statistically than mixed or solely inverted item scales (Schriesheim & Hill, 1981), inverted items decreasing instrument accuracy (Schriesheim & Hill, 1981), increasing interpretation problems in cross-cultural studies (Wong et al., 2003), contaminating the covariance structure of the data (Savalei & Falk, 2014), and reducing model fit (Essau, 2012).
+
+Controlling acquiescence may seem entirely detrimental so far. However, acquiescence is a response bias, introducing measurement error into responses. Thus, if a person is acquiescent and responds to an instrument solely with positive items, it will not be possible to detect levels of acquiescence and control it. This could be one of the reasons for a better model fit with only positive items, given that the error associated with acquiescent response in one item correlates with that of another item. Therefore, it is necessary to weigh the options carefully, especially considering the size of the instrument and the sample to be collected.
+
+## The Removal of Acquiescence: Statistics and Design
+
+Acquiescence can be removed in two ways: through statistical analyses that eliminate acquiescence from the covariance structure of the data or through research design. Regarding analyses, acquiescence should be addressed prior to conducting any covariance-based analysis, such as reliability analysis, factor analysis, and structural equation modeling (Billiet and McClendon, 2000; Cambré et al., 2002; Kam et al., 2012; Lorenzo-Seva et al., 2016). To eliminate acquiescence from the covariance structure of the data, it is generally necessary to make two assumptions (Savalei and Falk, 2014). The first assumption is that the acquiescence of each item is independent of the latent factor being measured, meaning this case should be carefully examined in each analysis, as it may not always hold true (Ferrando et al., 2003). The second assumption is that acquiescence bias behaves like a latent factor, affecting different items in different ways (Billiet and McClendon, 2000), and should also be critically examined in each case.
+
+Despite the possibility of controlling acquiescence through scale score composition, it cannot be controlled within the factorial structure of the scale (Savalei and Falk, 2014). To address this issue, some strategies are employed in research design to mitigate this bias. The study by Weijters et al. (2010) demonstrates that individuals exhibit higher levels of acquiescence if the questionnaire labels all response levels (e.g., ranging from "Strongly Disagree" to "Strongly Agree") and includes a midpoint (e.g., "Neither Agree nor Disagree"). Additionally, adding more gradations of agreement and disagreement does not affect the level of acquiescence, meaning a 5-point scale does not show less or more acquiescence than a 7-point scale (Weijters et al., 2010). Barnette (2000) found in their research that reversing half of the response options, the anchors, leads to higher levels of accuracy and observed variance.
+
+Fribourg et al. (2006) employed a different research design compared to others, comparing Likert scales with semantic differential scales. The study results indicate that semantic differential data are more suitable to the model than Likert format, and they exhibit clearer unidimensionality. Furthermore, the semantic differential scale did not correlate with measures of social desirability, further reducing response falsification (Friborg et al., 2006). Additionally, a semantic differential response scale showed no acquiescence bias in another study (Lewis, 2018). Finally, Zhang & Savalei (2016) explored an alternative version that enhances the factorial structure of psychological scales, termed the expanded format. The expanded format involves writing one item for each variation of the response scale, meaning if it's a four-point scale, the researcher must write one item representing each level of the latent trait. The participant selects which of these four items best represents them. The expanded format yielded a lower number of dimensions in an exploratory factor analysis (closer to the previously theorized number), better model fit indices, and improved reliability indices (Zhang & Savalei, 2016).
+
+## How to Control Acquiescence in R
+
+### Controlling Acquiescence with Ferrando et al. (2009)
+
+To run with the analysis by Ferrando et al. (2009), we first have to install the *vampyr* (Navarro-Gonzalez et al., 2021) package to run the analyses.
+
+``` r
+install.packages("vampyr")
+```
+
+And tell the program that we are going to use the functions of these packages.
+
+```{r}
+library(vampyr)
+```
+
+To run the analyses, we will use a dataset from the package itself. Let's see what the database looks like.
+
+```{r}
+summary(vampyr::vampyr_example)
+```
+
+According to the package, we have a database with 300 observations and 10 variables, where 6 items measure physical aggression and we have 4 markers of social desirability. Items 1, 2, 3, and 4 are markers of DS ("pure" measures of DS), and the remaining 6 items measure physical aggression. Items 5, 7 and 8 are in the positive pole of the target construct and items 6, 9 and 10 are written in the negative pole of the target construct.
+
+To perform the analysis controlling both desirability and acquiescence, simply use the following code.
+
+```{r}
+
+res <- ControlResponseBias(vampyr_example,
+                           content_factors = 1,
+                           SD_items = c(1,2,3,4),
+                           corr = "Polychoric",
+                           contAC = TRUE,
+                           unbalanced_items = c(),
+                           rotat = "promin",
+                           PA = FALSE,
+                           factor_scores = FALSE,
+                           path = TRUE
+                           )
+```
+
+This analysis allows controlling the effects of two response biases: Social Desirability and Acquiescence, extracting the variance due to these factors before extracting the content variance. If you don't have or want to control acquiescence, just remove the `SD_items = c(1,2,3,4)` argument.
+
+We do not always have an instrument that is completely balanced, that is, we do not always have the same number of positive and negative items in an instrument. This must be said to the function, just put the column position of the items in your database in the `unbalanced_items = c()` argument. For example, if the items in columns 10, 11, and 17 of your database are items that do not have an opposite pole, you would put the argument as follows: `unbalanced_items = c(10,11,17) `. The items you place in this argument will not be used in the calculation.
+
+We see that Bartlett's test of sphericity and KMO were calculated before proceeding with Exploratory Factor Analysis. Furthermore, the model fit indices were calculated. We also see that items 6, 9 and 10 have even high loadings on the desirability factor ("Factor SD"), and items 5, 7 and 8 on the acquiescence factor ("Factor AC").
+
+The function allows you to calculate people's factor scores. Factor scores work like when you calculate the mean scores of an instrument to correlate with others, but calculating averages has certain assumptions, while factor scores have others. So, to calculate the factor scores while controlling the DS and acquiescence biases, simply leave the factor scores argument as TRUE (`factor_scores = TRUE`) and save the result in some variable. In our case, we save the results in the `res` variable.
+
+To save only the factor scores, simply extract the scores from the `res` list.
+
+``` r
+scores <- res$Factor_scores
+```
+
+This way, just put this column of factor scores together with your data (using "cbind()") and then calculate whatever analysis you want.
+
+### Controlling Acquiescence with Random Intercepts
+
+First, we have to install the *lavaan* (Rosseel, 2012) package for the analyzes and the *EGAnet* (Golino & Christensen, 2023) package for the dataset.
+
+``` r
+install.packages("lavaan")
+install.packages("EGAnet")
+```
+
+Next, we tell R that we are going to use the functions from the packages.
+
+``` r
+library(lavaan)
+library(EGAnet)
+```
+
+Then, we must have information on which model we should test. In other words, we have to know the theory behind some instrument: how many factors we have, which items represent which factors, whether or not the factors are correlated, etc.
+
+Let's use the *EGAnet* package as an example (i.e., *Wiener Matrizen-Test 2*), which has 2 factors and items on the positive and negative pole.
+
+```{r}
+
+model_RI <- '
+              factor1 =~ NA*wmt1 + wmt2 + wmt3 + wmt5 + wmt11 +
+              wmt12 + wmt13 + wmt15 + wmt16 + wmt17 + wmt18
+              
+              factor2 =~ NA*wmt4 + wmt6 + wmt7 + wmt8 + 
+              wmt9 + wmt10 + wmt14
+              
+              # Random Intercepts
+              acquiescence =~ 1*wmt1 + 1*wmt2 + 1*wmt3 + 1*wmt5 +
+              1*wmt11 + 1*wmt12 + 1*wmt13 + 1*wmt15 + 1*wmt16 +
+              1*wmt17 + 1*wmt18 + 1*wmt4 + 1*wmt6 + 1*wmt7 + 
+              1*wmt8 + 1*wmt9 + 1*wmt10 + 1*wmt14
+              
+              factor1 ~~ 0*acquiescence
+              factor2 ~~ 0*acquiescence
+              
+              acquiescence ~~ acquiescence
+              
+              factor1 ~~ 1*factor1
+              factor2 ~~ 1*factor2
+              '
+```
+
+Now let's calculate the internal structure controlling for acquiescence.
+
+```{r}
+
+sem.fit <- lavaan::sem(model = model_RI,
+                      data = EGAnet::wmt2[,7:24],
+                      estimator = 'WLSMV',
+                      ordered = TRUE
+                      )
+
+lavaan::summary(sem.fit,
+                fit.measures=TRUE,
+                standardized=TRUE
+        )
+```
+
+We can calculate from people's factor scores, just use the following code.
+
+``` r
+scores <- lavaan::lavPredict(
+                      sem.fit,
+                      type = "lv",
+                      method = "EBM",
+                      label = TRUE,
+                      append.data = TRUE,
+                      optim.method = "bfgs" 
+                      )
+```
+
+We see that in the variable "scores" the factor scores of each subject were calculated and these scores were added to their database.
+
+### Controlling Acquiescence with Random Intercepts Exploratory Graph Analysis
+
+First, we have to install the *EGAnet* (Golino & Christensen, 2023) package for the analyzes and *lavaan* (Rosseel, 2012) for the fit indices.
+
+``` r
+install.packages("EGAnet")
+install.packages("lavaan")
+```
+
+Next, we tell R that we are going to use the functions from the packages.
+
+``` r
+library(EGAnet)
+library(lavaan)
+```
+
+```{r}
+EGA_RI<- EGAnet::riEGA(data = EGAnet::wmt2[,7:24])
+```
+
+We can also bootstrap controlling for acquiescence.
+
+```{r include=FALSE}
+
+boot.ri <- EGAnet::bootEGA(data = EGAnet::wmt2[,7:24],
+                           iter = 500,
+                           EGA.type = "riEGA", 
+                           seed = 2024
+                           ) 
+```
+
+To get a summary of the results, just take the bootstrap output.
+
+```{r}
+summary(boot.ri)
+```
+
+Additionally, we can take the stability output of the items.
+
+```{r}
+EGAnet::itemStability(boot.ri)
+```
+
+We can see network loadings (similar to factor loadings), with the code:
+
+```{r}
+Network_loadings <- EGAnet::net.loads(EGA_RI)
+
+print(Network_loadings$std)
+```
+
+This step by step must be repeated (removing items with low stability or factor loadings in the wrong dimensions) until the stability of the items is above 70% or 75%.
+
+We were also able to obtain the fit through a Confirmatory Factor Analysis by *EGAnet.*
+
+```{r}
+fit <- EGAnet::CFA(EGA_RI$EGA,
+                   data = EGAnet::wmt2[,7:24],
+                   estimator = "WLSMV",
+                   plot.CFA = TRUE,
+                   layout = "spring"
+                  )
+```
+
+To request fit indices we can use *lavaan*.
+
+```{r}
+lavaan::fitMeasures(fit$fit, fit.measures = "all")
+```
+
+We can calculate from people's factor scores, just use the following code.
+
+```{r}
+
+fe <- lavaan::lavPredict(fit$fit,
+                         type = "lv",
+                         method = "EBM", 
+                         label = TRUE, 
+                         append.data = TRUE,
+                         optim.method = "bfgs" 
+                         )
+```
+
+## References
+
+Barnette, J. J. (2000). Effects of stem and likert response option reversals on survey internal consistency: If you feel the need, there is a better alternative to using those negatively worded stems. *Educational and Psychological Measurement*, *60*(3), 361–370. <https://doi.org/10.1177/00131640021970592>
+
+Baumgartner, H., & Steenkamp, J. (2001). Response styles in marketing research: A cross national investigation. *Journal of Marketing Research*, *38*(2), 143–156. <https://doi.org/10.1509/jmkr.38.2.143.18840>
+
+Billiet, J. B., & Davidov, E. (2008). Testing the stability of an acquiescence style factor behind two interrelated substantive variables in a panel design. *Sociological Methods Research*, *36*(4), 542–562. <https://doi.org/10.1177/0049124107313901>
+
+Billiet, J. B., & McClendon, M. J. (2000). Modeling acquiescence in measurement models for two balanced sets of items. *Structural Equation Modeling*, *7*, 608–628. <https://doi.org/10.1207/S15328007SEM0704_5>
+
+Bruner, G. C., James, K. E., & Hensel, P. J. (2001). *Marketing scales handbook. A compilation of multi item measures*, volume iii. American Marketing Association.
+
+Cambré, B., Welkenhuysen-Gybels, J., & Billiet, J. (2002). Is it content or style? An evaluation of two competitive measurement models applied to a balanced set of ethnocentrism items. *International Journal of Comparative Sociology*, *43*, 1–20. <https://doi.org/10.1177/002071520204300101>
+
+Chang, L. (1995). Connotatively consistent and reversed connotatively inconsistent items are not fully equivalent: Generalizability study. *Educational and Psychological Measurement*, *55*, 991–997. <https://doi.org/10.1177/0013164495055006007>
+
+Chen, C., Shin-ying, L., & Stevenson, H. W. (1995). Response style and cross-cultural comparisons of rating scales among east asian and north american students. *Psychological Science*, *6*, 170–175. <https://doi.org/10.1111/j.1467-9280.1995.tb00327.x>
+
+Cronbach, L. J. (1942). Studies of acquiescence as a factor in the true-false test. *Journal of Educational Psychology*, *33*, 401–415. <https://doi.org/10.1037/h0054677>
+
+Danner, D., Aichholzer, J., & Rammstedt, B. (2015). Acquiescence in personality questionnaires: Relevance, domain specificity, and stability. *Journal of Research in Personality*, *57*, 119–130. <https://doi.org/10.1016/j.jrp.2015.05.004>
+
+Enos, M. M. (2000). Just say no!: The impact of negation in survey research. *Popular Measurement*, *3*(1), 34–39.
+
+Essau, e. a., C. A. (2012). Psychometric properties of the strength and difficulties questionnaire from five european countries. *International Journal of Methods in Psychiatric Research*, *21*(3), 232–245. <https://doi.org/10.1002/mpr.1364>
+
+Ferrando, P. J., Condon, L., & Chico, E. (2004). The convergent validity of acquiescence: An empirical study relating balanced scales and separate acquiescence scales. *Personality and individual differences*, *37*(7), 1331–1340. <https://doi.org/10.1016/j.paid.2004.01.003>
+
+Ferrando, P. J., Lorenzo-Seva, U., & Chico, E. (2003). Unrestricted factor analytic procedures for assessing acquiescent responding in balanced, theoretically unidimensional personality scales. *Multivariate Behavioral Research*, *38*(2), 353–374. <https://doi.org/10.1207/S15327906MBR3803_04>
+
+Friborg, O., Martinussen, M., & Rosenvinge, J. H. (2006). Likert-based vs. semantic differential-based scorings of positive psychological constructs: A psychometric comparison of two versions of a scale measuring resilience. *Personality and Individual Differences*, *40*(5), 873-884. <https://doi.org/10.1016/j.paid.2005.08.015>
+
+Golino, H., & Christensen, A. P. (2023). *EGAnet: Exploratory Graph Analysis – A framework for estimating the number of dimensions in multivariate data using network psychometrics*. R package.
+
+Hinz, A., Michalski, D., Schwarz, R., & Herzberg, P. Y. (2007). The acquiescence effect in responding to a questionnaire. GMS Psycho-Social Medicine, 4.
+
+Hughes, G. D. (2009). The impact of incorrect responses to reverse-coded survey items. *Research in the Schools*, *16*(2).
+
+Kam, C., Schermer, J. A., Harris, J., & Vernon, P. A. (2013). Heritability of acquiescence bias and item keying response style associated with the HEXACO Personality Scale. *Twin Research and Human Genetics*, *16*(4), 790-798.
+
+Kam, C., Zhou, X., Zhang, X., & Ho, M. Y. (2012). Examining the dimensionality of self-construals and individualistic–collectivistic values with random intercept item factor analysis. *Personality and Individual Differences*, *53*(6), 727-733. <https://doi.org/10.1016/j.paid.2012.05.023>
+
+Knight, R. G., Chisholm, B. J., Marsh, N. V., & Godfrey, H. P. (1988). Some normative, reliability, and factor analytic data for the revised UCLA Loneliness Scale. *Journal of Clinical Psychology*, *44*(2), 203-206. <https://doi.org/10.1002/1097-4679(198803)44:2%3C203::AID-JCLP2270440218%3E3.0.CO;2-5>
+
+Lewis, J. R. (2018). Comparison of item formats: Agreement vs. item-specific endpoints. *Journal of Usability Studies*, *11*(1).
+
+Lorenzo-Seva, U., Navarro-González, D., & Vigil-Colet, A. (2016). How response bias affects the factorial structure of personality self-reports.
+
+Luthar, S. S., & Zigler, E. (1991). Vulnerability and competence: A review of research on resilience in childhood. *American Journal of Orthopsychiatry*, *6*(1), 6–12. <https://doi.org/10.1037/h0079218>
+
+Marsh, H. W. (1986). Multidimensional Self Concepts: Do Positively and Negatively Worded Items Measure Substantively Different Components of Self.
+
+Marsh, H. W. (1996). Positive and negative global self-esteem: A substantively meaningful distinction or artifactors?. *Journal of personality and social psychology*, *70*(4), 810-819. <https://doi.org/10.1037/0022-3514.70.4.810>
+
+Navarro-Gonzalez, D., Vigil-Colet, A., Ferrando, P. J., Lorenzo-Seva, U., & Tendeiro, J. N. (2021). *vampyr: Factor Analysis Controlling the Effects of Response Bias*. <https://CRAN.R-project.org/package=vampyr>.
+
+Pilotte, W. J., & Gable, R. K. (1990). The impact of positive and negative item stems on the validity of a computer anxiety scale. *Educational and Psychological Measurement*, *50*(3), 603–610. <https://doi.org/10.1177/0013164490503016>
+
+Podsakoff, P.M., MacKenzie, S.B., Lee, J.Y., & Podsakoff, N.P. (2003). Common method biases in behavioral research: a critical review of the literature and recommended remedies. *Journal of applied psychology*, *88*(5), 879-903. <https://doi.org/10.1037/0021-9010.88.5.879>
+
+Primi, R., De Fruyt, F., Santos, D., Antonoplis, S., & John, O. P. (2020). True or false? Keying direction and acquiescence influence the validity of socio-emotional skills items in predicting high school achievement. *International Journal of Testing*, *20*(2), 97-121. <https://doi.org/10.1080/15305058.2019.1673398>
+
+R Core Team (2023). *R: A Language and Environment for Statistical Computing*. R Foundation for Statistical Computing, Vienna, Austria. <https://www.R-project.org/>.
+
+Rosseel, Y. (2012). lavaan: An R Package for Structural Equation Modeling. *Journal of Statistical Software*, *48*(2), 1-36. <https://doi.org/10.18637/jss.v048.i02>
+
+Robinson, J. P., Shaver, P. R., and Wrightsman, L. S. (1991). *Measures of social psychological attitudes* (Vol. 1. Measures of personality and social psychological atitudes). Academic Press.
+
+Salazar, M. S. (2015). The dilemma of combining positive and negative items in scales. *Psicothema*, *27*(2), 192–199. <https://doi.org/10.7334/psicothema2014.266>
+
+Sauro, J., & Lewis, J. (2011). When designing usability questionnaires, does it hurt to be positive? Proceedings of the SIGCHI Conference on Human Factors in Computing Systems, 2215–2224. <https://doi.org/10.1145/1978942.1979266>
+
+Savalei, V., & Falk, C. F. (2014). Recovering substantive factor loadings in the presence of acquiescence bias: A comparison of three approaches. *Multivariate behavioral research*, *49*(5), 407–424. <https://doi.org/10.1080/00273171.2014.931800>
+
+Schriesheim, C. A., & Hill, K. D. (1981). Controlling acquiescence response bias by item reversals: The effect on questionnaire validity. *Educational and psychological measurement*, *41*(4), 1101–1114. <https://doi.org/10.1177/001316448104100420>
+
+Soto, C. J., John, O. P., Gosling, S. D., & Potter, J. (2008). The developmental psychometrics of big five self-reports: Acquiescence, factor structure, coherence, and differentiation from ages 10 to 20. *Journal of personality and social psychology*, *94*(4), 718-737. <https://doi.org/10.1037/0022-3514.94.4.718>
+
+Suárez-Alvarez, J., Pedrosa, I., Lozano Fernández, L. M., García-Cueto, E., Cuesta, M., & Muñiz, J. (2018). Using reversed items in Likert scales: A questionable practice. *Psicothema*, *30*(2), 149-158. <https://doi.org/10.7334/psicothema2018.33>
+
+Valentini, F. (2017). Influência e controle da aquiescência na análise fatorial [Influence and control of acquiesncence in factor analysis]. *Avaliação Psicológica* [Psychological Assessment], *16*(2), 6–12. <https://doi.org/10.15689/ap.2017.1602.ed>
+
+Valentini, F., & Hauck Filho, N. (2020). O impacto da aquiescência na estimação de coeficientes de validade [Acquiescence impact in the estimation of validity coefficients]. *Avaliação Psicológica* [Psychological Assessment], *19*(1), 1–3. <http://dx.doi.org/10.15689/ap.2020.1901.ed>
+
+Van Sonderen, E., Sanderman, R., & Coyne, J. C. (2013). Ineffectiveness of reverse wording of questionnaire items: Let’s learn from cows in the rain. *PloS one*, *8*(7), e68967. <https://doi.org/10.1371/journal.pone.0068967>
+
+Weijters, B., & Baumgartner, H. (2012). Misresponse to reversed and negated items in surveys: A review. *Journal of Marketing Research*, *49*(5), 737-747. <https://doi.org/10.1509/jmr.11.0368>
+
+Weijters, B., Cabooter, E., & Schillewaert, N. (2010). The effect of rating scale format on response styles: The number of response categories and response category labels. *International Journal of Research in Marketing*, *27*(3), 236-247. <https://doi.org/10.1016/j.ijresmar.2010.02.004>
+
+Woods, C. M. (2006). Careless responding to reverse-worded items: Implications for confirmatory factor analysis. *Journal of Psychopathology and Behavioral Assessment*, *28*(3), 186–191. <https://doi.org/10.1007/s10862-005-9004-7>
+
+Wong, N., Rindfleisch, A., & Burroughs, J. E. (2003). Do reverse-worded items confound measures in cross-cultural consumer research? The case of the material values scale. *Journal of consumer research*, *30*(1), 72-91. <https://doi.org/10.1086/374697>
+
+Zhang, X., Noor, R., & Savalei, V. (2016). Examining the effect of reverse worded items on the factor structure of the need for cognition scale. *PloS one*, *11*(6), e0157795. <https://doi.org/10.1371/journal.pone.0157795>
+
+Zhang, X., & Savalei, V. (2016). Improving the factor structure of psychological scales: The expanded format as an alternative to the likert scale format. *Educational and psychological measurement*, *76*(3), 357–386. <https://doi.org/10.1177/0013164415596421>
+
+```{=html}
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('rafaelbastos', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support This',
+    'floating-chat.donateButton.background-color': '#5bc0de',
+    'floating-chat.donateButton.text-color': '#323842'
+  });
+</script>
+```

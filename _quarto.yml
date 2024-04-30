@@ -1,0 +1,87 @@
+project:
+  type: book
+  output-dir: docs
+  resources: resources
+execute:
+  freeze: false
+
+book:
+  title: "Advances in Psychometric Theory and Measurement for Psychological Sciences"
+  subtitle: "With Tutorials in R"
+  author: 
+  - name: "Rafael Valdece Sousa Bastos"
+    degrees: MSc
+    orcid: 0000-0003-2444-6982
+    email: rafavsbastos@gmail.com
+    url: https://www.consultoriapsicometria.com/en
+  cover-image: images/cover.png
+  date: today
+  sidebar: 
+    logo: images/logo.png
+    style: floating
+  favicon: images/logo.png
+  twitter-card:
+    creator: "@rafavsbastos"
+    image: images/twittercard.jpg
+  cookie-consent: false
+  google-analytics: "G-J4R1E10GWR"
+  description: "This is an educational resource, with content at the cutting edge of scientific knowledge. It aims to improve future research, by improving researchers knowledge in the statistical inferences made, planning better experiments and analyzing scientific research being carried out with more rigor and transparency."
+  page-navigation: true
+  search: true
+  repo-url: https://github.com/rafavsbastos/psychometrics_book
+  repo-branch: master
+  repo-actions: [edit, issue, source]
+  downloads: [pdf, epub]
+  margin-header: ""
+  page-footer:
+    right: "Bastos, R. V. S. (2024). Advances in Psychometric Theory and Measurement for Psychological Sciences: With Tutorials in R. https://doi.org/10.5281/zenodo.11094831. " 
+ 
+  chapters:
+  - index.qmd
+  - 01-Validity.qmd
+  - 02-Classical_Test_Theory.qmd
+  - 03-Latent_Variable.qmd
+  - 04-Measurement_Theory.qmd
+  - 05-EFA.qmd
+  - 06-CFA.qmd
+  - 07-EGA.qmd
+  - 08-Desirability.qmd
+  - 09-Acquiescence.qmd
+  - 10-Measurement_Invariance.qmd
+  - 11-NP_IRT.qmd
+  - 12-Step_by_step.qmd
+  
+format:
+  pdf:
+    author: "Rafael Valdece Sousa Bastos"
+    toc: true
+    number-sections: true
+    colorlinks: true
+    prefer-html: false
+    documentclass: scrreport
+    output-file: "Psychometric_Advances"
+    output-ext: "pdf"
+
+  epub:
+    toc: true
+    cover-image: images/cover.png
+    number-sections: true
+  html:
+    theme:
+      light:
+      - flatly
+      - include/light.scss
+      dark:
+      - darkly
+      - include/dark.scss
+    css: [include/booktem.css, include/style.css, include/webex.css]
+    df-print: kable
+    code-link: true
+    code-fold: false
+    code-line-numbers: true
+    code-overflow: wrap
+    code-copy: hover
+    highlight-style: a11y
+    monofont: Fira Code
+    mainfont: Open Sans
+    include-after-body: [include/webex.js, include/script.js]

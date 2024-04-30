@@ -1,0 +1,173 @@
+# Non-Parametric Item Response Theory {#sec-mokken}
+
+In psychometrics, with the advent of computers and new ways of carrying out statistical analyses, it has become a consensus to use techniques such as Factor Analysis and/or Item Response Theory to verify the validity of a given psychological instrument (Franco et al., 2022). Parametric tests are generally used, both Factor Analysis and Item Response Theory. But what are parametric tests and non-parametric tests?
+
+## (Non)-Parametric Tests
+
+Parametric techniques are based on statistical models that place constraints. For example, in a Pearson correlation, we impose the restriction that the relationship between two variables is linear. The same occurs in a Factor Analysis, which assumes a linear relationship between the construct and the items. Therefore, if there is a relationship between the variables, but this relationship is not linear, the models will underestimate or overestimate the magnitudes of such relationships. That is why so-called non-parametric techniques emerged, which are techniques that do not make specific restrictions on the behavior of variables.
+
+## Mokken Scaling
+
+Mokken Scale Analysis can be thought of as a Non-Parametric Item Response Theory technique as it does not assume the exact form of the item response function. It starts and **tests** the same three assumptions that are common to parametric Item Response Theory:
+
+-   Unidimensionality: only one latent trait of individuals interacts with a latent characteristic of items. In other words, only one latent trait explains the behavior of the items. In the realm of Item Response Theory (IRT), the principle of unidimensionality posits that a single latent trait, denoted as $\theta$, suffices to explain the underlying structure of the data. The primary rationale behind this lies in the preference of practical researchers for measurement instruments that focus on capturing a single trait at a time. This approach streamlines the interpretation of test results, making them more manageable and comprehensible.
+
+-   Local independence: is the idea that when items are conditioned on the latent trait, they should not correlate. In other words, an individual's response to item $i$ is not influenced by his or her responses to the other items in the same test. Local independence is as follows. Imagine that $X=(X_1,X_2,...,X_k)$ is a vector that contains item scores variables, and $x=(x_1, x_2, x_k)$ is a realization of $X$. In cases we deal with dichotomous items, each $x_i=0$ or $x_i=1$. The probability of an individual to have a score $x_i$ on item $i$, given the latent trait leval $\theta$, is $P(X_i=x_i|\theta)$. Thus, local independence means that
+
+$$
+P(X=x|\theta)=\prod^k_{i=1} P(X_i=x_i|\theta)
+$$
+One implication of local independence is that when the latent trait $\theta$ is held constant, the covariance between items $i$ and $j$ is zero: $Cov(X_i, X_j|\theta) = 0$. However, in a group where $\theta$ varies, the covariance is positive ($Cov(X_i, X_j) > 0$) because the items are measuring the same underlying trait. Nonetheless, this covariance disappears when $\theta$ is fixed because it is entirely accounted for by $\theta$.
+
+-   Latent Monotonicity: when the individual has a greater latent trait, the greater the probability of giving the correct answer or giving the highest answer on a scale. In other words, the higher the level of knowledge in mathematics, the more likely a person is to get an SAT math question right. These assumptions posit that that the conditional probability $P_i(\theta)$ is monotonely nondecreasing in $\theta$, which means:
+$$
+P_i(\theta_a)≤P_i(\theta_b)
+$$
+-   Non-intersection of Item Response Functions: means that item response functions should not intersect. A quick note is that, the success probability for a fixed item depends on a person's ability (or trait level) and is called its item response function (IRF); it is usually assumed that this IRF increases if the person has more of the latent trait. Thus, this assumption says that the $k$ item response functions are non-intersecting across $\theta$. Non-intersection means that all item response functions can be ordered and numbered such that:
+
+$$
+P_1(\theta)≤P_2(\theta)≤...≤P_k(\theta), \text{for all }\theta.
+$$
+As consequence for this formula, Item 1 is the most difficult item, followed by Item 2, and so on.
+
+From these assumptions, two Mokken Scale Analysis models are derived.
+
+1. Monotonic Homogeneity Model (Mokken, 1971): which respects the first three assumptions (unidimensionality, local independence and latent monotonicity). Thus, the Monotonic Homogeneity Model is an Item Response Theory model for measuring persons on an ordinal scale.
+2. Double Monotonicity Model: which respects the four assumptions of unidimensionality, local independence, latent monotonicity and non-intersection. It is a special case of 1.
+
+These two models have a difference. The first model (monotonic homogeneity) allows ordering only the respondents, while the second (double monotonicity) allows ordering both individuals and items (thus allowing the ordering of items by level of difficulty; Sijtsma & Molenaar, 2002).
+
+## Scalability Coefficient
+
+To test the assumptions of the monotonic homogeneity and double monotonicity models, the main index used is the Loevinger scalability coefficient H (Loevinger, 1948). There are three scalability indices:
+
+-   the item pair index ($H_{ij}$):
+    $$
+    H_{ij} = \frac{COV(X_I , X_j)}{COV(X_I , X_j)^{max}}
+    $$
+    Where $X_i$ is the sum score of item $i$, $X_j$ is the sum score of item $j$, and the superscript $max$ indicates the maximum covariance that the two items can have if they have no Guttman errors.
+
+-   the item index ($H_{j}$):
+    $$
+    H_j = \frac{COV(X_j,R_{-j})}{COV(X_j,R_{-j})^{max}}
+    $$
+Where $X_j$ is the sum score of item $j$, $R_{-j}$ is the and the remainder score (*rest score*) when disregarding item $j$ (i.e., the sum score of all the items minus item $j$), and the superscript $max$ indicates the maximum covariance that the two items can have if they do not have Guttman errors.
+
+-   the overall test index ($H$):
+    $$
+    H = \frac{\sum^J_{j=1} COV(X_j,R_{-j})}{\sum^J_{j=1} COV(X_j,R_{-j})^{max}}
+    $$
+Where $X_j$ is the sum score of item $j$, $R_{-j}$ is the and the remainder score (*rest score*) when disregarding item $j$ (i.e., the sum score of all the items minus item $j$), and the superscript $max$ indicates the maximum covariance that the two items can have if they do not have Guttman errors.
+
+The H coefficient indices can vary between -1 or +1, and the assumptions of unidimensionality, local independence and latent monotonicity imply: $0 ≤ H_{ij} ≤ 1$, for all $i ≠ j$; $0 ≤ H_j ≤ 1$, for all j; and $0 ≤ H ≤ 1$. Thus, if all assumptions are respected, the observed values of the $H$ indices should not be less than 0. Of course, it is possible to observe negative values when the items are not suitable for the scale (Sijtsma & Molenaar, 2002). All this means that the calculation of Guttman scalability coefficients is both descriptive and also serves predictive purposes for the quality of the measurements, allowing for more robust inferences (Franco et al., 2022).
+
+## Mokken Scaling in R
+
+To do this, we will use the *mokken* package (van der Ark, 2012). First, let's install the package on the computer.
+
+``` r
+install.packages("mokken")
+```
+
+Then, we will inform the program that we are going to use the functions of this package.
+
+```{r include=TRUE}
+library(mokken)
+```
+
+We will use a database available in the *mokken* (Van der Ark, 2007) package, with responses to 12 dichotomous items administered to 425 children from grades 2 to 6 in the Netherlands (Verweij, Sijtsma & Koops, 1996). Each item is a transitive reasoning task about physical properties of objects, with two items used as pseudo-items (items 11 and 12), four items about length relations (items 01, 02, 07 and 09), five items about width relations (items 03, 04, 05, 08 and 10) and an item related to area relations (item 06).
+
+```{r}
+data(transreas)
+
+data <- transreas[,2:ncol(transreas)] # Select only the test items
+```
+
+### Dimensionality Analysis in R
+
+In Mokken Scale Analysis, we do not perform dimensionality analysis with techniques such as Parallel Analysis. This is done through the automatic item selection procedure (AISP, *Autometed Item Selection ProcedureI;* Mokken, 1971). The AISP uses the scalability coefficient $H_i$ to select the most representative item of the dimension and then the item pair scalability coefficient to select the largest subset of items that measure the same construct (Mokken, 1971). Then, after selecting the best items for the first dimension, unselected items are tested to try to compose a second subscale, and so on, until it is no longer possible to allocate any item to any subscale. The scalability coefficient of pairs of items should not be less than 0.30 (Straat te al., 2013), and it is recommended to use the genetic algorithm (in the code, `search="ga"` ). The following table presents all the items in the rows and the minimum values of the scalability coefficient ($H_j$) of the best item represented in the columns.
+
+```{r}
+AISP <- aisp(data, # Items
+             search="ga", # Genetic Algorithm
+             lowerbound=seq(.3,.8,by=.05) # Which H to show
+             )
+
+# Print Results
+print(AISP)
+```
+
+It can be seen that the pseudo-items did not aggregate into any subscale. In general, AISP identified that, at most, two scales can be generated, represented by the numbers 1 and 2. The number 0 means that, given that coefficient H, the item does not form any scale.
+
+Let's save Scale 1 formed by the coefficient H = 0.45, given that this subscale is constant up to the limit of 0.45. This means that a robust scale can be created using items 1, 3, 6, 7, 8, 9 and 10. This way, pseudo-items 11 and 12 would be discarded, in addition to items 02, 04 and 05, which probably present more Guttman errors than would be expected for one-dimensional items. The second scale does not present consistency when varying the limits of the scalability coefficient, which may indicate that it is a spurious scale.
+
+Let's save the new scale in a variable for subsequent analyses.
+
+```{r}
+scale1 <- data[,colnames(data)[which(AISP[,"0.45"] == 1)]]
+```
+
+### Latent Monotonicity Analysis in R
+
+Using only the items that were maintained after AISP, the following table presents the items, the scalability indices for each item ($H_j$), the number of active pairs (PA)—which represents the maximum possible number of tests of monotonicity for each item—, the number of monotonicity violations (Vi) that were identified for each item, the magnitude of the largest violation (MaxVi), the z value of this largest violation (Zmax) for inferential testing, and the number of violations which were significant in each item (Zsig).
+
+```{r}
+MonLat <- check.monotonicity(scale1)
+
+summary(MonLat)
+```
+
+We see that item 6 (T06A) does not present adequate variability in scores, so it has little information about the respondents' scores, so it should be excluded. Let's save the remaining items in a new variable.
+
+```{r}
+scale2 <- scale1[,-7]
+```
+
+### Local Independence in R
+
+```{r}
+CA <- check.ca(scale2)
+
+print(CA)
+```
+
+The result is a vector of booleans (TRUE or FALSE) with length equal to the number of items. If TRUE, it indicates that the item is still on the scale, if FALSE, it indicates that the item should be removed. None of the items were considered outliers, that is, all items were maintained.
+
+### Non-intersection Analysis of Item Response Functions
+
+Using only the items that were maintained by the AISP and the monotonicity analysis, the analysis presented in the following table was performed.
+
+```{r}
+NI <- check.pmatrix(scale2)
+summary(NI)
+```
+
+No item was found to be in violation, so all were kept for the next analysis.
+
+## References
+
+Franco, V. R., Laros, J. A., & Bastos, R. V. S. (2022). Theoretical and practical foundations of Mokken scale analysis in psychology. *Paidéia (Ribeirão Preto)*, *32*. <https://doi.org/10.1590/1982-4327e3223>
+
+Loevinger, J. (1948). The technique of homogenous tests compared with some aspects of “scale analysis” and factor analysis. *Psychological Bulletin*, *45*(6), 507-530. <https://doi.org/10.1037/h0055827>
+
+Mokken, R. J. (1971). *A theory and procedure of scale analysis*. De Gruyter. <https://doi.org/10.1515/9783110813203>
+
+Sijtsma, K., & Molenaar, I. W. (2002). *Introduction to nonparametric item response theory*. Sage. <https://doi.org/10.4135/9781412984676>
+
+Straat, J. H., van der Ark, L. A., & Sijtsma, K. (2013). Comparing optimization algorithms for item selection in Mokken scale analysis. *Journal of Classification*, *30*, 72-99. <https://doi.org/10.1007/s00357-013-9122-y>
+
+Van der Ark LA (2007). Mokken Scale Analysis in R. *Journal of Statistical Software*, *20*(11), 1-19. <https://doi.org/10.18637/jss.v020.i11>.
+
+Verweij, A. C., Sijtsma, K., & Koops, W. (1996). A Mokken scale for transitive reasoning suited for longitudinal research. *International Journal of Behavioral Development*, *19*(1), 219-238. <https://doi.org/10.1177/016502549601900115>
+
+```{=html}
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('rafaelbastos', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support This',
+    'floating-chat.donateButton.background-color': '#5bc0de',
+    'floating-chat.donateButton.text-color': '#323842'
+  });
+</script>
+```

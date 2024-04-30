@@ -1,0 +1,260 @@
+# Measurement Invariance/Equivalence {#sec-invariance}
+
+If you are familiar with human research, you may have seen some examples of group comparisons. For example, if we want to test the effectiveness of an antidepressant, we may want to compare gender differences (since depression can differ based on gender). However, are you sure that the instrument you are using (e.g., Beck Depression Inventory) has the same structure for men or women?
+
+Another example is in cross-cultural research. We could measure differences in subjective well-being between countries and see if some countries are happier than others. But how can you infer that your results are accurate if you don't know whether you can compare the latent variable scale scores?
+
+> One criterion for comparing scale scores is that the latent variable is understood and measured equivalently across groups/countries. This property is known as measurement invariance or lack of bias. (Svetina et al., 2020).
+
+So, whenever you want to compare test scores between groups in some way, it would be interesting to do an invariance analysis on the scale first. You may have already come across results about IQ, saying that some countries or cultures have higher or lower IQ than others, without even testing measurement invariance.
+
+A test is invariant if participants belonging to different groups, who have the same score on the factor underlying the test, have on average the same score on an observed item (Lubke & Muthén, 2004).
+
+A common statistical method for establishing evidence of measurement invariance is through Multigroup Confirmatory Factor Analysis (CFA-MG). In CFA-MG, we use a hierarchical test set to impose constraints on the parameters of interest across groups.
+
+## Defining Measurement Invariance/Equivalence
+
+A general factor model is defined as
+
+$$
+\Sigma = \Lambda \Phi \Lambda' + \Theta
+$$ 
+
+Where $\Sigma$ represents the covariance matrix of the observed variables (or items); $\Lambda$ is the matrix of factor loadings that expresses the degree of association between the vector of latent variables (with associated covariance matrix $\Phi$) to the observed variables; $\Theta$ represents the covariance matrix of measurement errors for the observed variables.
+
+Consider that $v$ is the mean structure. Then, the observed variables' means can be represented by $E(Y)=E(v+\Lambda \eta + \epsilon)$, where $\eta$ is the vector of latent variables. This model has the assumption that $E(\epsilon)=0$ and $E(\eta)=k=0$, then $E(X)=v$, where $X$ is the vector of observed variables. This model generalizes to multiple population by permitting separate covariance matrix for each population or group, i.e., $\Sigma^{(g)}$ with mean structure $v^{(g)},g=1,...,G$.
+
+To establish measurement invariance is that if the null hypothesis is $H_0: \Sigma^{(1)}=\Sigma^{(2)}=...=\Sigma^{(G)}$ is rejected, a series of tests follows. I list them below.
+
+1.  Configural invariance: tests whether the factorial structure is the same across groups (i.e. number of factors, and whether items percent on the same factor). Thus, the number and pattern of parameters are assumed to be equal across groups. Nevertheless, the values of the parameters are assumed to differ withing identification constraints. If configural invariance is not found, this means that the items load in different factors for different groups.
+
+2.  Metric invariance: tests whether the factor loadings of items are equal across groups. The null hypothesis states that the pattern and value of factor loadings are equivalent across groups, i.e., $H_0: \Lambda^{(1)}=\Lambda^{(2)}=...=\Lambda^{(G)}$. If metric invariance is not found, it means that one or more items of the instrument are being answered with bias by one or more groups. Therefore, inferences of differences between groups may be biased. Although this is an indicator of response bias in the items, the next step is necessary to assume equal comparison between groups.
+
+3.  Scalar invariance: in addition to equal factor loadings, it tests whether the intercepts are equal between groups. Thus, the null hypothesis is $H_0: \Lambda^{(1)}=\Lambda^{(2)}=...=\Lambda^{(G)}$, and $v^{(1)}=v^{(2)}=...=v^{(G)}$. If scalar invariance is not found, any differences found between groups are not related to the latent trait, but to the non-equivalence of measurement of the instrument parameters.
+
+4.  Strict Invariance: implies that, in addition to loadings and intercepts, residual variances are similar between groups. Residual variance is simply item variance that is not associated with the latent variable you are measuring.
+
+Some authors advocate the need for strict invariance as a condition for comparing group means (Lubke & Dolan, 2003). In practice, this level of invariance is rarely achieved, given that scalar invariance supports comparisons between groups of manifest (or latent) variable means on the latent variable of interest (Hancock, 1997; Svetina et al., 2020, Thompson & Green, 2006). Thus, most authors suggest achieving scalar invariance instead, in order to conclude invariance (Svetina et al., 2020).
+
+## Measurement Invariance for Categorical Variables
+
+Previously, I described the concept of invariance where the distribution of observed variables is assumed to be multivariate normal. However, in Psychology, most of the surveys are binary of ordinal. If we use the multivariate distribution to categorical variables, we might have consequences on parameters, model fit, and cross-group comparisons (Beauducel & Herzberg, 2006; Lubke & Muthén, 2004; Muthén & Kaplan, 1985). To surpass this, we can use other estimators, like the diagonally weighted least squares (DWLS) family of estimators. The categorical measurement invariance goes as follows (Svetina et al., 2020).
+
+Imagine we have a *p* X 1 vector of observed variables $Y$, which take ordered values 0, 1, 2, ..., $C$. For each observed variable $Y_j$, with $j=1,2,...,p$, it is assumed that there is an underlying continuous latent response variable $Y^{*}_j$, which has the value of that determines the observed category of the observed variable $Y_j$. $Y^{*}_j$ is related to $Y_j$ by a set of $C+1$ threshold parameters $\tau_j=(\tau_{j0},\tau_{j1},...,\tau_{jC+1})$, where $\tau_{j0}=-\infty$ and $\tau_{jC+1}=\infty$. Thus, the probability that $Y_j = c$ is:
+
+$$
+P(Y_j=c)=P(\tau_{jc}≤Y^{*}_j≤\tau_{jc+1})
+$$
+
+For $c=0,1,...,C$. The model for the vector of latent response variables is:
+$$
+Y^*=v+\Lambda\eta+\epsilon
+$$
+where factor loadings and residuals are defined the same as before, $v$ is a vector of latent intercept parameters. In addition, mean and covariance structure of this model is the same: $E(Y^*)=v$, $Cov(Y^*)=\Sigma^*=\Lambda\Phi\Lambda'+\Theta$, where $E(Y^*)=v$ is assumed to be zero for identification purposes.
+
+
+In the typical scenario, the categorical factor model can be expanded to encompass multiple groups by accommodating distinct thresholds and covariance matrices for the latent response variables within each population. These are denoted as $\tau^{(k)})$ and $\Sigma^{*(k)}$, where $k$ ranges from 1 to $K$ (with $v^{(k)}=0$ for all $k$). In a similar vein, for ordinal data, assessments are made for "baseline" invariance, equivalent slopes, and equal slopes and thresholds, which mirror configural, metric, and scale invariance, respectively. To ascertain the viability of these invariance assumptions, both overall and difference chi-square tests are employed.
+
+## Measurement Invariance in R
+
+To run a Multigroup Confirmatory Factor Analysis, we must first install the *lavaan* (Rosseel, 2012) and *semTools* (Jorgensen et al., 2022) packages for analyses, and *psych* (Revelle, 2023) for the database.
+
+``` r
+ install.packages("lavaan")
+ install.packages("semTools")
+ install.packages("psych")
+```
+
+And tell the program that we are going to use the functions of these packages
+
+```{r}
+library(lavaan) 
+library(semTools)
+library(psych)
+```
+
+To run the analyses, we will use the BFI database (Big Five Personality Factors Questionnaire) that already exists in the *psych* package. We will differentiate between genders (1=Male and 2=Female).
+
+```{r}
+dat<- psych::bfi
+```
+
+We will store the results of our models in an empty matrix called *results*, where we will extract chi-square, degrees of freedom, RMSEA, CFI and TLI.
+
+```{r}
+results<-matrix(NA, nrow = 3, ncol = 6)
+```
+
+Let's do the analysis with the 5 BFI factors. First we place the model.
+
+```{r}
+mod.cat <- "Agre =~ A1 + A2 + A3 + A4 + A5
+            Con =~  C1 + C2 + C3 + C4 + C5
+            Extr =~ E1 + E2 + E3 + E4 + E5
+            Neur =~ N1 + N2 + N3 + N4 + N5
+            "
+```
+
+### Baseline Model
+
+First, let's make the base model (*baseline model*), where there are no restrictions (*constraints*) between the groups.
+
+```{r}
+baseline <- measEq.syntax(configural.model = mod.cat,
+                          data = dat,
+                          ordered = TRUE,
+                          parameterization = "delta",
+                          ID.fac = "std.lv",
+                          ID.cat = "Wu.Estabrook.2016",
+                          group = "gender",
+                          group.equal = "configural")
+```
+
+The function *measEq.syntax* from the semTools package automatically generates the lavaan syntax to perform a confirmatory factor analysis. As can be seen from the baseline model specification, items are treated as ordinals, delta parameterization and Wu and Estabrook's 2016 model identification are used.
+
+Let's then fit the base model.
+
+```{r}
+model.baseline <- as.character(baseline)
+
+fit.baseline <- cfa(model.baseline, 
+                    data = dat,
+                    group = "gender",
+                    ordered = TRUE)
+```
+
+Now let's save the results in the matrix we created initially.
+
+```{r output = FALSE}
+results[1,]<-round(
+  data.matrix(fitmeasures(fit.baseline,
+                          fit.measures = c("chisq.scaled",
+                          "df.scaled",
+                          "pvalue.scaled",
+                          "rmsea.scaled",
+                          "cfi.scaled",
+                          "tli.scaled"))),
+                      digits=3)
+```
+
+### Thresholds Invariance Model
+
+```{r}
+prop4 <- measEq.syntax(configural.model = mod.cat,
+                       data = dat,
+                       ordered = TRUE,
+                       parameterization = "delta",
+                       ID.fac = "std.lv",
+                       ID.cat = "Wu.Estabrook.2016",
+                       group = "gender",
+                       group.equal = c("thresholds"))
+
+model.prop4 <- as.character(prop4)
+
+fit.prop4 <- cfa(model.prop4,
+                 data = dat,
+                 group = "gender",
+                 ordered = TRUE)
+
+results[2,]<-round(data.matrix(
+  fitmeasures(fit.prop4, 
+             fit.measures = c("chisq.scaled",
+             "df.scaled",
+             "pvalue.scaled",
+             "rmsea.scaled",
+             "cfi.scaled",
+             "tli.scaled"))),
+             digits=3)
+```
+
+To examine the relative fit of the model and compare the chi-square statistics between the baseline model and the model where threshold constraints are employed, we use function lavTestLRT.
+
+```{r}
+lavTestLRT(fit.baseline,fit.prop4)
+```
+
+### Thresholds and Factor Loadings Invariance Model
+
+```{r}
+prop7 <- measEq.syntax(configural.model = mod.cat,
+                       data = dat,
+                       ordered = TRUE,
+                       parameterization = "delta",
+                       ID.fac = "std.lv",
+                       ID.cat = "Wu.Estabrook.2016",
+                       group = "gender",
+                       group.equal = c("thresholds", "loadings"))
+
+model.prop7 <- as.character(prop7)
+
+fit.prop7 <- cfa(model.prop7,
+                 data = dat,
+                 group = "gender",
+                 ordered = TRUE
+)
+
+
+results[3,] <- round(
+  data.matrix(
+  fitmeasures(fit.prop7, 
+  fit.measures = c("chisq.scaled",
+  "df.scaled",
+  "pvalue.scaled",
+  "rmsea.scaled",
+  "cfi.scaled",
+  "tli.scaled"))),
+  digits = 3)
+
+colnames(results) <- c("chisq","df","pvalue","rmsea","cfi","tli")
+rownames(results) <- c("baseline","thresholds","loadings")
+```
+
+Examining fit indices (*results*):
+
+```{r}
+print(results)
+```
+
+we noticed that in general, the model fit improved as the models became more restricted by imposing equality of thresholds (prop4) and equality of factor loadings (prop7).
+
+We can perform the chi-square difference test between the threshold invariance (prop4) and threshold + factor loadings (pro7) models to assess the feasibility of measurement invariance.
+
+```{r}
+lavTestLRT(fit.prop4,fit.prop7)
+```
+
+## Data Interpretation
+
+For interpretation, you can see Table 1 of the study by Svetina et al., (2020). In it, there is a summary of several simulation studies and which cutoff points are recommended. For example, if you have an ordinal distribution, you are comparing two groups, with each group having 150/150 or 150/500 or 500/500 participants, having 2 to 4 factors, you should test the levels of measurement invariance through of the chi-square difference with *p* \< 0.05 between each level of invariance. If you consider that you have data with normal distribution, you are comparing 2 groups, you have an N of 150, 250 or 500 per group, and you are comparing only 1 factor, the difference between each CFI invariance level should not be greater than or equal to 0.005, while the RMSEA difference must not be less than or equal to 0.010.
+
+## References
+
+Beauducel, A., & Herzberg, P. Y. (2006). On the performance of maximum likelihood versus means and variance adjusted weighted least squares estimation in CFA. Structural Equation Modeling: A Multidisciplinary Journal, 13(2), 186–203. <https://doi.org/10.1207/s15328007sem1302_2>
+
+Hancock, G. R. (1997). Structural equation modeling methods of hypothoesis testing of latent variable means. *Measurement & Evaluation in Counseling & Development (American Counseling Association)*, *30*(2), 91–105. <https://doi.org/10.1080/07481756.1997.12068926>
+
+Jorgensen, T. D., Pornprasertmanit, S., Schoemann, A. M., & Rosseel, Y. (2022). *semTools: Useful tools for structural equation modeling*. R package. Retrieved from <https://CRAN.R-project.org/package=semTools>
+
+Lubke, G. H., & Muthén, B. O. (2004). Applying multigroup confirmatory factor models for continuous outcomes to Likert scale data complicates meaningful group comparisons. *Structural equation modeling*, *11*(4), 514-534. <https://doi.org/10.1207/s15328007sem1104_2>
+
+Muthén, B., & Kaplan, D. (1985). A Comparison of Some Methodologies for the Factor Analysis of Non-Normal Likert Variables. British Journal of Mathematical and Statistical Psychology, 38, 171–189. <https://doi.org/10.1111/j.2044-8317.1985.tb00832.x>
+
+R Core Team (2023). *R: A Language and Environment for Statistical Computing*. R Foundation for Statistical Computing, Vienna, Austria. <https://www.R-project.org/>
+
+Revelle, W. (2023). *psych: Procedures for Psychological, Psychometric, and Personality Research*. Northwestern University, Evanston, Illinois. R package. <https://CRAN.R-project.org/package=psych>
+
+Rosseel, Y. (2012). lavaan: An R Package for Structural Equation Modeling. *Journal of Statistical Software*, *48*(2), 1-36. <https://doi.org/10.18637/jss.v048.i02\>
+
+Svetina, D., Rutkowski, L., & Rutkowski, D. (2020). Multiple-group invariance with categorical outcomes using updated guidelines: an illustration using M plus and the lavaan/semtools packages. *Structural Equation Modeling: A Multidisciplinary Journal*, *27*(1), 111-130. <https://doi.org/10.1080/10705511.2019.1602776>
+
+```{=html}
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('rafaelbastos', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support This',
+    'floating-chat.donateButton.background-color': '#5bc0de',
+    'floating-chat.donateButton.text-color': '#323842'
+  });
+</script>
+```

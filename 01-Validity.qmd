@@ -1,0 +1,185 @@
+# The Concept of Validity of Psychological Tests {#sec-validity}
+
+What does it mean to say that a test has evidence of validity? Where do the concepts of validity in psychology come from? How can we seek evidence of validity for our instruments? In this chapter, we will answer these questions.
+
+## Introduction
+
+In physics, we usually have an instrument that physically exists and measures physical properties. For example, an instrument that measures length uses this property (i.e., length) to measure the length of another object. Therefore, there is no need to prove that this property is congruent with the same property of the object being measured.
+
+However, there are some cases where this is not so clear. For example, if we are measuring speed using the Doppler effect (Doppler Effect is a physical wave phenomenon that occurs when there is relative approach or distance between a source of waves and an observer), where the approach/distance of the spectral lines of the galaxy's lights is the instrument. In this case, we have the problem of the validity of an instrument, as we need to know whether or not it is true that the distance between the spectral lines is related to speed. To do this, we have to prove it empirically. Validity is common in areas of knowledge that use indirect or derived measures. The same thing that happens with the Doppler effect is very common in behavioral and psychological sciences (for example, psychology and education), especially if we are using the concept of construct (for example, happiness, anxiety or attraction).
+
+From a psychological perspective, we can think of a construct as a characteristic that is inside our heads. These characteristics, like someone's personality, cannot be assessed through direct means. What we do, instead, is measure a person's behaviors, thoughts, emotions, affects, and infer that they come from the same construct (or not).
+
+Of course, we have many ways to measure constructs, a common way is through questionnaires, where people respond each item on a scale of 1 (strongly agree) to 5 (strongly disagree), for example. Let's say we're going to measure self-efficacy in the workplace. We developed the items based on the definition of self-efficacy and then what? How can we know what our test results mean? Is self-efficacy a single phenomenon or can it be divided into different aspects? This is the role of seeking validity.
+
+The need for valid measures seems obvious enough, given that to test theories that relate theoretical constructs (e.g., construct *A* influences construct *B* for individuals drawn from population *P* under conditions *C*), it is necessary to have valid measures of these constructs. Thus, even successful and replicable tests of a theory may be false if the measures lack construct validity; that is, they do not measure what researchers assume they are measuring (Schimmack, 2021).
+
+## A Brief Note on the History of Validity
+
+------------------------------------------------------------------------
+
+**A. 1900–1950: The hegemony of content validity**
+
+At that time, personality theories were the bomb. Most theories (such as psychoanalytic, gestalt, and phenomenology) generally had little empirical reasoning. In this context, personality trait tests were considered valid to the extent that the content of the test corresponded to the content of the theoretically defined traits.
+
+------------------------------------------------------------------------
+
+**B. 1950–1970: Prevalence of criterion validity**
+
+Behaviorism was very influential for Psychology and, of course, for Psychometrics. The tests were composed with a sample of behaviors that were expected to predict other behaviors or future behaviors. These tests were valid if they accurately predicted behavior in the future (or in another time), becoming the new path of validity (called criterion validity). It didn't matter why the test predicted the behavior, as long as they predicted it, and that was enough for its validity. As we can imagine, there was a shift from theoretical thinking to a focus on statistics. Rather than constructing a test to measure a construct, items were selected from a pool of items that appeared to refer to what they wanted to measure, essentially using statistical analysis to solve their problems.
+
+------------------------------------------------------------------------
+
+**C. 1970-Today: The rise of construct validity**
+
+After an article by Cronbach and Meehl in 1955 on a trinitarian model of validity (content, criterion, and construct), there was a change in the way of thinking about validity. The theory was back in play due to factors such as:
+
+1.  The need to develop a theory of personality and intelligence on an empirical basis, using factor analysis.
+
+2.  Studies of cognitive processes.
+
+3.  Studies of information processes.
+
+4.  Dissatisfaction with the results of using the test in education and work situations.
+
+5.  The impact of Item Response Theory.
+
+Cronbach and Meehl note that construct validation is necessary
+
+> whenever a test is to be interpreted as a measure of some attribute or
+quality which is not “operationally defined (p. 282).
+
+This definition makes clear that there are other types of validity (e.g., criterion validity) and that not all measures require construct validity. However, studies of psychological theories that relate constructs require valid measures of these constructs to test psychological theories. Thus, construct validity is the relationship between variation in observed scores on a measure (e.g., scores on a Likert scale) and a latent variable that reflects corresponding variation in a theoretical construct (e.g., Extraversion; i.e., people who feel more energized by social interactions).
+
+However, the problem of construct validaty can be illustrated with the development of IQ tests (Schimmack, 2021). IQ scores can have predictive validity (e.g., graduate school performance) without making any claims about the construct being measured (IQ tests measure whatever they measure, and what they measure predicts important outcomes). However, IQ tests are often treated as measures of intelligence. For IQ tests to be valid measures of intelligence, it is necessary to define the construct of intelligence and demonstrate that observed IQ scores are related to unobserved variation in intelligence. Thus, construct validation requires clear definitions of constructs that are independent of the measures being validated. Without a clear definition of constructs, the meaning of a measure essentially reverts to “whatever the measure is measuring”, as in the old adage “Intelligence is whatever IQ tests are measuring” (Schimmack, 2021).
+
+## What is Validity Then?
+
+The **classic definition** of validity is "when the test measures what it is supposed to measure, what the test measures, and how well it measures" (Baptista & de Villemor-Amaral, 2019). However, the classical definition makes it appear that tests are either valid or not. To change this dichotomous paradigm, the **current definition** of validity is "the degree to which theory and evidence support the interpretation of test results. Thus, for each context/purpose of test use and for each intended interpretation it is necessary that test results have evidence of validity" (Baptista & de Villemor-Amaral, 2019). Now, we can say that each measurement has its own degree of validity. Validity is not a property of the test, but a property of the interpretation of test scores.
+
+## Sources of Validity
+
+As I will explain below, there are different sources of validity. Each of them contributes to the search for the greatest “degree to which theory and evidence support the interpretation of test results”. In general, it is always good to look for lots of evidence of validity, always updating this evidence over time.
+
+### Evidence of Content-Based Validity
+
+You will collect data regarding the representation of a test's items, investigating whether they are samples of the domain they want to measure. The set of items is judged regarding its scope, with a view to evaluating the proposed construct. In general, it is based on the evaluation of experts, where they evaluate the importance of the items, taking into account their relationship with the aspects to be evaluated. However, it's also important to have the evaluation of the targeted population you will measure. Some statistical tests can be used, such as the percentage of agreement and the Kappa coefficient.
+
+Example: In a paper, Bastos et al. (2022) created a measure of self-perception of prejudice and discrimination for different social groups. The authors used the following procedure to seek content-based validity:
+
+1. Literature review on existing measures of prejudice and discrimination.
+
+2. Self-perceived prejudice is defined as the perception that a person is the victim of negative attitudes towards themselves based on their social group; and self-perceived discrimination as the perception that a person is the victim of negative and unjustified behavior towards themselves based on their social group.
+
+3. Based on these definitions and previous measures, the authors developed new items for other social groups.
+
+4. After creating the items, they sent them to experts (i.e., psychologists and psychometricians) so they could evaluate the items.
+
+5. Based on the proportion of agreement, the authors selected nine items for future analysis.
+
+### Evidence Vased on Response Processes
+
+You will collect data on the mental processes involved in performing certain tasks. Normally this is an individual response process, and researchers ask the person being evaluated about the cognitive path used to reach a certain result. As an example, we can see that Noble et al. (2014) sought this type of validity with their study. They found that English language learners (ELL) students had lower scores on high-stakes tests compared to non-English language learners. Based on the interview, they found that
+
+> ELL students' interactions with specific linguistic features of test items often led to alternative interpretations of the items that resulted in incorrect responses.
+
+### Evidence Based on Internal Structure
+
+You will collect data on the correlation structure of items assessing the same construct. Statistical tests that are frequently used are Exploratory Factor Analysis (EFA), Confirmatory Factor Analysis (CFA).
+
+As an example, we can use the article by Selau et al., (2020). The authors wanted to measure intellectual disability in children aged 7 to 15. They investigated the internal structure of the scale through EFA and CFA where items are divided into social, conceptual and practical factors that are explained by a higher order factor called adaptive function.
+
+### Evidence Based on its Relationships With External Variables
+
+You will collect data on the pattern of correlations between test scores and other variables that measure the same or different constructs. Typically, to obtain this type of validity, researchers use the correlation of test scores with other variables. This type of validity can be:
+
+1. Evidence of the ability of an instrument **to predict the assessed construct**.
+
+2. When we have tests that **measure the same construct**, we expect them to be closely related.
+
+3. When we have tests that **measure related constructs**, we expect them to be moderately related.
+
+4. When we have tests that **measure different constructs**, we expect them to be unrelated.
+
+Beymer et al. (2021) developed a Cost Perceptions of University Students scale. They correlated scale items with students' perceptions and values. They expected (and found) that "costs" were negatively correlated with "expectations" and "value" (you can see the definition of each variable in their article).
+
+### Evidence Based on the Consequences of Testing
+
+Examine the intended or unintended social consequences of the use of a test, to verify that its use is providing the desired effects, in accordance with the reason for which it was constructed. Tests have this type of validity if they are being used for the same reason they were created. Although you cannot predict what people will do with an instrument you have developed, the responsibilities of instrument authors need to be discussed.
+
+As an example, we can think of IQ measures. Its purpose is to measure people's intelligence. However, we can see that [at times in history IQ was being used to justify racism](https://en.wikipedia.org/wiki/History_of_the_race_and_intelligence_controversy).
+
+## Validity Crisis: How Validity is Done in Practice
+
+We can see that there are a series of steps to ensure that our measure of psychological characteristics has degrees of validity. By following these procedures, we have more confidence to infer about the relationships between psychological traits and other variables. In practice, people generally look for only three types of validity: content, internal structure, and relationships with other variables. I think there are two reasons why this happens:
+
+1. The difficulty of seeking validity based on the response process and the consequences of the test. Seeking validity based on the response process requires researchers to invest more time and money in interviewing enough participants. Seeking validity based on testing consequences is difficult. Authors are required to think about and predict their use in the recent and distant future, and some consequences may be (almost) impossible to predict.
+
+2. The authors don't think it's their job to pursue these two types of validity, because they both: a) don't think it's their responsibility what people do with their work; b) they think their measurement is incredible and has no flaws, which may be true, but there is a lot to consider before concluding this, and that thing is making sure that some other response bias is not interfering with the results.
+
+Only 12 years ago (in 2012) psychologists became aware that the field of psychology has a replication crisis (Schimmack, 2021). Many published results do not replicate honest replication attempts that allow the data to decide whether a hypothesis is true (Open Science Collaboration, 2015). However, unfortunately, low replicability is not the only problem in psychological science. Schimmack (2021) argues that psychology not only has a replication crisis, but also a validation crisis for psychological instruments.
+
+Cronbach and Meehl make it clear that they were skeptical about the construct validity of many psychological measures.
+
+> For most tests intended to measure constructs, adequate criteria do not exist. This being the case, many such tests have been left unvalidated, or a finespun network of rationalizations has been offered as if it were validation. Rationalization is not construct validation. One who claims that his test reflects a construct cannot maintain his claim in the face of recurrent negative results because these results show that his construct is too loosely defined to yield verifiable inferences (p. 291).
+
+Nothing much has changed in the world of psychological measurement (Schimmack, 2021). For example, the study by Flake et al. (2017), where they reviewed current practices and found that reliability is often the only criterion used to claim construct validity. However, the reliability of a single measure cannot be used to demonstrate construct validity because reliability is only necessary but not sufficient for validity.
+
+Thus, many articles do not provide evidence for construct validity and even if the evidence was sufficient to assert that a measure is valid, it is still unclear how valid a measure is. Another sign that psychology has a validity crisis is that psychologists today still use measures that were developed decades ago (Schimmack, 2010). Measures could be highly valid, it is also likely that they have not been replaced with better measures because quantitative assessments of validity are lacking. For example, Rosenberg's (1965) 10-item self-esteem scale is still the most widely used measure of self-esteem (Bosson et al., 2000; Schimmack, 2021). However, the construct validity of this measure has never been quantified, and it is unclear whether it is more valid than other measures of self-esteem (Schimmack, 2021).
+
+## How to Move Forward?
+
+Although there is general agreement that current practices have serious limitations (Kane, 2017; Maul, 2017), there is no general consensus on the best way to deal with the validation crisis. Some researchers suggest that psychology can do better without quantitative measurement (Maul, 2017), but this is clearly false, and seeks an alternative without empirical foundation for why other methods are better or worse than quantitative science. If psychologists had followed Meehl's advice to quantify validity, psychological science would have made more progress than where we are currently (Schimmack, 2021).
+
+Others believe that the view advocated by Cronbach and Meehl is too ambitious (Kane, 2016, 2017).
+
+> Where the theory is strong enough to support such efforts, I would be in favor of using them, but in most areas of research, the required theory is lacking. (Kane, 2017, p. 81).
+
+This may be true for some areas of psychology, such as educational testing, but it is not true for basic psychological science, where the sole purpose of measures is to test psychological theories. In this context, construct validation is crucial for testing causal theories. The industrial literature shows that it is possible to estimate construct validity even with rudimentary causal theories (Cote & Buckley, 1987), and there are some examples in social and personality psychology in which structural equation modeling has been used to quantify validity (Schimmack , 2021, Schimmack, 2010; Zou et al., 2013). Thus, the improvement of psychological science requires a quantitative research program on construct validity that focuses more firmly on the endeavor of always seeking evidence of the validity of its instruments.
+
+## References
+
+Baptista, M. N. & de Villemor-Amaral, A. E. (2019). *Compêndio de avaliação psicológica*, Editora Vozes.
+
+Bastos, R. V. S., Novaes, F. C., & Natividade, J. C. (2022). Self-Perception of Prejudice and Discrimination Scale: Evidence of Validity and Other Psychometric Properties. *Trends in Psychology*, 1-19. <https://doi.org/10.1007/s43076-022-00190-7>
+
+Beymer, P. N., Ferland, M., & Flake, J. K. (2022). Validity evidence for a short scale of college students’ perceptions of cost. *Current Psychology*, *41*(11), 7937-7956. <https://doi.org/10.1007/s12144-020-01218-w>
+
+Bosson, J. K., Swann, W. B., Jr., & Pennebaker, J. W. (2000). Stalking the perfect measure of implicit self-esteem: The blind men and the elephant revisited? *Journal of Personality and Social Psychology*, *79*(4), 631-643. <https://doi.org/10.1037/0022-3514.79.4.631>
+
+Cote, J. A., & Buckley, M. R. (1987). Estimating trait, method, and error variance: Generalizing across 70 construct validation studies. *Journal of Marketing*, *24*, 315-318. <https://doi.org/10.1177/002224378702400308>
+
+Cronbach, L. J., & Meehl, P. E. (1955). Construct validity in psychological tests. *Psychological bulletin*, *52*(4), 281. <https://psycnet.apa.org/doi/10.1037/h0040957>
+
+Flake, J. K., Pek, J., & Hehman, E. (2017). Construct validation in social and personality research: Current practice and recommendations. *Social Psychological and Personality Science*, *8*(4), 370–378. <https://doi.org/10.1177/1948550617693063>
+
+Kane, M. T. (2016) Explicating validity. *Assessment in Education: Principles, Policy & Practice*, *23*, 198-211. <https://doi.org/10.1080/0969594X.2015.1060192>
+
+Kane, M. T. (2017) Causal interpretations of psychological attributes. *Measurement: Interdisciplinary Research and Perspectives*, *15*, 79-82. <https://doi.org/10.1080/15366367.2017.1369771>
+
+Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. *Science*, *349*, (6251), 943-950. <https://doi.org/10.1126/science.aac4716>
+
+Maul. A. (2017). Moving beyond traditional methods of survey validation. *Measurement: Interdisciplinary Research and Perspectives*, *15*, 103-109. <https://doi.org/10.1080/15366367.2017.1369786>
+
+Pasquali, L. (2017). *Psicometria: teoria dos testes na psicologia e na educação*.  Editora Vozes Limitada.
+
+Rosenberg, M. (1965). *Society and the Adolescent Self-Image*. Princeton University Press.
+
+Schimmack, U. (2010). What multi-method data tell us about construct validity. *European Journal of Personality*, *24*, 241–257. <https://doi.org/10.1002/per.771>
+
+Schimmack, U. (2021). The Implicit Association Test: A method in search of a construct. *Perspectives on Psychological Science*, *16*(2), 396-414. <https://doi.org/10.1177/1745691619863798>
+
+Zou, C., Schimmack, U., & Gere, J. (2013). The validity of well-being measures: A multiple-indicator–multiple-rater model. *Psychological Assessment*, *25*(4), 1247-1254. <https://doi.org/10.1037/a0033902>
+
+
+```{=html}
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('rafaelbastos', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support This',
+    'floating-chat.donateButton.background-color': '#5bc0de',
+    'floating-chat.donateButton.text-color': '#323842'
+  });
+</script>
+```

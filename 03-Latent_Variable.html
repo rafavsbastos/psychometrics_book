@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="description" content="This is an educational resource, with content at the cutting edge of scientific knowledge. It aims to improve future research, by improving researchers knowledge in the statistical inferences made, planning better experiments and analyzing scientific research being carried out with more rigor and transparency.">
+<title>Advances in Psychometric Theory and Measurement for Psychological Sciences - 3&nbsp; Theory of Latent Variables in Psychometrics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./04-Measurement_Theory.html" rel="next">
+<link href="./02-Classical_Test_Theory.html" rel="prev">
+<link href="./images/logo.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J4R1E10GWR"></script><script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-J4R1E10GWR', { 'anonymize_ip': true});
+</script><link rel="stylesheet" href="include/booktem.css">
+<link rel="stylesheet" href="include/style.css">
+<link rel="stylesheet" href="include/webex.css">
+<meta name="twitter:title" content="Advances in Psychometric Theory and Measurement for Psychological Sciences - 3&nbsp; Theory of Latent Variables in Psychometrics">
+<meta name="twitter:description" content="This is an educational resource, with content at the cutting edge of scientific knowledge. It aims to improve future research, by improving researchers knowledge in the statistical inferences made, planning better experiments and analyzing scientific research being carried out with more rigor and transparency.">
+<meta name="twitter:image" content="images/twittercard.jpg">
+<meta name="twitter:creator" content="@rafavsbastos">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-Latent_Variable.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory of Latent Variables in Psychometrics</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Advances in Psychometric Theory and Measurement for Psychological Sciences</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/rafavsbastos/psychometrics_book" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+<li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Advances-in-Psychometric-Theory-and-Measurement-for-Psychological-Sciences.pdf">
+              <i class="bi bi-bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Advances-in-Psychometric-Theory-and-Measurement-for-Psychological-Sciences.epub">
+              <i class="bi bi-bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+</div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-Validity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Concept of Validity of Psychological Tests</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-Classical_Test_Theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Classical Test Theory</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-Latent_Variable.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory of Latent Variables in Psychometrics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-Measurement_Theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Measurement Theory: Why it is Possible to Measure Psychological Phenomena</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-EFA.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Exploratory Factor Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-CFA.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Confirmatory Factor Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-EGA.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Exploratory Graph Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-Desirability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Social Desirability Bias</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-Acquiescence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Acquiescence Bias</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-Measurement_Invariance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Measurement Invariance/Equivalence</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-NP_IRT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Non-Parametric Item Response Theory</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-Step_by_step.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">How to Validate Psychological Tests: A Step by Step Guide</span></span></a>
+  </div>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+<li><a href="#the-importance-of-psychometrics" id="toc-the-importance-of-psychometrics" class="nav-link active" data-scroll-target="#the-importance-of-psychometrics"><span class="header-section-number">3.1</span> The Importance of Psychometrics</a></li>
+  <li><a href="#misunderstandings-in-psychometric-practice" id="toc-misunderstandings-in-psychometric-practice" class="nav-link" data-scroll-target="#misunderstandings-in-psychometric-practice"><span class="header-section-number">3.2</span> Misunderstandings in Psychometric Practice</a></li>
+  <li><a href="#obstacles-to-the-psychometric-revolution" id="toc-obstacles-to-the-psychometric-revolution" class="nav-link" data-scroll-target="#obstacles-to-the-psychometric-revolution"><span class="header-section-number">3.3</span> Obstacles to the Psychometric Revolution</a></li>
+  <li><a href="#what-are-constructs-and-latent-variables" id="toc-what-are-constructs-and-latent-variables" class="nav-link" data-scroll-target="#what-are-constructs-and-latent-variables"><span class="header-section-number">3.4</span> What are Constructs and Latent Variables</a></li>
+  <li><a href="#ways-to-represent-a-construct" id="toc-ways-to-represent-a-construct" class="nav-link" data-scroll-target="#ways-to-represent-a-construct"><span class="header-section-number">3.5</span> Ways to Represent a Construct</a></li>
+  <li><a href="#the-platonic-relationship-of-cause-and-effect-in-psychological-measures" id="toc-the-platonic-relationship-of-cause-and-effect-in-psychological-measures" class="nav-link" data-scroll-target="#the-platonic-relationship-of-cause-and-effect-in-psychological-measures"><span class="header-section-number">3.6</span> The Platonic Relationship of Cause and Effect in Psychological Measures</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3.7</span> References</a></li>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/rafavsbastos/psychometrics_book/edit/master/03-Latent_Variable.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/rafavsbastos/psychometrics_book/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/rafavsbastos/psychometrics_book/blob/master/03-Latent_Variable.qmd" class="toc-action">View source</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title"><span id="sec-latente" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory of Latent Variables in Psychometrics</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header><section id="the-importance-of-psychometrics" class="level2" data-number="3.1"><h2 data-number="3.1" class="anchored" data-anchor-id="the-importance-of-psychometrics">
+<span class="header-section-number">3.1</span> The Importance of Psychometrics</h2>
+<p>Psychometrics, a field within psychology, focuses on quantifying and measuring mental attributes, behaviors, performance, and emotions. Despite significant advancements in psychometric modeling over the past centuries, its integration into conventional psychological testing remains limited. This is very concerning, given that measurement problems abound in human research (Cronbach &amp; Meehl, 1955; Messick, 1989; Borsboom et. al., 2004). Scholars argue that applying psychometric models to formalize psychological theory holds promise for addressing these challenges (Borsboom, 2006). However, many psychologists continue to rely on traditional psychometric methods, such as internal consistency coefficients and principal component analyses, without much deviation from past practices. Consequently, the interpretation of psychological test scores often lacks rigor, highlighting the disconnect between psychometrics and psychology (Borsboom, 2006).</p>
+</section><section id="misunderstandings-in-psychometric-practice" class="level2" data-number="3.2"><h2 data-number="3.2" class="anchored" data-anchor-id="misunderstandings-in-psychometric-practice">
+<span class="header-section-number">3.2</span> Misunderstandings in Psychometric Practice</h2>
+<p>Misunderstandings are prevalent in the field of psychometrics. For instance, many studies delve into the structure of individual differences using latent variable theory but employ Principal Component Analysis (PCA) for data analysis. However, PCA does not align with latent variable theory. Thus, extracting a principal component structure alone does not shed light on its correspondence with a supposed latent variable structure. PCA serves as a data reduction technique (Bartholomew, 2004), which, in itself, isn’t problematic as long as interpretations remain confined to principal components, which are essentially weighted sum scores.</p>
+<p>Another example is the interpretation of group differences through observed scores. The interpretation of differences between groups regarding psychological attributes depends on measurement invariance (or measurement equivalence) between the groups being compared. There are several psychometric models and associated techniques to gain some control over this problem (Mellenbergh, 1989; Meredith, 1993; Millsap &amp; Everson, 1993). However, almost no one cares about this, whether in Brazil or abroad, people simply evaluate the observed scores — without testing the invariance of the measurement models that relate these scores to psychological attributes. If you look at, for example, some of the most influential studies on group differences in intelligence, you rarely see invariance analyses. Consider for example the work of Herrnstein and Murray (1994) and Lynn and Vanhanen (2002). They infer differences in intelligence levels between groups from observed differences in IQ (by race and nationality) without even having performed a single test for invariance.</p>
+</section><section id="obstacles-to-the-psychometric-revolution" class="level2" data-number="3.3"><h2 data-number="3.3" class="anchored" data-anchor-id="obstacles-to-the-psychometric-revolution">
+<span class="header-section-number">3.3</span> Obstacles to the Psychometric Revolution</h2>
+<p>Borsboom (2006) highlights a significant issue with psychometric models: they often challenge commonly accepted assumptions, such as measurement invariance. This leads researchers into fundamental questions about the structure of the phenomena they study and its relationship to observable data. Developing theories in this context is no simple task, potentially placing researchers in complex situations. Despite the importance of these inquiries in any scientific field, they aren’t widely embraced in psychology. Consequently, even if researchers can provide compelling models for their observations, publishing such results proves challenging, as many journal editors and reviewers lack familiarity with psychometric models. Additionally, the perceived complexity of psychometrics exacerbates this issue. Compounding matters are the prevailing research standards in psychology, which demand that scientific articles remain accessible, despite the inherently intricate nature of the subject matter – human behavior and its underlying mental processes.</p>
+</section><section id="what-are-constructs-and-latent-variables" class="level2" data-number="3.4"><h2 data-number="3.4" class="anchored" data-anchor-id="what-are-constructs-and-latent-variables">
+<span class="header-section-number">3.4</span> What are Constructs and Latent Variables</h2>
+<p>The notion of what a construct is and how to use it is fundamental for carrying out theories and research in psychology and related areas. Constructs are defined in empirical studies, and findings are interpreted in terms of the construct. What, then, would be a construct?</p>
+<p>A construct is a concept that has three characteristics (Cronbach &amp; Meehl, 1955): (i) it is not defined by a single observable referent (for example, 1 item on a scale); (ii) cannot be observed directly; and (iii) its observable referents are not fully inclusive. A latent variable is one (but not the only) statistical tool for studying constructs, and is commonly used in statistical analyzes to evaluate the relationship between constructs and their indicators (Spearman, 1904). A construct is operationally defined in terms of a number of items or indirect indicators, which are taken as an empirical analogue of a construct (Edwards &amp; Bagozzi, 2000). These indicators are also called observed variables, which can be items in a self-report measure, interview, observations, or other means (DeVellis, 1991; Lord &amp; Novick, 1968; Messick, 1995).</p>
+<p>The reflective approach to latent variables is used by most methods in psychometrics that deal with measurement issues, often used in areas such as personality (John, 2021), well-being (Diener et al., 2010), criminology (Pechorro et al ., 2021), and others. The reflective approach is based on several assumptions, one of which is critical to its validity. It postulates a causal relationship between the latent variable and its indicators. This means that the variance and covariance in the indicators are dependent on changes in the latent variable (Bollen, 1989).</p>
+</section><section id="ways-to-represent-a-construct" class="level2" data-number="3.5"><h2 data-number="3.5" class="anchored" data-anchor-id="ways-to-represent-a-construct">
+<span class="header-section-number">3.5</span> Ways to Represent a Construct</h2>
+<p>Usually, when running an Exploratory of Confirmatory Factor Analysis, we use the common factor model. This model sees the covariance between observable variables as a reflection of the influence of one or more factors and also a variance that is not explained. This would be different from network analysis, which allows covariance between items to have a cause between them. In other words, the psychometric model of factor analysis generally believes that item covariance occurs only because there is a latent factor that explains it. This is a very important assumption to keep in mind, as perhaps your construct does not fit the common factor model, but rather a network analysis. I will explain with an example given by <a href="https://doi.org/10.1146/annurev-clinpsy-050212-185608">Borsboom and Cramer (2013)</a>.</p>
+<p>Below, we see the common factor model (<a href="#fig-factor">Figure&nbsp;<span class="quarto-unresolved-ref">fig-factor</span></a>) of an instrument that measures major depression. In it, items measure aspects such as: feeling depressed, insomnia, weight gain, motor problems, fatigue, concentration problems, etc. We see from the image that the variation in scores on the items has a common cause, depression (that is, the higher the person’s level of depression, the more they report having these symptoms).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-factor" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="03-Latent_Variable_files/figure-html/fig-factor-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;3.1: Factor Model</figcaption></figure>
+</div>
+</div>
+</div>
+<p>However, we can think that some items have relationships with each other that are not just due to depression. An example of this is the cause of concentration problems and its relationship with other symptoms. People who have problems sleeping become fatigued and, therefore, have problems concentrating (problems sleeping → fatigue → concentration problems). In other words, it is possible to infer a causal relationship between one observable variable and another, which breaks with the common factorial model assumption of local independence. A possible representation of this model is in the image below (<a href="#fig-network">Figure&nbsp;<span class="quarto-unresolved-ref">fig-network</span></a>), where the items have causal relationships with each other.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-network" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="03-Latent_Variable_files/figure-html/fig-network-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;3.2: Network Model</figcaption></figure>
+</div>
+</div>
+</div>
+<p>So how do I know if my construct follows the common factor model or is more like network analysis? Well, often by theory! I know that researchers for a long time only cared about statistics to guide everything, but it is important for us to think about our constructs theoretically again and then test the theory empirically. However, there are also statistics that help verify this! But we’ll see that in the next chapter.</p>
+</section><section id="the-platonic-relationship-of-cause-and-effect-in-psychological-measures" class="level2" data-number="3.6"><h2 data-number="3.6" class="anchored" data-anchor-id="the-platonic-relationship-of-cause-and-effect-in-psychological-measures">
+<span class="header-section-number">3.6</span> The Platonic Relationship of Cause and Effect in Psychological Measures</h2>
+<p>The validity of psychometric models depends on the validity of the causal assumptions they make, which are generally implicit to the user. Psychological tests (e.g., self-report questionnaires) are typically constructed to measure constructs, while the responses observed in such tests are believed to reflect the latent variable underlying them (Van Bork et al., 2017). For example, a person’s self-esteem is not observed directly, but we assume that it can be measured through items on an instrument. This line of thinking is the basis of the reflective approach, as represented by <a href="#fig-reflective">Figure&nbsp;<span class="quarto-unresolved-ref">fig-reflective</span></a>. The reflective approach is applied to most psychometric models, such as classical test theory (Lord &amp; Novick, 1968), the common factor model (Bartholomew, 1995; Speaman, 1904), item response theory models (Hambleton et al.&nbsp;al., 1991), latent class and latent profile analysis (B. O. Muthén &amp; L. K. Muthén, 2000; Obersky, 2016), mixture models (Loken &amp; Molenaar, 2008), latent growth models (Meredith &amp; Tisak, 1990), reliability (Nunnally, 1978) and others, all crucial aspects of instrument development and evaluation.</p>
+<div id="fig-reflective" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/reflective.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;3.3: The Reflective Measurement Approach.</figcaption></figure>
+</div>
+<p>Causal language is common across a wide range of research areas (Pearl, 2009) and has permeated the definition of reflective measures in psychometric literature. For example, measurement error is often characterized as part of an observed variable that is not “explained” by the construct (or true score; Lord &amp; Novick, 1968; Nunnally, 1978). Furthermore, other authors clearly state the direction of causality from the construct to its indicators (DeVellis, 1991; Long, 1983). However, some authors defend the descriptivist (or formative) approach, which understands latent variables as a parsimonious summary of the data and not the underlying cause of the indicators (Jonas &amp; Markon, 2016; Van Bork et al., 2017). The difference between the causal and descriptive approaches is that the first can be seen as a representation of a real-world phenomenon, while the second does not include a conceptual interpretation and only describes statistical dependencies between indicators (Moneta &amp; Russo, 2014; Van Bork and others, 2017). Causal interpretation is important in many settings (Van Bork et al., 2017): (1) in research, establishing causal relationships is often aligned with the primary goal of explaining correlations between multiple indicators, rather than just summarizing them. them.; (2) a causal interpretation of the construct legitimizes the reflective approach and its shared variance rather than other models that take into account the unique variance of indicators, such as the network model (Borsboom &amp; Cramer, 2013); (3) the causal interpretation resonates with the assumption of local independence (i.e., covariation between indicators disappears when conditioned on their common cause).</p>
+<p>However, the simple use of causal language does not necessarily imply that the variables actually have causal relationships, this is an empirical question. To incorporate causality, one must adhere to the principles of causality from the philosophy of science within the psychological, social, and behavioral literature (Asher, 1983; Bagozzi, 1980; Bollen, 1989; Cook &amp; Campbell, 1979; Heise, 1975; James et al.&nbsp;al., 1982). To see ways to test the causal structure of your instrument, see the article by Franco et al., (2023).</p>
+</section><section id="references" class="level2" data-number="3.7"><h2 data-number="3.7" class="anchored" data-anchor-id="references">
+<span class="header-section-number">3.7</span> References</h2>
+<p>Asher, H. B. (1983). <em>Causal modeling</em>. Sage.</p>
+<p>Bagozzi, R. P. (1980). <em>Causal models in marketing</em>. Wiley.</p>
+<p>Bartholomew, D. J. (1995). Spearman and the origin and development of factor analysis. <em>British Journal of Mathematical and Statistical Psychology</em>, <em>48</em>(2), 211-220. <a href="https://doi.org/10.1111/j.2044-8317.1995.tb01060.x" class="uri">https://doi.org/10.1111/j.2044-8317.1995.tb01060.x</a></p>
+<p>Bartholomew, D.J. (2004). <em>Measuring intelligence: Facts and fallacies</em>. Cambridge University Press.</p>
+<p>Borsboom, D. (2006). The attack of the psychometricians. <em>Psychometrika</em>, <em>71</em>(3), 425-440. <a href="https://doi.org/10.1007/s11336-006-1447-6" class="uri">https://doi.org/10.1007/s11336-006-1447-6</a></p>
+<p>Borsboom, D., &amp; Cramer, A. O. (2013). Network analysis: an integrative approach to the structure of psychopathology. <em>Annual review of clinical psychology</em>, <em>9</em>, 91-121. <a href="https://doi.org/10.1146/annurev-clinpsy-050212-185608" class="uri">https://doi.org/10.1146/annurev-clinpsy-050212-185608</a></p>
+<p>Borsboom, D., Mellenbergh, G.J., &amp; Van Heerden, J. (2004). The concept of validity. <em>Psychological Review</em>, <em>111</em>, 1061–1071. <a href="https://doi.org/10.1037/0033-295X.111.4.1061" class="uri">https://doi.org/10.1037/0033-295X.111.4.1061</a></p>
+<p>Cronbach, L.J., &amp; Meehl, P.E. (1955). Construct validity in psychological tests. <em>Psychological Bulletin</em>, <em>52</em>, 281–302. <a href="https://doi.org/10.1037/h0040957" class="uri">https://doi.org/10.1037/h0040957</a></p>
+<p>DeVellis, R. F., &amp; Thorpe, C. T. (2021). <em>Scale development: Theory and applications</em>. Sage publications.</p>
+<p>Diener, E., Wirtz, D., Tov, W., Kim-Prieto, C., Choi, D. W., Oishi, S., &amp; Biswas-Diener, R. (2010). New well-being measures: Short scales to assess flourishing and positive and negative feelings. <em>Social indicators research</em>, <em>97</em>, 143-156. <a href="https://doi.org/10.1007/s11205-009-9493-y" class="uri">https://doi.org/10.1007/s11205-009-9493-y</a></p>
+<p>Franco, V. R., Bastos, R. V., &amp; Jiménez, M. (2023, June). <em>Tetrad Fit Index for Factor Analysis Models</em>. Paper presented at Virtual MathPsych/ICCM 2023. Via mathpsych.org/presentation/1297.</p>
+<p>Hambleton, R. K., Swaminathan, H. and Rogers, H. J. (1991) <em>Fundamentals of Item Response Theory</em>. Sage</p>
+<p>Harman, H. H. (1976). <em>Modem factor analysis</em> (3rd ed.). University of Chicago Press.</p>
+<p>Heise, D. R. (1975). <em>Causal analysis</em>. Wiley.</p>
+<p>Herrnstein, R.J., &amp; Murray, C. (1994). <em>The Bell curve</em>. The Free Press.</p>
+<p>James, L. R., Mulaik, S. A., &amp; Brett, J. M. (1982). <em>Causal analysis: Assumptions, models and data</em>. Sage.</p>
+<p>John, O. P. (2021). History, measurement, and conceptual elaboration of the Big‑Five trait taxonomy: The paradigm matures. In O. P. John &amp; R. W. Robins (Eds.), <em>Handbook of personality: Theory and research</em> (pp.&nbsp;35–82). The Guilford Press.</p>
+<p>Jonas, K. G., &amp; Markon, K. E. (2016). A descriptivist approach to trait conceptualization and inference. <em>Psychological Review</em>, <em>123</em>(1), 90.</p>
+<p>Kim, J. O., &amp; Mueller, C. W. (1978). <em>Factor analysis</em>. Sage.</p>
+<p>Loken &amp; Molenaar (2008). Categories or Continua? The Correspondence Between Mixture Models and Factor Models. In G. R. Hancock &amp; K. M. Samuelsen (Eds), <em>Advances in Latent Variable Mixture Models</em>. (pp.&nbsp;277 - 298).</p>
+<p>Long, J. S. (1983). <em>Confirmatory factor analysis: A preface to LISREL</em>. Sage.</p>
+<p>Lord, F. M., &amp; Novick, M. R. (1968). <em>Statistical theories of mental test scores</em>. Addison-Wesley.</p>
+<p>Lynn, R., &amp; Vanhanen, T. (2002). <em>IQ and the wealth of nations</em>. Praeger.</p>
+<p>McDonald, R. P. (2013). <em>Test theory: A unified treatment</em>. Psychology Press.</p>
+<p>Mellenbergh, G.J. (1989). Item bias and item response theory. <em>International Journal of Educational Research</em>, <em>13</em>, 127–143. <a href="https://doi.org/10.1016/0883-0355(89)90002-5" class="uri">https://doi.org/10.1016/0883-0355(89)90002-5</a></p>
+<p>Meredith, W. (1993). Measurement invariance, factor analysis, and factorial invariance. <em>Psychometrika</em>, <em>58</em>, 525–543. <a href="https://doi.org/10.1007/BF02294825" class="uri">https://doi.org/10.1007/BF02294825</a></p>
+<p>Meredith, W., &amp; Tisak, J. (1990). Latent curve analysis. <em>Psychometrika</em>, <em>55</em>, 107-122. <a href="https://doi.org/10.1007/BF02294746" class="uri">https://doi.org/10.1007/BF02294746</a></p>
+<p>Messick, S. (1989). Validity. In R.L. Linn (Ed.), <em>Educational measurement</em> (pp.&nbsp;13–103). American Council on Education and National Council on Measurement in Education.</p>
+<p>Messick, S. (1995). Validity of psychological assessment: Validation of inferences from persons’ responses and performances as scientific inquiry into score meaning. <em>American Psychologist</em>, <em>50</em>(9), 741-749. <a href="https://doi.org/10.1037/0003-066X.50.9.741" class="uri">https://doi.org/10.1037/0003-066X.50.9.741</a></p>
+<p>Millsap, R.E., &amp; Everson, H.T. (1993). Methodology review: Statistical approaches for assessing bias. <em>Applied Psychological Measurement</em>, <em>17</em>, 297–334. <a href="https://doi.org/10.1177/014662169301700401" class="uri">https://doi.org/10.1177/014662169301700401</a></p>
+<p>Moneta, A., &amp; Russo, F. (2014). Causal models and evidential pluralism in econometrics. <em>Journal of Economic Methodology</em>, <em>21</em>(1), 54-76. <a href="https://doi.org/10.1080/1350178X.2014.886473" class="uri">https://doi.org/10.1080/1350178X.2014.886473</a></p>
+<p>Muthén, B. O., &amp; Muthén, L. K. (2000). Integrating person-centered and variablecentered analyses: Growth mixture modeling with latent trajectory classes. <em>Alcoholism: Clinical &amp; Experimental Research</em>, <em>24</em>(6), 882-891. <a href="https://doi.org/10.1111/j.1530-0277.2000.tb02070.x" class="uri">https://doi.org/10.1111/j.1530-0277.2000.tb02070.x</a></p>
+<p>Nunnally, J. C. (1978). <em>Psychometric theory</em> (2nd ed). McGraw-Hill.</p>
+<p>Oberski, D. (2016). Mixture models: Latent profile and latent class analysis. <em>Modern statistical methods for HCI</em>, 275-287. <a href="https://doi.org/10.1007/978-3-319-26633-6_12" class="uri">https://doi.org/10.1007/978-3-319-26633-6_12</a></p>
+<p>Pechorro, P., DeLisi, M., Gonçalves, R. A., Quintas, J., &amp; Hugo Palma, V. (2021). The Brief Self-Control Scale and its refined version among incarcerated and community youths: Psychometrics and measurement invariance. <em>Deviant Behavior</em>, <em>42</em>(3), 425-442. <a href="https://doi.org/10.1080/01639625.2019.1684942" class="uri">https://doi.org/10.1080/01639625.2019.1684942</a></p>
+<p>Spearman, C. (1904). ‘General intelligence’ objectively determined and measured. <em>American Journal of Psychology</em>, <em>5</em>, 201-293. <a href="https://doi.org/10.1037/11491-006" class="uri">https://doi.org/10.1037/11491-006</a></p>
+<p>Van Bork, R., Wijsen, L. D., &amp; Rhemtulla, M. (2017). Toward a causal interpretation of the common factor model. <em>Disputatio</em>, <em>9</em>(47), 581-601. <a href="https://doi.org/10.1515/disp-2017-0019" class="uri">https://doi.org/10.1515/disp-2017-0019</a></p>
+<script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script><script>
+  kofiWidgetOverlay.draw('rafaelbastos', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support This',
+    'floating-chat.donateButton.background-color': '#5bc0de',
+    'floating-chat.donateButton.text-color': '#323842'
+  });
+</script>
+
+</section></main><!-- /main --><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script><script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    $(solveme[i]).after(" <span class='webex-icon'></span>");
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    $(selects[i]).after(" <span class='webex-icon'></span>");
+  }
+
+  update_total_correct();
+}
+
+</script><script>
+// open rdrr links externally ----
+
+var exlinks = document.querySelectorAll("a[href^='https://rdrr.io']");
+var exlink_func = function(){
+  window.open(this.href);
+  return false;
+};
+for (var i = 0; i < exlinks.length; i++) {
+    exlinks[i].addEventListener('click', exlink_func, false);
+}
+
+// visible second sidebar in mobile ----
+
+function move_sidebar() {
+  var toc = document.getElementById("TOC");
+  var small_sidebar = document.querySelector("#quarto-sidebar .sidebar-menu-container");
+  var right_sidebar = document.getElementById("quarto-margin-sidebar");
+
+  if (window.innerWidth < 768) {
+    small_sidebar.append(toc);
+  } else {
+    right_sidebar.append(toc);
+  }
+}
+move_sidebar();
+window.onresize = move_sidebar;
+</script><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./02-Classical_Test_Theory.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Classical Test Theory</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./04-Measurement_Theory.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Measurement Theory: Why it is Possible to Measure Psychological Phenomena</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">Bastos, R. V. S. (2024). Advances in Psychometric Theory and Measurement for Psychological Sciences: With Tutorials in R. https://doi.org/10.5281/zenodo.11094831.</div>
+  </div>
+</footer>
+
+
+</body></html>

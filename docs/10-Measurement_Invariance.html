@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="description" content="This is an educational resource, with content at the cutting edge of scientific knowledge. It aims to improve future research, by improving researchers knowledge in the statistical inferences made, planning better experiments and analyzing scientific research being carried out with more rigor and transparency.">
+<title>Advances in Psychometric Theory and Measurement for Psychological Sciences - 10&nbsp; Measurement Invariance/Equivalence</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./11-NP_IRT.html" rel="next">
+<link href="./09-Acquiescence.html" rel="prev">
+<link href="./images/logo.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><link rel="stylesheet" href="include/booktem.css">
+<link rel="stylesheet" href="include/style.css">
+<link rel="stylesheet" href="include/webex.css">
+<meta name="twitter:title" content="Advances in Psychometric Theory and Measurement for Psychological Sciences - 10&nbsp; Measurement Invariance/Equivalence">
+<meta name="twitter:description" content="This is an educational resource, with content at the cutting edge of scientific knowledge. It aims to improve future research, by improving researchers knowledge in the statistical inferences made, planning better experiments and analyzing scientific research being carried out with more rigor and transparency.">
+<meta name="twitter:image" content="images/twittercard.jpg">
+<meta name="twitter:creator" content="@rafavsbastos">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./10-Measurement_Invariance.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Measurement Invariance/Equivalence</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Advances in Psychometric Theory and Measurement for Psychological Sciences</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/rafavsbastos/psychometrics_book" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+<li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Advances-in-Psychometric-Theory-and-Measurement-for-Psychological-Sciences.pdf">
+              <i class="bi bi-bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Advances-in-Psychometric-Theory-and-Measurement-for-Psychological-Sciences.epub">
+              <i class="bi bi-bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+</div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-Validity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Concept of Validity of Psychological Tests</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-Classical_Test_Theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Classical Test Theory</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-Latent_Variable.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory of Latent Variables in Psychometrics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-Measurement_Theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Measurement Theory: Why it is Possible to Measure Psychological Phenomena</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-EFA.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Exploratory Factor Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-CFA.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Confirmatory Factor Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-EGA.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Exploratory Graph Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-Desirability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Social Desirability Bias</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-Acquiescence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Acquiescence Bias</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-Measurement_Invariance.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Measurement Invariance/Equivalence</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-NP_IRT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Non-Parametric Item Response Theory</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-Step_by_step.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">How to Validate Psychological Tests: A Step by Step Guide</span></span></a>
+  </div>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+<li><a href="#defining-measurement-invarianceequivalence" id="toc-defining-measurement-invarianceequivalence" class="nav-link active" data-scroll-target="#defining-measurement-invarianceequivalence"><span class="header-section-number">10.1</span> Defining Measurement Invariance/Equivalence</a></li>
+  <li><a href="#measurement-invariance-for-categorical-variables" id="toc-measurement-invariance-for-categorical-variables" class="nav-link" data-scroll-target="#measurement-invariance-for-categorical-variables"><span class="header-section-number">10.2</span> Measurement Invariance for Categorical Variables</a></li>
+  <li>
+<a href="#measurement-invariance-in-r" id="toc-measurement-invariance-in-r" class="nav-link" data-scroll-target="#measurement-invariance-in-r"><span class="header-section-number">10.3</span> Measurement Invariance in R</a>
+  <ul class="collapse">
+<li><a href="#baseline-model" id="toc-baseline-model" class="nav-link" data-scroll-target="#baseline-model"><span class="header-section-number">10.3.1</span> Baseline Model</a></li>
+  <li><a href="#thresholds-invariance-model" id="toc-thresholds-invariance-model" class="nav-link" data-scroll-target="#thresholds-invariance-model"><span class="header-section-number">10.3.2</span> Thresholds Invariance Model</a></li>
+  <li><a href="#thresholds-and-factor-loadings-invariance-model" id="toc-thresholds-and-factor-loadings-invariance-model" class="nav-link" data-scroll-target="#thresholds-and-factor-loadings-invariance-model"><span class="header-section-number">10.3.3</span> Thresholds and Factor Loadings Invariance Model</a></li>
+  </ul>
+</li>
+  <li><a href="#data-interpretation" id="toc-data-interpretation" class="nav-link" data-scroll-target="#data-interpretation"><span class="header-section-number">10.4</span> Data Interpretation</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">10.5</span> References</a></li>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/rafavsbastos/psychometrics_book/edit/master/10-Measurement_Invariance.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/rafavsbastos/psychometrics_book/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/rafavsbastos/psychometrics_book/blob/master/10-Measurement_Invariance.qmd" class="toc-action">View source</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title"><span id="sec-invariance" class="quarto-section-identifier"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Measurement Invariance/Equivalence</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header><p>If you are familiar with human research, you may have seen some examples of group comparisons. For example, if we want to test the effectiveness of an antidepressant, we may want to compare gender differences (since depression can differ based on gender). However, are you sure that the instrument you are using (e.g., Beck Depression Inventory) has the same structure for men or women?</p>
+<p>Another example is in cross-cultural research. We could measure differences in subjective well-being between countries and see if some countries are happier than others. But how can you infer that your results are accurate if you don’t know whether you can compare the latent variable scale scores?</p>
+<blockquote class="blockquote">
+<p>One criterion for comparing scale scores is that the latent variable is understood and measured equivalently across groups/countries. This property is known as measurement invariance or lack of bias. (Svetina et al., 2020).</p>
+</blockquote>
+<p>So, whenever you want to compare test scores between groups in some way, it would be interesting to do an invariance analysis on the scale first. You may have already come across results about IQ, saying that some countries or cultures have higher or lower IQ than others, without even testing measurement invariance.</p>
+<p>A test is invariant if participants belonging to different groups, who have the same score on the factor underlying the test, have on average the same score on an observed item (Lubke &amp; Muthén, 2004).</p>
+<p>A common statistical method for establishing evidence of measurement invariance is through Multigroup Confirmatory Factor Analysis (CFA-MG). In CFA-MG, we use a hierarchical test set to impose constraints on the parameters of interest across groups.</p>
+<section id="defining-measurement-invarianceequivalence" class="level2" data-number="10.1"><h2 data-number="10.1" class="anchored" data-anchor-id="defining-measurement-invarianceequivalence">
+<span class="header-section-number">10.1</span> Defining Measurement Invariance/Equivalence</h2>
+<p>A general factor model is defined as</p>
+<p><span class="math display">\[
+\Sigma = \Lambda \Phi \Lambda' + \Theta
+\]</span></p>
+<p>Where <span class="math inline">\(\Sigma\)</span> represents the covariance matrix of the observed variables (or items); <span class="math inline">\(\Lambda\)</span> is the matrix of factor loadings that expresses the degree of association between the vector of latent variables (with associated covariance matrix <span class="math inline">\(\Phi\)</span>) to the observed variables; <span class="math inline">\(\Theta\)</span> represents the covariance matrix of measurement errors for the observed variables.</p>
+<p>Consider that <span class="math inline">\(v\)</span> is the mean structure. Then, the observed variables’ means can be represented by <span class="math inline">\(E(Y)=E(v+\Lambda \eta + \epsilon)\)</span>, where <span class="math inline">\(\eta\)</span> is the vector of latent variables. This model has the assumption that <span class="math inline">\(E(\epsilon)=0\)</span> and <span class="math inline">\(E(\eta)=k=0\)</span>, then <span class="math inline">\(E(X)=v\)</span>, where <span class="math inline">\(X\)</span> is the vector of observed variables. This model generalizes to multiple population by permitting separate covariance matrix for each population or group, i.e., <span class="math inline">\(\Sigma^{(g)}\)</span> with mean structure <span class="math inline">\(v^{(g)},g=1,...,G\)</span>.</p>
+<p>To establish measurement invariance is that if the null hypothesis is <span class="math inline">\(H_0: \Sigma^{(1)}=\Sigma^{(2)}=...=\Sigma^{(G)}\)</span> is rejected, a series of tests follows. I list them below.</p>
+<ol type="1">
+<li><p>Configural invariance: tests whether the factorial structure is the same across groups (i.e.&nbsp;number of factors, and whether items percent on the same factor). Thus, the number and pattern of parameters are assumed to be equal across groups. Nevertheless, the values of the parameters are assumed to differ withing identification constraints. If configural invariance is not found, this means that the items load in different factors for different groups.</p></li>
+<li><p>Metric invariance: tests whether the factor loadings of items are equal across groups. The null hypothesis states that the pattern and value of factor loadings are equivalent across groups, i.e., <span class="math inline">\(H_0: \Lambda^{(1)}=\Lambda^{(2)}=...=\Lambda^{(G)}\)</span>. If metric invariance is not found, it means that one or more items of the instrument are being answered with bias by one or more groups. Therefore, inferences of differences between groups may be biased. Although this is an indicator of response bias in the items, the next step is necessary to assume equal comparison between groups.</p></li>
+<li><p>Scalar invariance: in addition to equal factor loadings, it tests whether the intercepts are equal between groups. Thus, the null hypothesis is <span class="math inline">\(H_0: \Lambda^{(1)}=\Lambda^{(2)}=...=\Lambda^{(G)}\)</span>, and <span class="math inline">\(v^{(1)}=v^{(2)}=...=v^{(G)}\)</span>. If scalar invariance is not found, any differences found between groups are not related to the latent trait, but to the non-equivalence of measurement of the instrument parameters.</p></li>
+<li><p>Strict Invariance: implies that, in addition to loadings and intercepts, residual variances are similar between groups. Residual variance is simply item variance that is not associated with the latent variable you are measuring.</p></li>
+</ol>
+<p>Some authors advocate the need for strict invariance as a condition for comparing group means (Lubke &amp; Dolan, 2003). In practice, this level of invariance is rarely achieved, given that scalar invariance supports comparisons between groups of manifest (or latent) variable means on the latent variable of interest (Hancock, 1997; Svetina et al., 2020, Thompson &amp; Green, 2006). Thus, most authors suggest achieving scalar invariance instead, in order to conclude invariance (Svetina et al., 2020).</p>
+</section><section id="measurement-invariance-for-categorical-variables" class="level2" data-number="10.2"><h2 data-number="10.2" class="anchored" data-anchor-id="measurement-invariance-for-categorical-variables">
+<span class="header-section-number">10.2</span> Measurement Invariance for Categorical Variables</h2>
+<p>Previously, I described the concept of invariance where the distribution of observed variables is assumed to be multivariate normal. However, in Psychology, most of the surveys are binary of ordinal. If we use the multivariate distribution to categorical variables, we might have consequences on parameters, model fit, and cross-group comparisons (Beauducel &amp; Herzberg, 2006; Lubke &amp; Muthén, 2004; Muthén &amp; Kaplan, 1985). To surpass this, we can use other estimators, like the diagonally weighted least squares (DWLS) family of estimators. The categorical measurement invariance goes as follows (Svetina et al., 2020).</p>
+<p>Imagine we have a <em>p</em> X 1 vector of observed variables <span class="math inline">\(Y\)</span>, which take ordered values 0, 1, 2, …, <span class="math inline">\(C\)</span>. For each observed variable <span class="math inline">\(Y_j\)</span>, with <span class="math inline">\(j=1,2,...,p\)</span>, it is assumed that there is an underlying continuous latent response variable <span class="math inline">\(Y^{*}_j\)</span>, which has the value of that determines the observed category of the observed variable <span class="math inline">\(Y_j\)</span>. <span class="math inline">\(Y^{*}_j\)</span> is related to <span class="math inline">\(Y_j\)</span> by a set of <span class="math inline">\(C+1\)</span> threshold parameters <span class="math inline">\(\tau_j=(\tau_{j0},\tau_{j1},...,\tau_{jC+1})\)</span>, where <span class="math inline">\(\tau_{j0}=-\infty\)</span> and <span class="math inline">\(\tau_{jC+1}=\infty\)</span>. Thus, the probability that <span class="math inline">\(Y_j = c\)</span> is:</p>
+<p><span class="math display">\[
+P(Y_j=c)=P(\tau_{jc}≤Y^{*}_j≤\tau_{jc+1})
+\]</span></p>
+<p>For <span class="math inline">\(c=0,1,...,C\)</span>. The model for the vector of latent response variables is: <span class="math display">\[
+Y^*=v+\Lambda\eta+\epsilon
+\]</span> where factor loadings and residuals are defined the same as before, <span class="math inline">\(v\)</span> is a vector of latent intercept parameters. In addition, mean and covariance structure of this model is the same: <span class="math inline">\(E(Y^*)=v\)</span>, <span class="math inline">\(Cov(Y^*)=\Sigma^*=\Lambda\Phi\Lambda'+\Theta\)</span>, where <span class="math inline">\(E(Y^*)=v\)</span> is assumed to be zero for identification purposes.</p>
+<p>In the typical scenario, the categorical factor model can be expanded to encompass multiple groups by accommodating distinct thresholds and covariance matrices for the latent response variables within each population. These are denoted as <span class="math inline">\(\tau^{(k)})\)</span> and <span class="math inline">\(\Sigma^{*(k)}\)</span>, where <span class="math inline">\(k\)</span> ranges from 1 to <span class="math inline">\(K\)</span> (with <span class="math inline">\(v^{(k)}=0\)</span> for all <span class="math inline">\(k\)</span>). In a similar vein, for ordinal data, assessments are made for “baseline” invariance, equivalent slopes, and equal slopes and thresholds, which mirror configural, metric, and scale invariance, respectively. To ascertain the viability of these invariance assumptions, both overall and difference chi-square tests are employed.</p>
+</section><section id="measurement-invariance-in-r" class="level2" data-number="10.3"><h2 data-number="10.3" class="anchored" data-anchor-id="measurement-invariance-in-r">
+<span class="header-section-number">10.3</span> Measurement Invariance in R</h2>
+<p>To run a Multigroup Confirmatory Factor Analysis, we must first install the <em>lavaan</em> (Rosseel, 2012) and <em>semTools</em> (Jorgensen et al., 2022) packages for analyses, and <em>psych</em> (Revelle, 2023) for the database.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a> <span class="fu">install.packages</span>(<span class="st">"lavaan"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2"></a> <span class="fu">install.packages</span>(<span class="st">"semTools"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3"></a> <span class="fu">install.packages</span>(<span class="st">"psych"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>And tell the program that we are going to use the functions of these packages</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">library</span>(lavaan) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>This is lavaan 0.6-17
+lavaan is FREE software! Please report any bugs.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">library</span>(semTools)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code> </code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>###############################################################################</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>This is semTools 0.5-6</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>All users of R (or SEM) are invited to submit functions or ideas for functions.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>###############################################################################</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">library</span>(psych)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'psych'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:semTools':
+
+    reliability, skew</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:lavaan':
+
+    cor2cov</code></pre>
+</div>
+</div>
+<p>To run the analyses, we will use the BFI database (Big Five Personality Factors Questionnaire) that already exists in the <em>psych</em> package. We will differentiate between genders (1=Male and 2=Female).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>dat<span class="ot">&lt;-</span> psych<span class="sc">::</span>bfi</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We will store the results of our models in an empty matrix called <em>results</em>, where we will extract chi-square, degrees of freedom, RMSEA, CFI and TLI.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>results<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="cn">NA</span>, <span class="at">nrow =</span> <span class="dv">3</span>, <span class="at">ncol =</span> <span class="dv">6</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Let’s do the analysis with the 5 BFI factors. First we place the model.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>mod.cat <span class="ot">&lt;-</span> <span class="st">"Agre =~ A1 + A2 + A3 + A4 + A5</span></span>
+<span id="cb16-2"><a href="#cb16-2"></a><span class="st">            Con =~  C1 + C2 + C3 + C4 + C5</span></span>
+<span id="cb16-3"><a href="#cb16-3"></a><span class="st">            Extr =~ E1 + E2 + E3 + E4 + E5</span></span>
+<span id="cb16-4"><a href="#cb16-4"></a><span class="st">            Neur =~ N1 + N2 + N3 + N4 + N5</span></span>
+<span id="cb16-5"><a href="#cb16-5"></a><span class="st">            "</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="baseline-model" class="level3" data-number="10.3.1"><h3 data-number="10.3.1" class="anchored" data-anchor-id="baseline-model">
+<span class="header-section-number">10.3.1</span> Baseline Model</h3>
+<p>First, let’s make the base model (<em>baseline model</em>), where there are no restrictions (<em>constraints</em>) between the groups.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>baseline <span class="ot">&lt;-</span> <span class="fu">measEq.syntax</span>(<span class="at">configural.model =</span> mod.cat,</span>
+<span id="cb17-2"><a href="#cb17-2"></a>                          <span class="at">data =</span> dat,</span>
+<span id="cb17-3"><a href="#cb17-3"></a>                          <span class="at">ordered =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb17-4"><a href="#cb17-4"></a>                          <span class="at">parameterization =</span> <span class="st">"delta"</span>,</span>
+<span id="cb17-5"><a href="#cb17-5"></a>                          <span class="at">ID.fac =</span> <span class="st">"std.lv"</span>,</span>
+<span id="cb17-6"><a href="#cb17-6"></a>                          <span class="at">ID.cat =</span> <span class="st">"Wu.Estabrook.2016"</span>,</span>
+<span id="cb17-7"><a href="#cb17-7"></a>                          <span class="at">group =</span> <span class="st">"gender"</span>,</span>
+<span id="cb17-8"><a href="#cb17-8"></a>                          <span class="at">group.equal =</span> <span class="st">"configural"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The function <em>measEq.syntax</em> from the semTools package automatically generates the lavaan syntax to perform a confirmatory factor analysis. As can be seen from the baseline model specification, items are treated as ordinals, delta parameterization and Wu and Estabrook’s 2016 model identification are used.</p>
+<p>Let’s then fit the base model.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>model.baseline <span class="ot">&lt;-</span> <span class="fu">as.character</span>(baseline)</span>
+<span id="cb18-2"><a href="#cb18-2"></a></span>
+<span id="cb18-3"><a href="#cb18-3"></a>fit.baseline <span class="ot">&lt;-</span> <span class="fu">cfa</span>(model.baseline, </span>
+<span id="cb18-4"><a href="#cb18-4"></a>                    <span class="at">data =</span> dat,</span>
+<span id="cb18-5"><a href="#cb18-5"></a>                    <span class="at">group =</span> <span class="st">"gender"</span>,</span>
+<span id="cb18-6"><a href="#cb18-6"></a>                    <span class="at">ordered =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now let’s save the results in the matrix we created initially.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>results[<span class="dv">1</span>,]<span class="ot">&lt;-</span><span class="fu">round</span>(</span>
+<span id="cb19-2"><a href="#cb19-2"></a>  <span class="fu">data.matrix</span>(<span class="fu">fitmeasures</span>(fit.baseline,</span>
+<span id="cb19-3"><a href="#cb19-3"></a>                          <span class="at">fit.measures =</span> <span class="fu">c</span>(<span class="st">"chisq.scaled"</span>,</span>
+<span id="cb19-4"><a href="#cb19-4"></a>                          <span class="st">"df.scaled"</span>,</span>
+<span id="cb19-5"><a href="#cb19-5"></a>                          <span class="st">"pvalue.scaled"</span>,</span>
+<span id="cb19-6"><a href="#cb19-6"></a>                          <span class="st">"rmsea.scaled"</span>,</span>
+<span id="cb19-7"><a href="#cb19-7"></a>                          <span class="st">"cfi.scaled"</span>,</span>
+<span id="cb19-8"><a href="#cb19-8"></a>                          <span class="st">"tli.scaled"</span>))),</span>
+<span id="cb19-9"><a href="#cb19-9"></a>                      <span class="at">digits=</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="thresholds-invariance-model" class="level3" data-number="10.3.2"><h3 data-number="10.3.2" class="anchored" data-anchor-id="thresholds-invariance-model">
+<span class="header-section-number">10.3.2</span> Thresholds Invariance Model</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>prop4 <span class="ot">&lt;-</span> <span class="fu">measEq.syntax</span>(<span class="at">configural.model =</span> mod.cat,</span>
+<span id="cb20-2"><a href="#cb20-2"></a>                       <span class="at">data =</span> dat,</span>
+<span id="cb20-3"><a href="#cb20-3"></a>                       <span class="at">ordered =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb20-4"><a href="#cb20-4"></a>                       <span class="at">parameterization =</span> <span class="st">"delta"</span>,</span>
+<span id="cb20-5"><a href="#cb20-5"></a>                       <span class="at">ID.fac =</span> <span class="st">"std.lv"</span>,</span>
+<span id="cb20-6"><a href="#cb20-6"></a>                       <span class="at">ID.cat =</span> <span class="st">"Wu.Estabrook.2016"</span>,</span>
+<span id="cb20-7"><a href="#cb20-7"></a>                       <span class="at">group =</span> <span class="st">"gender"</span>,</span>
+<span id="cb20-8"><a href="#cb20-8"></a>                       <span class="at">group.equal =</span> <span class="fu">c</span>(<span class="st">"thresholds"</span>))</span>
+<span id="cb20-9"><a href="#cb20-9"></a></span>
+<span id="cb20-10"><a href="#cb20-10"></a>model.prop4 <span class="ot">&lt;-</span> <span class="fu">as.character</span>(prop4)</span>
+<span id="cb20-11"><a href="#cb20-11"></a></span>
+<span id="cb20-12"><a href="#cb20-12"></a>fit.prop4 <span class="ot">&lt;-</span> <span class="fu">cfa</span>(model.prop4,</span>
+<span id="cb20-13"><a href="#cb20-13"></a>                 <span class="at">data =</span> dat,</span>
+<span id="cb20-14"><a href="#cb20-14"></a>                 <span class="at">group =</span> <span class="st">"gender"</span>,</span>
+<span id="cb20-15"><a href="#cb20-15"></a>                 <span class="at">ordered =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb20-16"><a href="#cb20-16"></a></span>
+<span id="cb20-17"><a href="#cb20-17"></a>results[<span class="dv">2</span>,]<span class="ot">&lt;-</span><span class="fu">round</span>(<span class="fu">data.matrix</span>(</span>
+<span id="cb20-18"><a href="#cb20-18"></a>  <span class="fu">fitmeasures</span>(fit.prop4, </span>
+<span id="cb20-19"><a href="#cb20-19"></a>             <span class="at">fit.measures =</span> <span class="fu">c</span>(<span class="st">"chisq.scaled"</span>,</span>
+<span id="cb20-20"><a href="#cb20-20"></a>             <span class="st">"df.scaled"</span>,</span>
+<span id="cb20-21"><a href="#cb20-21"></a>             <span class="st">"pvalue.scaled"</span>,</span>
+<span id="cb20-22"><a href="#cb20-22"></a>             <span class="st">"rmsea.scaled"</span>,</span>
+<span id="cb20-23"><a href="#cb20-23"></a>             <span class="st">"cfi.scaled"</span>,</span>
+<span id="cb20-24"><a href="#cb20-24"></a>             <span class="st">"tli.scaled"</span>))),</span>
+<span id="cb20-25"><a href="#cb20-25"></a>             <span class="at">digits=</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To examine the relative fit of the model and compare the chi-square statistics between the baseline model and the model where threshold constraints are employed, we use function lavTestLRT.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="fu">lavTestLRT</span>(fit.baseline,fit.prop4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 14%">
+<col style="width: 17%">
+<col style="width: 12%">
+<col style="width: 17%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Df</th>
+<th style="text-align: left;">AIC</th>
+<th style="text-align: left;">BIC</th>
+<th style="text-align: right;">Chisq</th>
+<th style="text-align: right;">Chisq diff</th>
+<th style="text-align: right;">Df diff</th>
+<th style="text-align: right;">Pr(&gt;Chisq)</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">fit.baseline</td>
+<td style="text-align: right;">328</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">3894.513</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">fit.prop4</td>
+<td style="text-align: right;">388</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">3918.218</td>
+<td style="text-align: right;">56.41539</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">0.6074842</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section><section id="thresholds-and-factor-loadings-invariance-model" class="level3" data-number="10.3.3"><h3 data-number="10.3.3" class="anchored" data-anchor-id="thresholds-and-factor-loadings-invariance-model">
+<span class="header-section-number">10.3.3</span> Thresholds and Factor Loadings Invariance Model</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>prop7 <span class="ot">&lt;-</span> <span class="fu">measEq.syntax</span>(<span class="at">configural.model =</span> mod.cat,</span>
+<span id="cb22-2"><a href="#cb22-2"></a>                       <span class="at">data =</span> dat,</span>
+<span id="cb22-3"><a href="#cb22-3"></a>                       <span class="at">ordered =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb22-4"><a href="#cb22-4"></a>                       <span class="at">parameterization =</span> <span class="st">"delta"</span>,</span>
+<span id="cb22-5"><a href="#cb22-5"></a>                       <span class="at">ID.fac =</span> <span class="st">"std.lv"</span>,</span>
+<span id="cb22-6"><a href="#cb22-6"></a>                       <span class="at">ID.cat =</span> <span class="st">"Wu.Estabrook.2016"</span>,</span>
+<span id="cb22-7"><a href="#cb22-7"></a>                       <span class="at">group =</span> <span class="st">"gender"</span>,</span>
+<span id="cb22-8"><a href="#cb22-8"></a>                       <span class="at">group.equal =</span> <span class="fu">c</span>(<span class="st">"thresholds"</span>, <span class="st">"loadings"</span>))</span>
+<span id="cb22-9"><a href="#cb22-9"></a></span>
+<span id="cb22-10"><a href="#cb22-10"></a>model.prop7 <span class="ot">&lt;-</span> <span class="fu">as.character</span>(prop7)</span>
+<span id="cb22-11"><a href="#cb22-11"></a></span>
+<span id="cb22-12"><a href="#cb22-12"></a>fit.prop7 <span class="ot">&lt;-</span> <span class="fu">cfa</span>(model.prop7,</span>
+<span id="cb22-13"><a href="#cb22-13"></a>                 <span class="at">data =</span> dat,</span>
+<span id="cb22-14"><a href="#cb22-14"></a>                 <span class="at">group =</span> <span class="st">"gender"</span>,</span>
+<span id="cb22-15"><a href="#cb22-15"></a>                 <span class="at">ordered =</span> <span class="cn">TRUE</span></span>
+<span id="cb22-16"><a href="#cb22-16"></a>)</span>
+<span id="cb22-17"><a href="#cb22-17"></a></span>
+<span id="cb22-18"><a href="#cb22-18"></a></span>
+<span id="cb22-19"><a href="#cb22-19"></a>results[<span class="dv">3</span>,] <span class="ot">&lt;-</span> <span class="fu">round</span>(</span>
+<span id="cb22-20"><a href="#cb22-20"></a>  <span class="fu">data.matrix</span>(</span>
+<span id="cb22-21"><a href="#cb22-21"></a>  <span class="fu">fitmeasures</span>(fit.prop7, </span>
+<span id="cb22-22"><a href="#cb22-22"></a>  <span class="at">fit.measures =</span> <span class="fu">c</span>(<span class="st">"chisq.scaled"</span>,</span>
+<span id="cb22-23"><a href="#cb22-23"></a>  <span class="st">"df.scaled"</span>,</span>
+<span id="cb22-24"><a href="#cb22-24"></a>  <span class="st">"pvalue.scaled"</span>,</span>
+<span id="cb22-25"><a href="#cb22-25"></a>  <span class="st">"rmsea.scaled"</span>,</span>
+<span id="cb22-26"><a href="#cb22-26"></a>  <span class="st">"cfi.scaled"</span>,</span>
+<span id="cb22-27"><a href="#cb22-27"></a>  <span class="st">"tli.scaled"</span>))),</span>
+<span id="cb22-28"><a href="#cb22-28"></a>  <span class="at">digits =</span> <span class="dv">3</span>)</span>
+<span id="cb22-29"><a href="#cb22-29"></a></span>
+<span id="cb22-30"><a href="#cb22-30"></a><span class="fu">colnames</span>(results) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"chisq"</span>,<span class="st">"df"</span>,<span class="st">"pvalue"</span>,<span class="st">"rmsea"</span>,<span class="st">"cfi"</span>,<span class="st">"tli"</span>)</span>
+<span id="cb22-31"><a href="#cb22-31"></a><span class="fu">rownames</span>(results) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"baseline"</span>,<span class="st">"thresholds"</span>,<span class="st">"loadings"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Examining fit indices (<em>results</em>):</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a><span class="fu">print</span>(results)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>              chisq  df pvalue rmsea   cfi   tli
+baseline   4111.951 328      0 0.096 0.867 0.846
+thresholds 4372.509 388      0 0.091 0.860 0.863
+loadings   4120.539 404      0 0.086 0.869 0.877</code></pre>
+</div>
+</div>
+<p>we noticed that in general, the model fit improved as the models became more restricted by imposing equality of thresholds (prop4) and equality of factor loadings (prop7).</p>
+<p>We can perform the chi-square difference test between the threshold invariance (prop4) and threshold + factor loadings (pro7) models to assess the feasibility of measurement invariance.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a><span class="fu">lavTestLRT</span>(fit.prop4,fit.prop7)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<thead><tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Df</th>
+<th style="text-align: left;">AIC</th>
+<th style="text-align: left;">BIC</th>
+<th style="text-align: right;">Chisq</th>
+<th style="text-align: right;">Chisq diff</th>
+<th style="text-align: right;">Df diff</th>
+<th style="text-align: right;">Pr(&gt;Chisq)</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">fit.prop4</td>
+<td style="text-align: right;">388</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">3918.218</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">fit.prop7</td>
+<td style="text-align: right;">404</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">3952.985</td>
+<td style="text-align: right;">21.36015</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0.1650784</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section></section><section id="data-interpretation" class="level2" data-number="10.4"><h2 data-number="10.4" class="anchored" data-anchor-id="data-interpretation">
+<span class="header-section-number">10.4</span> Data Interpretation</h2>
+<p>For interpretation, you can see Table 1 of the study by Svetina et al., (2020). In it, there is a summary of several simulation studies and which cutoff points are recommended. For example, if you have an ordinal distribution, you are comparing two groups, with each group having 150/150 or 150/500 or 500/500 participants, having 2 to 4 factors, you should test the levels of measurement invariance through of the chi-square difference with <em>p</em> &lt; 0.05 between each level of invariance. If you consider that you have data with normal distribution, you are comparing 2 groups, you have an N of 150, 250 or 500 per group, and you are comparing only 1 factor, the difference between each CFI invariance level should not be greater than or equal to 0.005, while the RMSEA difference must not be less than or equal to 0.010.</p>
+</section><section id="references" class="level2" data-number="10.5"><h2 data-number="10.5" class="anchored" data-anchor-id="references">
+<span class="header-section-number">10.5</span> References</h2>
+<p>Beauducel, A., &amp; Herzberg, P. Y. (2006). On the performance of maximum likelihood versus means and variance adjusted weighted least squares estimation in CFA. Structural Equation Modeling: A Multidisciplinary Journal, 13(2), 186–203. <a href="https://doi.org/10.1207/s15328007sem1302_2" class="uri">https://doi.org/10.1207/s15328007sem1302_2</a></p>
+<p>Hancock, G. R. (1997). Structural equation modeling methods of hypothoesis testing of latent variable means. <em>Measurement &amp; Evaluation in Counseling &amp; Development (American Counseling Association)</em>, <em>30</em>(2), 91–105. <a href="https://doi.org/10.1080/07481756.1997.12068926" class="uri">https://doi.org/10.1080/07481756.1997.12068926</a></p>
+<p>Jorgensen, T. D., Pornprasertmanit, S., Schoemann, A. M., &amp; Rosseel, Y. (2022). <em>semTools: Useful tools for structural equation modeling</em>. R package. Retrieved from <a href="https://CRAN.R-project.org/package=semTools" class="uri">https://CRAN.R-project.org/package=semTools</a></p>
+<p>Lubke, G. H., &amp; Muthén, B. O. (2004). Applying multigroup confirmatory factor models for continuous outcomes to Likert scale data complicates meaningful group comparisons. <em>Structural equation modeling</em>, <em>11</em>(4), 514-534. <a href="https://doi.org/10.1207/s15328007sem1104_2" class="uri">https://doi.org/10.1207/s15328007sem1104_2</a></p>
+<p>Muthén, B., &amp; Kaplan, D. (1985). A Comparison of Some Methodologies for the Factor Analysis of Non-Normal Likert Variables. British Journal of Mathematical and Statistical Psychology, 38, 171–189. <a href="https://doi.org/10.1111/j.2044-8317.1985.tb00832.x" class="uri">https://doi.org/10.1111/j.2044-8317.1985.tb00832.x</a></p>
+<p>R Core Team (2023). <em>R: A Language and Environment for Statistical Computing</em>. R Foundation for Statistical Computing, Vienna, Austria. <a href="https://www.R-project.org/" class="uri">https://www.R-project.org/</a></p>
+<p>Revelle, W. (2023). <em>psych: Procedures for Psychological, Psychometric, and Personality Research</em>. Northwestern University, Evanston, Illinois. R package. <a href="https://CRAN.R-project.org/package=psych" class="uri">https://CRAN.R-project.org/package=psych</a></p>
+<p>Rosseel, Y. (2012). lavaan: An R Package for Structural Equation Modeling. <em>Journal of Statistical Software</em>, <em>48</em>(2), 1-36. <a href="https://doi.org/10.18637/jss.v048.i02%5C" class="uri">https://doi.org/10.18637/jss.v048.i02\</a></p>
+<p>Svetina, D., Rutkowski, L., &amp; Rutkowski, D. (2020). Multiple-group invariance with categorical outcomes using updated guidelines: an illustration using M plus and the lavaan/semtools packages. <em>Structural Equation Modeling: A Multidisciplinary Journal</em>, <em>27</em>(1), 111-130. <a href="https://doi.org/10.1080/10705511.2019.1602776" class="uri">https://doi.org/10.1080/10705511.2019.1602776</a></p>
+<script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script><script>
+  kofiWidgetOverlay.draw('rafaelbastos', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support This',
+    'floating-chat.donateButton.background-color': '#5bc0de',
+    'floating-chat.donateButton.text-color': '#323842'
+  });
+</script>
+
+</section></main><!-- /main --><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script><script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    $(solveme[i]).after(" <span class='webex-icon'></span>");
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    $(selects[i]).after(" <span class='webex-icon'></span>");
+  }
+
+  update_total_correct();
+}
+
+</script><script>
+// open rdrr links externally ----
+
+var exlinks = document.querySelectorAll("a[href^='https://rdrr.io']");
+var exlink_func = function(){
+  window.open(this.href);
+  return false;
+};
+for (var i = 0; i < exlinks.length; i++) {
+    exlinks[i].addEventListener('click', exlink_func, false);
+}
+
+// visible second sidebar in mobile ----
+
+function move_sidebar() {
+  var toc = document.getElementById("TOC");
+  var small_sidebar = document.querySelector("#quarto-sidebar .sidebar-menu-container");
+  var right_sidebar = document.getElementById("quarto-margin-sidebar");
+
+  if (window.innerWidth < 768) {
+    small_sidebar.append(toc);
+  } else {
+    right_sidebar.append(toc);
+  }
+}
+move_sidebar();
+window.onresize = move_sidebar;
+</script><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./09-Acquiescence.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Acquiescence Bias</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./11-NP_IRT.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Non-Parametric Item Response Theory</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">Bastos, R. V. S. (2024). Advances in Psychometric Theory and Measurement for Psychological Sciences: With Tutorials in R. Retrieved from https://github.com/rafavsbastos/psychometrics_book.</div>
+  </div>
+</footer>
+
+
+</body></html>

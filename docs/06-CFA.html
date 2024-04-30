@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="description" content="This is an educational resource, with content at the cutting edge of scientific knowledge. It aims to improve future research, by improving researchers knowledge in the statistical inferences made, planning better experiments and analyzing scientific research being carried out with more rigor and transparency.">
+<title>Advances in Psychometric Theory and Measurement for Psychological Sciences - 6&nbsp; Confirmatory Factor Analysis</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./07-EGA.html" rel="next">
+<link href="./05-EFA.html" rel="prev">
+<link href="./images/logo.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script><script src="site_libs/kePrint-0.0.1/kePrint.js"></script><link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><link rel="stylesheet" href="include/booktem.css">
+<link rel="stylesheet" href="include/style.css">
+<link rel="stylesheet" href="include/webex.css">
+<meta name="twitter:title" content="Advances in Psychometric Theory and Measurement for Psychological Sciences - 6&nbsp; Confirmatory Factor Analysis">
+<meta name="twitter:description" content="This is an educational resource, with content at the cutting edge of scientific knowledge. It aims to improve future research, by improving researchers knowledge in the statistical inferences made, planning better experiments and analyzing scientific research being carried out with more rigor and transparency.">
+<meta name="twitter:image" content="images/twittercard.jpg">
+<meta name="twitter:creator" content="@rafavsbastos">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-CFA.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Confirmatory Factor Analysis</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Advances in Psychometric Theory and Measurement for Psychological Sciences</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/rafavsbastos/psychometrics_book" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+<li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Advances-in-Psychometric-Theory-and-Measurement-for-Psychological-Sciences.pdf">
+              <i class="bi bi-bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Advances-in-Psychometric-Theory-and-Measurement-for-Psychological-Sciences.epub">
+              <i class="bi bi-bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+</div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-Validity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Concept of Validity of Psychological Tests</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-Classical_Test_Theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Classical Test Theory</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-Latent_Variable.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory of Latent Variables in Psychometrics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-Measurement_Theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Measurement Theory: Why it is Possible to Measure Psychological Phenomena</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-EFA.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Exploratory Factor Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-CFA.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Confirmatory Factor Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-EGA.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Exploratory Graph Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-Desirability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Social Desirability Bias</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-Acquiescence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Acquiescence Bias</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-Measurement_Invariance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Measurement Invariance/Equivalence</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-NP_IRT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Non-Parametric Item Response Theory</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-Step_by_step.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">How to Validate Psychological Tests: A Step by Step Guide</span></span></a>
+  </div>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+<li><a href="#what-is-it-and-when-do-we-apply-confirmatory-factor-analysis" id="toc-what-is-it-and-when-do-we-apply-confirmatory-factor-analysis" class="nav-link active" data-scroll-target="#what-is-it-and-when-do-we-apply-confirmatory-factor-analysis"><span class="header-section-number">6.1</span> What is it and When Do We Apply Confirmatory Factor Analysis?</a></li>
+  <li><a href="#model-specification" id="toc-model-specification" class="nav-link" data-scroll-target="#model-specification"><span class="header-section-number">6.2</span> Model Specification</a></li>
+  <li><a href="#differences-between-saturatedunrestricted-model-and-restricted-model" id="toc-differences-between-saturatedunrestricted-model-and-restricted-model" class="nav-link" data-scroll-target="#differences-between-saturatedunrestricted-model-and-restricted-model"><span class="header-section-number">6.3</span> Differences Between Saturated/Unrestricted Model and Restricted Model</a></li>
+  <li><a href="#model-identification" id="toc-model-identification" class="nav-link" data-scroll-target="#model-identification"><span class="header-section-number">6.4</span> Model Identification</a></li>
+  <li>
+<a href="#fit-indices" id="toc-fit-indices" class="nav-link" data-scroll-target="#fit-indices"><span class="header-section-number">6.5</span> Fit Indices</a>
+  <ul class="collapse">
+<li><a href="#fit-indices-commonly-used-in-factor-analysis" id="toc-fit-indices-commonly-used-in-factor-analysis" class="nav-link" data-scroll-target="#fit-indices-commonly-used-in-factor-analysis"><span class="header-section-number">6.5.1</span> Fit Indices Commonly Used in Factor Analysis</a></li>
+  <li><a href="#criticisms-of-factor-analysis" id="toc-criticisms-of-factor-analysis" class="nav-link" data-scroll-target="#criticisms-of-factor-analysis"><span class="header-section-number">6.5.2</span> Criticisms of Factor Analysis</a></li>
+  </ul>
+</li>
+  <li><a href="#how-to-run-a-confirmatory-factor-analysis-in-r." id="toc-how-to-run-a-confirmatory-factor-analysis-in-r." class="nav-link" data-scroll-target="#how-to-run-a-confirmatory-factor-analysis-in-r."><span class="header-section-number">6.6</span> How to Run a Confirmatory Factor Analysis in R.</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.7</span> References</a></li>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/rafavsbastos/psychometrics_book/edit/master/06-CFA.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/rafavsbastos/psychometrics_book/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/rafavsbastos/psychometrics_book/blob/master/06-CFA.qmd" class="toc-action">View source</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title"><span id="sec-cfa" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Confirmatory Factor Analysis</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header><p>In this text, I will present the fundamentals of the Confirmatory Factor Analysis (CFA), and how it works, and we will compare CFA with Exploratory Factor Analysis.</p>
+<section id="what-is-it-and-when-do-we-apply-confirmatory-factor-analysis" class="level2" data-number="6.1"><h2 data-number="6.1" class="anchored" data-anchor-id="what-is-it-and-when-do-we-apply-confirmatory-factor-analysis">
+<span class="header-section-number">6.1</span> What is it and When Do We Apply Confirmatory Factor Analysis?</h2>
+<p>The CFA is a multivariate statistic that serves to estimate the structure of an instrument, verifying how well the measured variables represent the number of constructs. That is, it verifies whether an instrument’s structure can be, but is not necessarily, true. For this, we need to state which structure we want to test. Generally, the CFA is used when there is a previous study that tells us the dimensionality of that instrument. For instance, we would have a North American study that uses an EFA to verify the instrument’s dimensionality and you use a CFA to verify how well this structure happens with Brazilian data. However, this is not the only way you can use the CFA! You can, for example, have the EFA in the same study (to explore the dimensionality), but still test different theoretical models using the CFA.</p>
+<p>Thus, both EFA and CFA are applied when you want to estimate the dimensionality of an instrument (note that I said estimate, not explore/discover dimensionality). For example, we can apply the CFA in self-report instruments, where items represent behaviors, thoughts, or feelings. Another example, we can apply it to a set of other measures, such as psychophysical measures of anxiety. Thus, CFA applies to instruments that measure some attributes such as well-being, anxiety, prejudice, etc.</p>
+</section><section id="model-specification" class="level2" data-number="6.2"><h2 data-number="6.2" class="anchored" data-anchor-id="model-specification">
+<span class="header-section-number">6.2</span> Model Specification</h2>
+<p>The model from a CFA is similar, but not equal to, the model from an EFA. The model can be described as:</p>
+<p><span class="math display">\[ x = \Lambda_x \xi + \delta \]</span></p>
+<p><span class="math display">\[ y = \Lambda_y \eta + \epsilon \]</span></p>
+<p>Where <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are observed variables, <span class="math inline">\(\xi\)</span> and <span class="math inline">\(\eta\)</span> are latent factors, and <span class="math inline">\(\delta\)</span> and <span class="math inline">\(\epsilon\)</span> are measurement errors. Both formulas yield the same basic model, where an observed variable depends on one or more latent variable and a measurement error. Remember that the measurement error is considered to be uncorrelated with the latent variables.</p>
+<p>Imagine we have eight items (<span class="math inline">\(x1\)</span> to <span class="math inline">\(x8\)</span>), where the first four items’ measures extroversion, and the last four measures neuroticism. Let’s assume extroversion has no effects on the indicators of neuroticism. In addition, each indicator contains a measurement error that is assumed uncorrelated with the latent variables. The matrix equation the represents these relations are:</p>
+<p><span class="math display">\[
+\begin{bmatrix}
+x1 \\
+x2 \\
+x3 \\
+x4 \\
+x5 \\
+x6 \\
+x7 \\
+x8
+\end{bmatrix} =
+\begin{bmatrix}
+\lambda_{1,1} &amp; 0 \\
+\lambda_{2,1} &amp; 0 \\
+\lambda_{3,1} &amp; 0 \\
+\lambda_{4,1} &amp; 0 \\
+0 &amp; \lambda_{5,2} \\
+0 &amp; \lambda_{6,2} \\
+0 &amp; \lambda_{7,2} \\
+0 &amp; \lambda_{8,2} \\
+\end{bmatrix}
+\begin{bmatrix}
+\eta_1 \\
+\eta_2
+\end{bmatrix}+
+\begin{bmatrix}
+\delta_1 \\
+\delta_2 \\
+\delta_3 \\
+\delta_4 \\
+\delta_5 \\
+\delta_6 \\
+\delta_7 \\
+\delta_8
+\end{bmatrix}
+\]</span></p>
+<p><span class="math display">\[
+COV(\eta_i,\delta_j) = 0
+\]</span> for all <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span></p>
+<p><span class="math display">\[
+E(\delta_j) = 0
+\]</span> for all <span class="math inline">\(j\)</span>.</p>
+<p>We can think <span class="math inline">\(\eta_1\)</span> as an extroversion latent variable and <span class="math inline">\(\eta_2\)</span> as a neuroticism latent variable, where the first column of <span class="math inline">\(\lambda\)</span>’s are factor loadings (the direct structural relation between a latent and observed variable; may be viewed as regression coefficients) for extroversion, and the second column are factor loadings for neuroticism. The double subscript of <span class="math inline">\(\lambda_{i,j}\)</span> represent the row (item) and column (latent variable) positions. A zero in <span class="math inline">\(\lambda\)</span> represent that the corresponding observed variable is not influenced by the latent variable in that column.</p>
+</section><section id="differences-between-saturatedunrestricted-model-and-restricted-model" class="level2" data-number="6.3"><h2 data-number="6.3" class="anchored" data-anchor-id="differences-between-saturatedunrestricted-model-and-restricted-model">
+<span class="header-section-number">6.3</span> Differences Between Saturated/Unrestricted Model and Restricted Model</h2>
+<p>The EFA model can be called the saturated/unrestricted model. This is because all latent dimensions explain the variation in all items, as exemplified in the image below (<a href="#fig-efae">Figure&nbsp;<span>6.1</span></a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-efae" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="06-CFA_files/figure-html/fig-efae-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;6.1: Exploratory Factor Analysis Model</figcaption></figure>
+</div>
+</div>
+</div>
+<p>As for the CFA, we can call it the Restricted Model, that is, we impose some restrictions on the model, for example, not having cross-loadings of a factor with items from another factor. The restricted model is exemplified in the image below (<a href="#fig-cfa">Figure&nbsp;<span>6.2</span></a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-cfa" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="06-CFA_files/figure-html/fig-cfa-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;6.2: Confirmatory Factor Analysis Model.</figcaption></figure>
+</div>
+</div>
+</div>
+<p>Of course, there are some practical differences between one model and another. The first is that, generally, the output of the factor loadings from a CFA is different from the EFA. While in EFA we have cross loads on all factors, in the CFA some loadings are set at 0 (<a href="#tbl-floa">Table&nbsp;<span>6.1</span></a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-floa" class="anchored">
+<table class="table table-striped table-sm small" data-quarto-postprocess="true">
+<caption>Table&nbsp;6.1: Factor Loadings of a CFA.</caption>
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Items</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Factor 1</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Factor 2</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">V1</td>
+<td style="text-align: center;">0.6</td>
+<td style="text-align: center;">0.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">V2</td>
+<td style="text-align: center;">0.7</td>
+<td style="text-align: center;">0.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">V3</td>
+<td style="text-align: center;">0.8</td>
+<td style="text-align: center;">0.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">V4</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">0.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">V5</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">0.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">V6</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">0.9</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+</div>
+</div>
+<p>I made <a href="#tbl-diff">Table&nbsp;<span>6.2</span></a> that shows the differences between the unrestricted model (EFA) and the restricted model (CFA).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-diff" class="anchored">
+<table class="table table-striped table-sm small" data-quarto-postprocess="true">
+<caption>Table&nbsp;6.2: Differences Between EFA and CFA.</caption>
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th"></th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">EFA</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">CFA</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Explore data dimensionality</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Require defined hypothesis</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Choose items</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Test Models</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Prove models</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fit Indices Available</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Restricted Model</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Unrestricted/Saturated Model</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Modifications/Residual Correlations</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+</div>
+</div>
+<p>We see in the table above that, for the confirmatory factor analysis, we need to have a defined hypothesis, that is, there must be a theory behind that will directly guide our analyses, we cannot just keep exploring without a proper justification. This is a little different from EFA, which has a theory behind the structure, but you test whether this structure will be corroborated in the data (through parallel analysis and the like). Of course, in EFA we can extract the factors based on theory, which, in a way, would resemble CFA in terms of the hypothesis guiding the analysis directly.</p>
+<p>It is also important to emphasize again that in the CFA we can test different models, being able to make modifications and allow residual correlations. We can even test more complex models, such as a hierarchical model or a bifactor model. In short, because CFA makes restrictions on the model, we have the possibility to test a multitude of things! One use of CFA is through multi-group CFA.</p>
+</section><section id="model-identification" class="level2" data-number="6.4"><h2 data-number="6.4" class="anchored" data-anchor-id="model-identification">
+<span class="header-section-number">6.4</span> Model Identification</h2>
+<p>We have to deal with a “problem” called model identification when we talk about a restricted model (Bollen, 1989). In other words, we need our data to have enough “information” to be able to do the necessary statistics.</p>
+<p>Imagine if we were to estimate a one-factor model with 4 items (for example, estimating depression with a 4-item questionnaire). We therefore estimate 4 factor loadings (one per item), 4 residues (one per item), that is, we have 8 “information” to be discovered/estimated. The information we actually have is the item scores (for example, people’s scores on items Item1, Item2, Item3, Item4) and the correlation between them. Count the cells of the correlation matrix between 4 items in <a href="#tbl-corr">Table&nbsp;<span>6.3</span></a>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-corr" class="anchored">
+<table class="table table-sm table-striped small">
+<caption>Table&nbsp;6.3: Correlation Table Between Items1 to Item4.</caption>
+<thead><tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Item1</th>
+<th style="text-align: left;">Item2</th>
+<th style="text-align: left;">Item3</th>
+<th style="text-align: left;">Item4</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Item1</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Item2</td>
+<td style="text-align: left;">-0.05</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Item3</td>
+<td style="text-align: left;">-0.13</td>
+<td style="text-align: left;">0.03</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Item4</td>
+<td style="text-align: left;">-0.04</td>
+<td style="text-align: left;">0.04</td>
+<td style="text-align: left;">-0.04</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Thus, we have 4 scores + 6 correlations = 10 pieces of information. In other words, with 4 items we can estimate the 8 pieces of factor loadings and residues since we have 10 pieces of information in our hands. Following this logic, it is easy to see that, in order to be able to identify the model, the minimum number of items is 3 items per latent factor. See, in a unifactorial model with 3 items, we will estimate 3 factor loadings + 3 residues = 6 necessary information. We have information for 3 items + 3 correlations = 6 information in our sleeve. So we will have 0 degrees of freedom (DF).</p>
+<ul>
+<li><p>If DF &lt; 0, the unidentified model (nothing will be estimated);</p></li>
+<li><p>If DF = 0, the model is under-identified (only factor loadings will be arbitrarily estimated; no fit indexes will be generated);</p></li>
+<li><p>If DF&gt; 1, the overidentified model (everything can be estimated).</p></li>
+</ul>
+<p>A model should only be interpreted if DF&gt; 1, as this is the only way to solve the covariance equation of items and latent variables, allowing the output of fit indices.</p>
+</section><section id="fit-indices" class="level2" data-number="6.5"><h2 data-number="6.5" class="anchored" data-anchor-id="fit-indices">
+<span class="header-section-number">6.5</span> Fit Indices</h2>
+<p>The validity of psychometric models depends on the validity of the causal assumptions they make, which are generally implicit to the user. Psychological tests (e.g., self-report questionnaires) are typically constructed to measure constructs, while the responses observed in such tests are believed to reflect the underlying latent variable (Van Bork et al., 2017). For example, a person’s self-esteem is not observed directly, but we assume that it can be measured through the use of items from an instrument. Various fit indices have been created trying to figure out whether the data fits a specific model. However, the causal assumption regarding the relationship between constructs and their indicators is often ignored in commonly used fit indices (Bartholomew, 1995; Franco et al., 2023).</p>
+<section id="fit-indices-commonly-used-in-factor-analysis" class="level3" data-number="6.5.1"><h3 data-number="6.5.1" class="anchored" data-anchor-id="fit-indices-commonly-used-in-factor-analysis">
+<span class="header-section-number">6.5.1</span> Fit Indices Commonly Used in Factor Analysis</h3>
+<p>To test whether the theoretical model reflects the data causally, several fit indices have been developed to try to achieve this. Two main classes of fit indices have been proposed to try to operationalize the “goodness” (or “badness”) of models (Xia &amp; Yang, 2019): absolute fit indices and incremental fit indices.</p>
+<p>Absolute fit indices assess how far the fitted model is from a “perfect” model, while a “perfect” model is defined as the model that can perfectly predict the values of the observed correlation matrix. One of the most used absolute fit indices is the <em>Root Mean Squared Error of Approximation</em> (RMSEA; Steiger &amp; Lind, 1980; Franco et al., 2023). Incremental fit indices, on the other hand, evaluate the performance of the fitted model compared to a “baseline” model. The base model, in this context, is normally defined as the model where all variables are considered independent and, therefore, should be the model with the worst possible fit. The <em>Comparative Fit Index</em> (CFI; Bentler, 1990) and the <em>Tucker-Lewis Index</em> (TLI; Tucker &amp; Lewis, 1973) are two of the most commonly used incremental fit indices. Regardless of whether a fit index is incremental or absolute, the “quality” of the fit is defined according to the objective function of the factor model, which is usually defined in terms of some type of difference between the observed correlation matrix and the implied correlation matrix from the adjusted model (Franco et al., 2023).</p>
+<p>The main objective of factor analysis is to find a structure of latent causes that can be used to explain the correlational structure of observed data. Fit indices are, then, a way of checking whether the identified model is, in fact, good enough to explain the data. For a researcher to tell whether a model is “good enough” to explain the correlation structure of a data set, decisions based on fit indices depend on a set of cutoff criteria (Bentler &amp; Bonett, 1980; Jöreskog &amp; Sörbom, 1993). For example, Hu and Bentler (1999) demonstrated, through simulation studies, that an RMSEA less than 0.06 and a CFI and TLI greater than 0.95 indicate a relatively good fit of the model data to observed continuous variables. With nominal and ordinal data, however, these fit indices tend to be biased in the direction of good fit. Therefore, with nominal and ordinal data, more rigorous criteria or another decision criterion must be used for model selection (Xia &amp; Yang, 2019).</p>
+<p>For example, the article by Bonifay and Cai (2017) verified how the fit indexes of some models behaved. For this, a quasi-unrestricted model was tested (similar to the Exploratory Factor Analysis model, but with 2 loads being restricted to identify the model); a bifactor model; two hierarchical models; and a one-dimensional model. For this, fit indices were analyzed in 1000 simulated datasets. They found that, within all possible fits in these databases, the quasi-unconstrained model and the bifactor model almost always present good fit indices. This implies that we cannot interpret fit indices as good model indicators in these cases. For example, if you compare a bifactor model with a single-factor model, you will most likely find better fit indices in the bifactor, but this is not necessarily the best model to explain the data. Of course, one would have to compare fit indices of nested models, but the example serves as an illustration.</p>
+</section><section id="criticisms-of-factor-analysis" class="level3" data-number="6.5.2"><h3 data-number="6.5.2" class="anchored" data-anchor-id="criticisms-of-factor-analysis">
+<span class="header-section-number">6.5.2</span> Criticisms of Factor Analysis</h3>
+<p>Some authors are critical of factorial models due to the lack of testing of causal assumptions, as shown by the network literature as an alternative way of explaining/describing the correlation patterns found between observed variables (Epskamp et al., 2018; Schmittmann et al., 2013). For example, McFarland’s work (McFarland, 2020) states that psychometric networks of Gaussian graphical models and latent variable modeling (Kline, 2023) are alternatives to each other, where both can be applied to describe or explain the variance-covariance structure of the observed variables of interest. . In fact, some simulation (e.g., van Bork et al., 2021) and theoretical (e.g., Kruis &amp; Maris, 2016) studies have shown that network and factor analytic models can sometimes explain the same patterns of correlation. This highlights a limitation of fit indices such as RMSEA, CFI and TLI for assessing the “quality” of factor models: they do not necessarily consider the causal assumptions embedded in factor models.</p>
+<p>Regardless, both absolute and incremental fit indices have been used to assess whether we have support for a factor or network model, models that have different causal assumptions (Kan et al., 2020; McFarland, 2020; see also Aristodemou et al., 2023). Therefore, a fit index that takes into account the causal structure assumed by factor models could, in principle, provide additional information necessary to perform a more appropriate model selection.</p>
+</section></section><section id="how-to-run-a-confirmatory-factor-analysis-in-r." class="level2" data-number="6.6"><h2 data-number="6.6" class="anchored" data-anchor-id="how-to-run-a-confirmatory-factor-analysis-in-r.">
+<span class="header-section-number">6.6</span> How to Run a Confirmatory Factor Analysis in R.</h2>
+<p>To run a Confirmatory Factor Analysis, we must first install the <em>lavaan</em> (Rosseel, 2012) package.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">install.packages</span>(<span class="st">"lavaan"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>And tell the program that we are going to use the functions from this package.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">library</span>(lavaan)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then, we must have information on which model we should test. In other words, we have to know the theory behind some instrument: how many factors we have, which items represent which factors, whether or not the factors are correlated, etc.</p>
+<p>Let’s use the Holzinger and Swineford (1939) model as an example. We will save the model in the <code>HS.model</code> variable.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>HS.model <span class="ot">&lt;-</span> <span class="st">' visual  =~ x1 + x2 + x3</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="st">              textual =~ x4 + x5 + x6</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="st">              speed   =~ x7 + x8 + x9 '</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You can see in this code that <code>=~</code> is used when we have a latent variable (on the left), and we inform after <code>=~</code> which items belong to that factor (summing the items). By default, <em>lavaan</em> will correlate the factors. Let’s leave it like that for now. Now we will run the analysis and save in the object <code>cfa.fit</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>cfa.fit <span class="ot">&lt;-</span> <span class="fu">cfa</span>(<span class="at">model =</span> HS.model,</span>
+<span id="cb4-2"><a href="#cb4-2"></a>               <span class="at">data =</span> HolzingerSwineford1939,</span>
+<span id="cb4-3"><a href="#cb4-3"></a>               <span class="at">estimator =</span> <span class="st">'ml'</span>,</span>
+<span id="cb4-4"><a href="#cb4-4"></a>               <span class="at">ordered =</span> <span class="cn">FALSE</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a>               )</span>
+<span id="cb4-6"><a href="#cb4-6"></a></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="fu">summary</span>(cfa.fit,</span>
+<span id="cb4-8"><a href="#cb4-8"></a>        <span class="at">fit.measures=</span><span class="cn">TRUE</span>,</span>
+<span id="cb4-9"><a href="#cb4-9"></a>        <span class="at">standardized=</span><span class="cn">TRUE</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a>        )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>lavaan 0.6.17 ended normally after 35 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        21
+
+  Number of observations                           301
+
+Model Test User Model:
+                                                      
+  Test statistic                                85.306
+  Degrees of freedom                                24
+  P-value (Chi-square)                           0.000
+
+Model Test Baseline Model:
+
+  Test statistic                               918.852
+  Degrees of freedom                                36
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.931
+  Tucker-Lewis Index (TLI)                       0.896
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)              -3737.745
+  Loglikelihood unrestricted model (H1)      -3695.092
+                                                      
+  Akaike (AIC)                                7517.490
+  Bayesian (BIC)                              7595.339
+  Sample-size adjusted Bayesian (SABIC)       7528.739
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.092
+  90 Percent confidence interval - lower         0.071
+  90 Percent confidence interval - upper         0.114
+  P-value H_0: RMSEA &lt;= 0.050                    0.001
+  P-value H_0: RMSEA &gt;= 0.080                    0.840
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.065
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+  visual =~                                                             
+    x1                1.000                               0.900    0.772
+    x2                0.554    0.100    5.554    0.000    0.498    0.424
+    x3                0.729    0.109    6.685    0.000    0.656    0.581
+  textual =~                                                            
+    x4                1.000                               0.990    0.852
+    x5                1.113    0.065   17.014    0.000    1.102    0.855
+    x6                0.926    0.055   16.703    0.000    0.917    0.838
+  speed =~                                                              
+    x7                1.000                               0.619    0.570
+    x8                1.180    0.165    7.152    0.000    0.731    0.723
+    x9                1.082    0.151    7.155    0.000    0.670    0.665
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+  visual ~~                                                             
+    textual           0.408    0.074    5.552    0.000    0.459    0.459
+    speed             0.262    0.056    4.660    0.000    0.471    0.471
+  textual ~~                                                            
+    speed             0.173    0.049    3.518    0.000    0.283    0.283
+
+Variances:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+   .x1                0.549    0.114    4.833    0.000    0.549    0.404
+   .x2                1.134    0.102   11.146    0.000    1.134    0.821
+   .x3                0.844    0.091    9.317    0.000    0.844    0.662
+   .x4                0.371    0.048    7.779    0.000    0.371    0.275
+   .x5                0.446    0.058    7.642    0.000    0.446    0.269
+   .x6                0.356    0.043    8.277    0.000    0.356    0.298
+   .x7                0.799    0.081    9.823    0.000    0.799    0.676
+   .x8                0.488    0.074    6.573    0.000    0.488    0.477
+   .x9                0.566    0.071    8.003    0.000    0.566    0.558
+    visual            0.809    0.145    5.564    0.000    1.000    1.000
+    textual           0.979    0.112    8.737    0.000    1.000    1.000
+    speed             0.384    0.086    4.451    0.000    1.000    1.000</code></pre>
+</div>
+</div>
+<p>The first argument you have to put the variable where you configured the model. The <code>data</code> argument must come with your database. As the data follows a normal distribution and is continuous, we will consider the Maximum Likelihood estimator and the items will not be considered as ordinal.</p>
+<p>Now, let’s analyze the result with the following function, where we ask for the fit indices, standardized loads and correlations.</p>
+<p>The “Model Test User Model” represents the chi-square of the configured model. We also have several other adjustment indices, such as CFI, TLI, RMSEA and SRMR. We report fit indices as follows.</p>
+<p><em>The Holzier and Swineford (1939) model had the following fit indices: 𝜒²(gl = 24) = 85,306, p &lt; 0,001, CFI = 0,931, TLI = 0,896, RMSEA [IC 95%]= 0,092 [0,071 - 0,0114], SRMR = 0,065.</em></p>
+<p>The standardized factor loadings are in the “Latent Variables” part in the “Std.all” column. The p-values of each item are in the “P(&gt;|z|)” column. We see that we do not have the loading of the first item of each factor. This is because we have to fix one of the loads to have the magnitude of the others as a parameter, and <em>lavaan</em> always fixes the first one by default (look at the <em>Estimate</em> column, which represents the non-standardized load). We can set other items and leave the first one to be estimated, just put <code>NA*</code> in front of the first item and set another item at <code>1*</code>. That way:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>HS.model <span class="ot">&lt;-</span> <span class="st">' visual  =~ NA*x1 + 1*x2 + x3</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="st">              textual =~ NA*x4 + x5 + 1*x6</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="st">              speed   =~ NA*x7 + x8 + 1*x9 '</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a></span>
+<span id="cb6-5"><a href="#cb6-5"></a>cfa.fit <span class="ot">&lt;-</span> <span class="fu">cfa</span>(<span class="at">model =</span> HS.model,</span>
+<span id="cb6-6"><a href="#cb6-6"></a>               <span class="at">data =</span> HolzingerSwineford1939,</span>
+<span id="cb6-7"><a href="#cb6-7"></a>               <span class="at">estimator =</span> <span class="st">'ml'</span>,</span>
+<span id="cb6-8"><a href="#cb6-8"></a>               <span class="at">ordered =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb6-9"><a href="#cb6-9"></a></span>
+<span id="cb6-10"><a href="#cb6-10"></a><span class="fu">summary</span>(cfa.fit,</span>
+<span id="cb6-11"><a href="#cb6-11"></a>        <span class="at">fit.measures=</span><span class="cn">TRUE</span>,</span>
+<span id="cb6-12"><a href="#cb6-12"></a>        <span class="at">standardized=</span><span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>lavaan 0.6.17 ended normally after 40 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        21
+
+  Number of observations                           301
+
+Model Test User Model:
+                                                      
+  Test statistic                                85.306
+  Degrees of freedom                                24
+  P-value (Chi-square)                           0.000
+
+Model Test Baseline Model:
+
+  Test statistic                               918.852
+  Degrees of freedom                                36
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.931
+  Tucker-Lewis Index (TLI)                       0.896
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)              -3737.745
+  Loglikelihood unrestricted model (H1)      -3695.092
+                                                      
+  Akaike (AIC)                                7517.490
+  Bayesian (BIC)                              7595.339
+  Sample-size adjusted Bayesian (SABIC)       7528.739
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.092
+  90 Percent confidence interval - lower         0.071
+  90 Percent confidence interval - upper         0.114
+  P-value H_0: RMSEA &lt;= 0.050                    0.001
+  P-value H_0: RMSEA &gt;= 0.080                    0.840
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.065
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+  visual =~                                                             
+    x1                1.807    0.325    5.554    0.000    0.900    0.772
+    x2                1.000                               0.498    0.424
+    x3                1.318    0.239    5.509    0.000    0.656    0.581
+  textual =~                                                            
+    x4                1.080    0.065   16.703    0.000    0.990    0.852
+    x5                1.202    0.072   16.760    0.000    1.102    0.855
+    x6                1.000                               0.917    0.838
+  speed =~                                                              
+    x7                0.925    0.129    7.155    0.000    0.619    0.570
+    x8                1.091    0.145    7.517    0.000    0.731    0.723
+    x9                1.000                               0.670    0.665
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+  visual ~~                                                             
+    textual           0.209    0.048    4.322    0.000    0.459    0.459
+    speed             0.157    0.040    3.967    0.000    0.471    0.471
+  textual ~~                                                            
+    speed             0.174    0.048    3.592    0.000    0.283    0.283
+
+Variances:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+   .x1                0.549    0.114    4.833    0.000    0.549    0.404
+   .x2                1.134    0.102   11.146    0.000    1.134    0.821
+   .x3                0.844    0.091    9.317    0.000    0.844    0.662
+   .x4                0.371    0.048    7.779    0.000    0.371    0.275
+   .x5                0.446    0.058    7.642    0.000    0.446    0.269
+   .x6                0.356    0.043    8.277    0.000    0.356    0.298
+   .x7                0.799    0.081    9.823    0.000    0.799    0.676
+   .x8                0.488    0.074    6.573    0.000    0.488    0.477
+   .x9                0.566    0.071    8.003    0.000    0.566    0.558
+    visual            0.248    0.077    3.214    0.001    1.000    1.000
+    textual           0.840    0.098    8.541    0.000    1.000    1.000
+    speed             0.449    0.087    5.152    0.000    1.000    1.000</code></pre>
+</div>
+</div>
+<p>See that now items x2, x6 and x9 are fixed with a charge equal to 1.</p>
+<p>Well, we see the covariances below, in the “Covariances” part. The standardized column for the covariance (the correlation) between the factors is also “Std.all”. We see that visual was correlated with textual (r = 0.459), visual with speed (r = 0.471), and textual with speed (r = 0.283), with all correlations being significant (column “P(&gt;|z|) )”.</p>
+<p>What if in our model we theorize that there is no correlation between factors? We have a few more things to add to the code. See in the previous output that the correlation is expressed by <code>~~</code>. Also, remember that to set a parameter to some number, we multiply with <code>*</code> in the model.</p>
+<p>Then, the code with all orthogonal (i.e., uncorrelated) factors.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>HS.model <span class="ot">&lt;-</span> <span class="st">' visual  =~ x1 + x2 + x3</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="st">              textual =~ x4 + x5 + x6</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="st">              speed   =~ x7 + x8 + x9</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a><span class="st">              </span></span>
+<span id="cb8-5"><a href="#cb8-5"></a><span class="st">              visual ~~ 0*textual</span></span>
+<span id="cb8-6"><a href="#cb8-6"></a><span class="st">              visual ~~ 0*speed</span></span>
+<span id="cb8-7"><a href="#cb8-7"></a><span class="st">              textual ~~ 0*speed</span></span>
+<span id="cb8-8"><a href="#cb8-8"></a><span class="st">              '</span></span>
+<span id="cb8-9"><a href="#cb8-9"></a></span>
+<span id="cb8-10"><a href="#cb8-10"></a>cfa.fit <span class="ot">&lt;-</span> <span class="fu">cfa</span>(<span class="at">model =</span> HS.model,</span>
+<span id="cb8-11"><a href="#cb8-11"></a>               <span class="at">data =</span> HolzingerSwineford1939,</span>
+<span id="cb8-12"><a href="#cb8-12"></a>               <span class="at">estimator =</span> <span class="st">'ml'</span>, </span>
+<span id="cb8-13"><a href="#cb8-13"></a>               <span class="at">ordered =</span> <span class="cn">FALSE</span></span>
+<span id="cb8-14"><a href="#cb8-14"></a>               )</span>
+<span id="cb8-15"><a href="#cb8-15"></a></span>
+<span id="cb8-16"><a href="#cb8-16"></a><span class="fu">summary</span>(cfa.fit,</span>
+<span id="cb8-17"><a href="#cb8-17"></a>        <span class="at">fit.measures=</span><span class="cn">TRUE</span>,</span>
+<span id="cb8-18"><a href="#cb8-18"></a>        <span class="at">standardized=</span><span class="cn">TRUE</span></span>
+<span id="cb8-19"><a href="#cb8-19"></a>        )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>lavaan 0.6.17 ended normally after 32 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        18
+
+  Number of observations                           301
+
+Model Test User Model:
+                                                      
+  Test statistic                               153.527
+  Degrees of freedom                                27
+  P-value (Chi-square)                           0.000
+
+Model Test Baseline Model:
+
+  Test statistic                               918.852
+  Degrees of freedom                                36
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.857
+  Tucker-Lewis Index (TLI)                       0.809
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)              -3771.856
+  Loglikelihood unrestricted model (H1)      -3695.092
+                                                      
+  Akaike (AIC)                                7579.711
+  Bayesian (BIC)                              7646.439
+  Sample-size adjusted Bayesian (SABIC)       7589.354
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.125
+  90 Percent confidence interval - lower         0.106
+  90 Percent confidence interval - upper         0.144
+  P-value H_0: RMSEA &lt;= 0.050                    0.000
+  P-value H_0: RMSEA &gt;= 0.080                    1.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.161
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+  visual =~                                                             
+    x1                1.000                               0.724    0.621
+    x2                0.778    0.141    5.532    0.000    0.563    0.479
+    x3                1.107    0.214    5.173    0.000    0.801    0.710
+  textual =~                                                            
+    x4                1.000                               0.984    0.847
+    x5                1.133    0.067   16.906    0.000    1.115    0.866
+    x6                0.924    0.056   16.391    0.000    0.910    0.832
+  speed =~                                                              
+    x7                1.000                               0.661    0.608
+    x8                1.225    0.190    6.460    0.000    0.810    0.801
+    x9                0.854    0.121    7.046    0.000    0.565    0.561
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+  visual ~~                                                             
+    textual           0.000                               0.000    0.000
+    speed             0.000                               0.000    0.000
+  textual ~~                                                            
+    speed             0.000                               0.000    0.000
+
+Variances:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+   .x1                0.835    0.118    7.064    0.000    0.835    0.614
+   .x2                1.065    0.105   10.177    0.000    1.065    0.771
+   .x3                0.633    0.129    4.899    0.000    0.633    0.496
+   .x4                0.382    0.049    7.805    0.000    0.382    0.283
+   .x5                0.416    0.059    7.038    0.000    0.416    0.251
+   .x6                0.369    0.044    8.367    0.000    0.369    0.308
+   .x7                0.746    0.086    8.650    0.000    0.746    0.631
+   .x8                0.366    0.097    3.794    0.000    0.366    0.358
+   .x9                0.696    0.072    9.640    0.000    0.696    0.686
+    visual            0.524    0.130    4.021    0.000    1.000    1.000
+    textual           0.969    0.112    8.640    0.000    1.000    1.000
+    speed             0.437    0.097    4.520    0.000    1.000    1.000</code></pre>
+</div>
+</div>
+<p>See that all correlations are set to 0. You can set any value for any parameter, but remember to have a theory behind it to support it.</p>
+<p>Of course, we can also do the analysis for ordinal data. Generally, for ordinal data we use another estimator, <code>"WLSMV"</code>, and put the argument <code>ordered = TRUE</code>. It would look like this (but will not work on this data, since the data is not ordinal):</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>cfa.fit <span class="ot">&lt;-</span> <span class="fu">cfa</span>(<span class="at">model =</span> HS.model,</span>
+<span id="cb10-2"><a href="#cb10-2"></a>               <span class="at">data =</span> HolzingerSwineford1939,</span>
+<span id="cb10-3"><a href="#cb10-3"></a>               <span class="at">estimator =</span> <span class="st">'WLSMV'</span>,</span>
+<span id="cb10-4"><a href="#cb10-4"></a>               <span class="at">ordered =</span> <span class="cn">TRUE</span></span>
+<span id="cb10-5"><a href="#cb10-5"></a>               )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We can calculate from people’s factor scores. Factor scores work like when you calculate the average of an instrument to correlate with others, but calculating averages has certain assumptions, while factor scores have others. So, to calculate the factor scores just use the following code.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>data_with_scores <span class="ot">&lt;-</span> <span class="fu">lavPredict</span>(</span>
+<span id="cb11-2"><a href="#cb11-2"></a>  cfa.fit,</span>
+<span id="cb11-3"><a href="#cb11-3"></a>  <span class="at">type =</span> <span class="st">"lv"</span>,</span>
+<span id="cb11-4"><a href="#cb11-4"></a>  <span class="at">method =</span> <span class="st">"EBM"</span>,</span>
+<span id="cb11-5"><a href="#cb11-5"></a>  <span class="at">label =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb11-6"><a href="#cb11-6"></a>  <span class="at">append.data =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb11-7"><a href="#cb11-7"></a>  <span class="at">optim.method =</span> <span class="st">"bfgs"</span></span>
+<span id="cb11-8"><a href="#cb11-8"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We see that in the variable <code>data_with_scores</code> the factor scores of each subject were calculated and these scores were added to their database.</p>
+</section><section id="references" class="level2" data-number="6.7"><h2 data-number="6.7" class="anchored" data-anchor-id="references">
+<span class="header-section-number">6.7</span> References</h2>
+<p>Aristodemou, M. E., Kievit, R. A., Murray, A. L., Eisner, M., Ribeaud, D., &amp; Fried, E. I. (2023). Common Cause Versus Dynamic Mutualism: An Empirical Comparison of Two Theories of Psychopathology in Two Large Longitudinal Cohorts. <em>Clinical Psychological Science</em>, 21677026231162814. <a href="https://doi.org/10.1177/21677026231162814" class="uri">https://doi.org/10.1177/21677026231162814</a></p>
+<p>Bartholomew, D. J. (1995). Spearman and the origin and development of factor analysis. <em>British Journal of Mathematical and Statistical Psychology</em>, <em>48</em>(2), 211-220. <a href="https://doi.org/10.1111/j.2044-8317.1995.tb01060.x" class="uri">https://doi.org/10.1111/j.2044-8317.1995.tb01060.x</a></p>
+<p>Bentler, P. M. (1990). Comparative fit indexes in structural models. <em>Psychological Bulletin</em>, <em>107</em>, 238–246. <a href="https://doi.org/10.1037/0033-2909.107.2.238" class="uri">https://doi.org/10.1037/0033-2909.107.2.238</a></p>
+<p>Bentler, P.M.,&amp; Bonett, D. G. (1980). Significance tests and goodness of fit in the analysis of covariance structures. <em>Psychological Bulletin</em>, <em>88</em>, 588–606. <a href="https://doi.org/10.1037/0033-2909.88.3.588" class="uri">https://doi.org/10.1037/0033-2909.88.3.588</a></p>
+<p>Bollen, K. A. (1989). <em>Structural equations with latent variables</em>. John Wiley &amp; Sons.</p>
+<p>Bonifay, W., &amp; Cai, L. (2017). On the complexity of item response theory models.&nbsp;<em>Multivariate behavioral research</em>, <em>52</em>(4), 465-484. <a href="https://doi.org/10.1080/00273171.2017.1309262" class="uri">https://doi.org/10.1080/00273171.2017.1309262</a></p>
+<p>Borsboom, D., &amp; Cramer, A. O. (2013). Network analysis: an integrative approach to the structure of psychopathology. <em>Annual review of clinical psychology</em>, <em>9</em>, 91-121. <a href="https://doi.org/10.1146/annurev-clinpsy-050212-185608" class="uri">https://doi.org/10.1146/annurev-clinpsy-050212-185608</a></p>
+<p>Epskamp, S., Maris, G., Waldorp, L. J., &amp; Borsboom, D. (2018). Network psychometrics. T<em>he Wiley handbook of psychometric testing: A multidisciplinary reference on survey, scale and test development</em>, 953-986. <a href="https://doi.org/10.1002/9781118489772.ch30" class="uri">https://doi.org/10.1002/9781118489772.ch30</a></p>
+<p>Franco, V. R., Bastos, R. V., &amp; Jiménez, M. (2023, June). <em>Tetrad Fit Index for Factor Analysis Models</em>. Paper presented at Virtual MathPsych/ICCM 2023. Via <a href="https://mathpsych.org/presentation/1297">mathpsych.org/presentation/1297</a>.</p>
+<p>Holzinger, K. J., &amp; Swineford, F. (1939). A study in factor analysis: The stability of a bi-factor solution. <em>Supplementary educational monographs</em>.</p>
+<p>Hu, L., &amp; Bentler, P. M. (1999). Cutoff criteria for fit indexes in covariance structure analysis: Conventional criteria versus new alternatives. <em>Structural Equation Modeling</em>, <em>6</em>, 1–55. <a href="https://doi.org/10.1080/10705519909540118" class="uri">https://doi.org/10.1080/10705519909540118</a></p>
+<p>Kan, K. J., de Jonge, H., van der Maas, H. L., Levine, S. Z., &amp; Epskamp, S. (2020). How to compare psychometric factor and network models. <em>Journal of Intelligence, 8</em>(4), 35. <a href="https://doi.org/10.3390/jintelligence8040035" class="uri">https://doi.org/10.3390/jintelligence8040035</a></p>
+<p>Kline, R. B. (2023). <em>Principles and practice of structural equation modeling</em>. Guilford publications.</p>
+<p>Kruis, J., &amp; Maris, G. (2016). Three representations of the Ising model. <em>Scientific reports</em>,&nbsp;<em>6</em>(1), 34175. <a href="https://doi.org/10.1038/srep34175" class="uri">https://doi.org/10.1038/srep34175</a></p>
+<p>McFarland, D. (2020). The effects of using partial or uncorrected correlation matrices when comparing network and latent variable models. <em>Journal of Intelligence</em>, <em>8</em>(1), 7. <a href="https://doi.org/10.3390/jintelligence8010007" class="uri">https://doi.org/10.3390/jintelligence8010007</a></p>
+<p>R Core Team (2023). <em>R: A Language and Environment for Statistical Computing</em>. R Foundation for Statistical Computing, Vienna, Austria. <a href="https://www.R-project.org/" class="uri">https://www.R-project.org/</a>.</p>
+<p>Rosseel, Y. (2012). lavaan: An R Package for Structural Equation Modeling. <em>Journal of Statistical Software</em>, <em>48</em>(2), 1-36. <a href="https://doi.org/10.18637/jss.v048.i02" class="uri">https://doi.org/10.18637/jss.v048.i02</a></p>
+<p>Schmittmann, V. D., Cramer, A. O., Waldorp, L. J., Epskamp, S., Kievit, R. A., &amp; Borsboom, D. (2013). Deconstructing the construct: A network perspective on psychological phenomena. <em>New ideas in psychology</em>, <em>31</em>(1), 43-53. <a href="https://doi.org/10.1016/j.newideapsych.2011.02.007" class="uri">https://doi.org/10.1016/j.newideapsych.2011.02.007</a></p>
+<p>Steiger, J. H.,&amp;Lind, J. C. (1980). Statistically based tests for the number of common factors. <em>Paper presented at the Annual Meeting of the Psychometric Society</em>, Iowa City, IA.</p>
+<p>Tucker, L. R., &amp; Lewis, C. (1973). A reliability coefficient for maximum likelihood factor analysis. <em>Psychometrika</em>, <em>38</em>, 1–10. <a href="https://doi.org/10.1007/BF02291170" class="uri">https://doi.org/10.1007/BF02291170</a></p>
+<p>Van Bork, R., Wijsen, L. D., &amp; Rhemtulla, M. (2017). Toward a causal interpretation of the common factor model. <em>Disputatio</em>, <em>9</em>(47), 581-601. <a href="https://doi.org/10.1515/disp-2017-0019" class="uri">https://doi.org/10.1515/disp-2017-0019</a></p>
+<p>Xia, Y., &amp; Yang, Y. (2019). RMSEA, CFI, and TLI in structural equation modeling with ordered categorical data: The story they tell depends on the estimation methods. <em>Behavior Research Methods</em>, <em>51</em>, 409-428. <a href="https://doi.org/10.3758/s13428-018-1055-2" class="uri">https://doi.org/10.3758/s13428-018-1055-2</a></p>
+<script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script><script>
+  kofiWidgetOverlay.draw('rafaelbastos', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support This',
+    'floating-chat.donateButton.background-color': '#5bc0de',
+    'floating-chat.donateButton.text-color': '#323842'
+  });
+</script>
+
+</section></main><!-- /main --><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script><script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    $(solveme[i]).after(" <span class='webex-icon'></span>");
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    $(selects[i]).after(" <span class='webex-icon'></span>");
+  }
+
+  update_total_correct();
+}
+
+</script><script>
+// open rdrr links externally ----
+
+var exlinks = document.querySelectorAll("a[href^='https://rdrr.io']");
+var exlink_func = function(){
+  window.open(this.href);
+  return false;
+};
+for (var i = 0; i < exlinks.length; i++) {
+    exlinks[i].addEventListener('click', exlink_func, false);
+}
+
+// visible second sidebar in mobile ----
+
+function move_sidebar() {
+  var toc = document.getElementById("TOC");
+  var small_sidebar = document.querySelector("#quarto-sidebar .sidebar-menu-container");
+  var right_sidebar = document.getElementById("quarto-margin-sidebar");
+
+  if (window.innerWidth < 768) {
+    small_sidebar.append(toc);
+  } else {
+    right_sidebar.append(toc);
+  }
+}
+move_sidebar();
+window.onresize = move_sidebar;
+</script><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./05-EFA.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Exploratory Factor Analysis</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./07-EGA.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Exploratory Graph Analysis</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">Bastos, R. V. S. (2024). Advances in Psychometric Theory and Measurement for Psychological Sciences: With Tutorials in R. Retrieved from https://github.com/rafavsbastos/psychometrics_book.</div>
+  </div>
+</footer>
+
+
+</body></html>

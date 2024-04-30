@@ -1,0 +1,170 @@
+# How to Validate Psychological Tests: A Step by Step Guide {#sec-guide}
+
+This chapter aims to help you understand the steps involved in constructing and validating psychological tests. As we know, psychological tests are important instruments for evaluating skills, behaviors and psychological traits. However, to ensure that tests are valid and reliable, it is necessary to follow a rigorous and systematic construction and validation process. This guide will provide an overview of the steps involved in creating and validating psychological tests. I hope this 11-step guide gives you a thorough understanding of the process of creating and validating psychological tests and helps you develop high-quality instruments to assess psychological skills and traits.
+
+## Define the Objective of the Test
+
+The test objective must be clearly defined before the test construction process begins. To do this, you must have the following questions in mind: What do you want to evaluate? What are the behaviors, skills or psychological traits that we intend to measure? Why are you trying to measure this? What are the theoretical and practical implications of having a measure of this?
+
+These questions are crucial to have guidance on where to start looking, researching, and immersing yourself in the subject. Sometimes we want to develop an instrument out of necessity. For example, in one research, I developed an instrument to measure how much people felt they suffered prejudice and discrimination. Why did I create this instrument? 1. I wanted to study the impact of this phenomenon on people's self-esteem and well-being, so, as this instrument didn't exist yet, I had to create it. 2. Because studying this subject was important to me. As I always say, we put a little bit of ourselves into the research, and the choice of the topic came from me for a reason. So, you can use some justifications for creating instruments. The need to measure why it will impact X, Y or Z and a shortage of instruments is the most common.
+
+## Literature Review
+
+At this stage, a literature review must be carried out to verify which measurement instruments exist that assess the same construct or psychological trait, in order to avoid duplication of efforts. You can follow some tips, such as:
+
+1. Select relevant databases: it is important to search for articles in relevant databases in the area of interest, such as PsycINFO, Scopus, Web of Science, Scielo, PubMed, among others.
+2. Use appropriate keywords: it is important to use keywords appropriate to the area of interest to obtain more accurate results. Some examples of keywords are “psychological instrument”, “validation”, “psychometrics”, “construction”, “scale”, among others.
+3. Carry out a systematic search: it is important to carry out a systematic search for articles, following a pre-defined strategy, such as the use of Boolean operators (AND, OR) and the inclusion or exclusion of specific terms. In other words, when you search for a racism instrument, you will use “scale” AND “racism” OR “validation” AND “racism”, and so on. Using these operators makes a filter in article search engines. They will select when the two words appear together (AND) or when there is one or the other word (OR).
+4. Analyze the search results: it is important to analyze the articles found and identify the instruments already validated and used in the area of interest, as well as the gaps and limitations of existing instruments. Furthermore, it is important to read and evaluate the selected articles to see the methodological quality of the studies, the validity and reliability of the instruments used and the authors' conclusions.
+5. Synthesize the information: it is important to synthesize the information obtained in a narrative review or in a table that presents the characteristics of the identified instruments, such as the construct assessed, the target population, the number of items, fit indices, number of factors , among other relevant information.
+
+## Should I Build or Adapt an Instrument?
+
+The decision to build or adapt a psychological instrument depends on several factors, such as the research objectives, the characteristics of the target population, the construct or variable to be evaluated, the cultural and linguistic context, among others.
+
+When to build a psychological instrument:
+
+- When there is no validated instrument for the construct or variable of interest;
+- When the target population you want to measure presents specific characteristics that are not covered by existing instruments;
+- When the construct or variable of interest is multidimensional and existing instruments do not cover all relevant dimensions;
+- When a specific approach or theory is sought to evaluate the construct or variable of interest.
+
+When adapting a psychological instrument:
+
+- When there is already a validated instrument for the theoretical construct you thought of or variable of interest, but it was developed in another language or culture;
+- When the intention is to use an instrument validated in another language or culture, but it is necessary to make adaptations to guarantee semantic, conceptual, cultural and linguistic equivalence;
+
+It is important to highlight that the adaptation of a psychological instrument requires specific methodological care to guarantee semantic, conceptual, cultural and linguistic equivalence, in addition to verifying the validity and reliability of the adapted instrument. The construction of a psychological instrument requires a solid theoretical and empirical foundation to guarantee the validity and reliability of the constructed instrument.
+
+## Which Model Should I Choose?
+
+This is also a crucial step, which is almost never thought of when building a psychological instrument. When we do a test, we will apply this test to a specific model. For example, we have the factor model (which is most commonly used to develop instruments), principal components, the network model, the latent profile model, and so on.
+
+I want you to think critically while building the instrument. Before applying a test to a model, you must think about which model you want to test your data on, and only then test the model.
+
+## Think About How the Participant Will Answer the Questionnaire
+
+Another crucial step, which is almost never thought of when building a psychological instrument, is the questionnaire response scale. For example, when presenting the item, should the participant select only one option? Should you order the options? And so on.
+
+We have some possible response scales that are important to mention.
+
+1. Likert scales: on this scale, participants select the degree of agreement or disagreement with a given statement. For example, a Likert scale can be used to assess how much the person agrees with the item “I am a communicative person.”, with the options: completely agree, partially agree, neither agree nor disagree, partially disagree, completely disagree.
+
+2. Forced-Choice: The researcher offers the respondent, for example, three or four response options (items) organized into blocks. Then, the participant must order the items according to what is most frequent (within that block) and least frequent. Therefore, you will have a hierarchy of what represents that person most.
+
+3. Expanded Format: It is a mix of the Likert format and the forced-choice format. You present, for example, 5 answer options, where the participant must select only one. However, instead of being in degree of agreement, each gradation is a specific item, which varies in degree of intensity. For example.
+
+    1.  I hate other people.
+    2.  I don't like other people.
+    3.  I do not like or dislike other people.
+    4.  I generally like other people.
+    5.  I love others'.
+
+4. Frequency scale: on this scale, participants select the frequency with which a certain behavior, thought or feeling occurs. For example, a frequency scale can be used to assess how often someone has experienced a certain symptom in the last seven days, with the options: never, rarely, sometimes, often, always.
+
+5. Semantic Differential: The format of a semantic differential scale is usually presented in the form of a vertical line, where the concept in question is placed in the middle of the line. At each end of the line, opposite adjectives are presented, such as "good" and "bad", "positive" and "negative", "strong" and "weak", among others. The participant is asked to mark a point on the vertical line that best represents their attitude towards the concept in question, according to the position of the opposing adjectives.
+
+For example, in a psychological test that assesses attitudes towards school, a semantic differential scale can be used, presenting the word "school" in the middle of the line and the adjectives "fun" and "boring" at the ends. The participants would be asked to mark a point on the vertical line that best represents their opinion of the school.
+
+## Item Construction
+
+Based on the definition of the test objective and the literature review, a series of items must be constructed that assess the psychological construct or trait that is intended to be measured. It is important that the items are clear, precise and relevant to the objective of the test. I'll talk about some item construction tips below.
+
+1. Create items that can be answered by all participants you will collect: Items must be formulated in such a way that they can be answered by all participants, regardless of their educational or cultural background. Therefore, always keep in mind the sample you are going to collect, otherwise you may be biasing the instrument towards one group compared to another.
+     a. Consider cultural sensitivity: When formulating items, take cultural differences into account and avoid including questions that may be offensive or inappropriate for certain groups.
+2. Enter only one idea per item. Sometimes, I have dealt with items that wanted to measure extroversion and agreeableness at the same time, and this is very confusing when responding, in addition to confusing the interpretation of the scores. See the example of the item “I am a communicative person, who likes to help others.”. If the person agrees with this item, they may agree with “being communicative”, “helping others” or both. And how do we interpret this? There's not much of a way. This will also mess with the respondent's head. Anyway, avoid it!
+3. Use clear and simple language: Items should be written in a clear and easy-to-understand way for participants, without complicated and technical words (such as, undoubtedly; etc.) or jargon. Use slang only if it is appropriate for the target population.
+     a. Within this suggestion there is a suggestion that is a maxim of psychometrics. Avoid using the word “No” as much as possible (for example, instead of using “I’m not sad”, use the antonym “I’m happy”). This is because a negative is more difficult to understand than a more direct item.
+4. Avoid suggestive or biased questions: items should not suggest an answer or include words that could lead the participant to a specific answer.
+5. Do not use adverbs of intensity, as this can make the item more difficult to agree or disagree with in an artificial way. For example, instead of using “I really like Black Sabbath”, just use “I like Black Sabbath”. See, if a person completely agrees with the item “I like Black Sabbath”, it means they like it a lot. If she responds that she disagrees with the item “I really like Black Sabbath”, she may still like Black Sabbath, but she doesn't agree that she likes it that much.
+6. Include control items or "gotchas": To ensure that participants are paying attention and are not simply choosing random answers, include items that check whether they are carefully reading the questions. For example, use the item “Mark alternative 5 on the response scale”.
+7. Vary the content of the items: Items should cover a variety of content or aspects of the construct being measured in order to obtain a more comprehensive measure. So, when measuring extroversion, you don't want to measure just the number of times the person speaks, that is, that they are communicative. You can measure things like feeling better about social interactions, frequency of social interactions, and so on.
+     a. Include negative items: Include items that assess both positive and negative behaviors in order to obtain a more complete and accurate measure of the construct being measured. In other words, if we think about extroversion: add items that the more the person agrees with, the greater their extroversion (such as “I like going out with large groups of people”); and also items that the more the person agrees with, the lower their extroversion (such as “I avoid leaving the house with people I don’t know”).
+8. Perform an item analysis: After constructing the items, perform an item analysis to determine whether they are consistent with the underlying theory of the construct being measured and whether they are correlated with other items in a coherent manner.
+9. Consider the extent of the test: take into account the extent of the test and the time required for its application, seeking to create an instrument that is sufficiently comprehensive and can be applied in a reasonable time.
+
+## Judges' Assessment and Item Writing
+
+The evaluation of judges is an important stage in the process of constructing a psychological instrument. This assessment involves the review of the instrument's items by subject matter experts, with the aim of identifying possible problems or limitations of the items.
+
+To carry out this assessment, it is recommended to follow the following steps:
+
+1. Selection of judges: select a group of experts on the subject, who have theoretical knowledge and/or practical experience in the area of the construct being measured.
+2. Submission of items: send the instrument items to the judges, along with instructions for evaluating and defining the construct you are measuring.
+3. Item evaluation: ask the judges to evaluate the instrument's items, checking whether they are clear, objective, relevant and suitable for measuring the construct being evaluated.
+4. Judges' feedback: request that judges provide detailed feedback on the instrument's items, indicating which items need to be modified or deleted, as well as which items could be added to improve the construct measurement.
+5. Analysis of results: analyze the results of the judges' evaluation and use the information obtained to make adjustments to the instrument's items. There are some statistical analyzes that can be used to evaluate the agreement between judges in the evaluation stage of the items of a psychological instrument. Some of these analyzes include:
+     1. Content Validity Coefficient (CVC): the CVC is a statistical index that measures the agreement between judges regarding the content validity of the items. This coefficient is calculated based on the judges' assessment of the following categories: (a) clarity of language (which consists of analyzing the language used in the items, taking into account the characteristics of the responding population); (b) practical relevance (which aims to assess whether the item is in fact important for the instrument); and (c) theoretical relevance, which involves analyzing the association between the item and the theory. It ranges from 0 to 1, with higher values indicating greater agreement between judges.
+     2. Item Validity Index (IVI): IVI is an index that measures agreement between judges regarding the validity of items. It also varies from 0 to 1, with higher values indicating greater agreement between judges.
+     3. Intraclass Correlation Coefficient (ICC): the ICC is an index that measures the agreement between judges in relation to the answers given by participants in the instrument. It ranges from -1 to 1, with higher values indicating greater agreement between judges.
+     4. Fleiss Kappa Coefficient: Fleiss Kappa is an index that measures the agreement between judges in relation to the answers given by participants in categorical items. It ranges from 0 to 1, with higher values indicating greater agreement between judges.
+
+It is important that you, as the responsible researcher, carry out a careful analysis of the results of the judges' evaluation, comparing the judges' responses and identifying the points where there is agreement or disagreement. Furthermore, you must take into account the feedback provided by the judges and make the necessary adjustments to the instrument, always considering the ethical and professional guidelines in force. When possible, rewrite the items as recommended by the evaluators.
+
+## Target Population Assessment
+
+The evaluation of a psychological instrument with the target population is a fundamental step in the instrument validation process. This evaluation aims to test whether the instrument is understandable, relevant and reliable for the population it is intended to evaluate.
+
+To carry out this assessment, I suggest the following steps:
+
+1. Define the sample: define the sample of participants who will be invited to participate in the study. This sample must be representative of the target population of the instrument and must be large enough to guarantee the statistical validity of the results.
+2. Select participants: select participants according to the previously established inclusion and exclusion criteria. It is important to ensure that selected participants are able to understand and respond to the instrument. To do this, you can show the instrument during an interview, which will make you available to answer any questions you may have.
+3. Ask the representative sample questions about the phenomenon you want to build an instrument for. Create an interview guide that seeks to verify the suitability of that construct for that target population. For example, you may want to measure racism suffered by black people, which is probably different from the racism suffered by indigenous people, and so on. Therefore, try to better understand how that construct works for the target population you thought of. If nothing is in line with what you thought, I recommend you review your theory and your instrument. Always listen to your participants!
+4. Ask participants if they understood the items, and if there is any doubt, flag the item, explain what you meant and ask what the best way would be  to ask that question to that population.
+
+##  Internal Structure Assessment: Training Stage
+
+1. This step will collect new data, as it aims to test whether the theoretical structure holds in your data. The evaluation of the internal structure of a psychological instrument is a process that aims to identify and verify the consistency of the dimensions or factors underlying the construct or variable of interest. This is a crucial step in validating an instrument.
+
+Here, you will send your instrument to your sample, and ask them to respond to the scale you built. Of course, this step serves some specific models, including the unrestricted common factor model, principal component analysis and latent profile analysis.
+
+1. First, you will estimate the dimensionality: either through parallel analysis, Exploratory Graph Analysis, or Eigenvalue > 1 (I don't recommend the latter). In latent profile analysis you will adhere to other methods and heuristics. They usually do trial and error, adding a factor and testing the fit of the model.
+2. Once you know the number of dimensions, you will apply Exploratory Factor Analysis or other Exploratory Graph Analysis methods, or Latent Profile Analysis. Here, the aim is to see the relationship of the item with the construct (i.e., to see the factor or component loadings and where the items clustered [in the case of the factor and principal components model]; or to see the probability of the item belong to a certain class [in the case of latent profiles]).
+3. The third stage involves refining the instrument. To do this, you will delete bad items:
+a. Those who presented low loads/probabilities of belonging;
+b. exclude items that have high response bias, if you have collected data to do so;
+c. exclude item that has many loadings or crossed probabilities, that is, it has loadings or probabilities of belonging to more than one factor at the same time
+d. Exclude items that were not grouped into factors in a pertinent way.
+4. Finally, you evaluate the possibility of rewriting any bad items
+
+##  Internal Structure Assessment: Validation Stage
+
+In this step, you will collect new data to verify that the results of the training step replicate in a new sample, the validation sample. See, in this case, training and validation is a term used in other areas of knowledge, such as machine learning. So, the term validation here is not the same as validation in psychology.
+
+Data collection should be in the same way as the previous step, with some minimal adjustments. In general, adjustments should be made to remove more noise from the data. Such as making small adjustments to bad items when possible, or improving the way you collect.
+
+Anyway, here you will apply Confirmatory Factor Analysis, with the theoretical and empirical structure in mind. If the empirical structure from the previous step is different from the structure you theorized, you can see the difference between the fit indices. Just be careful because if the model is not nested, the models are not directly comparable.
+
+In the case of other models, such as principal components, latent profiles and networks, this sample serves the same purpose: checking whether the results are replicated. You just won't apply a Confirmatory Factor Analysis.
+
+##  Other Evidence of Validity
+
+Here, you will collect new data to check three types of validity (you can do 1 study for the following validities, or 1 study for each validity below. It's up to you).
+
+1. Convergent Validity: Convergent validity refers to the extent to which an instrument is correlated with other measures that theoretically should be related to the construct being measured. To do this, you will collect data to check if your instrument correlates with other scales that measure THE SAME THING as you; and collect data from other instruments that measure things that should be correlated but are different constructs. Example: Consider an instrument that was developed to measure social anxiety in adolescents. To assess convergent validity, you can apply the instrument together with other previously validated social anxiety measures, in addition to applying Life Satisfaction and Neuroticism instruments. If scores on the new instrument are highly correlated with scores on already validated measures, this suggests that the instrument has high convergent validity.
+
+2. Divergent Validity: Divergent validity refers to the extent to which an instrument is not correlated with other measures that theoretically should not be related to the construct being measured. In other words, the lower the correlations between the instrument and other unrelated measures, the greater the divergent validity. Continuing with the example above, the researcher can assess the divergent validity of the instrument by measuring its correlation with measures that should not be related to social anxiety, such as the professional interests scale or the racism scale. If scores on the new instrument are not correlated with scores on these measures, this suggests that the instrument has high divergent validity.
+
+##  Extra Observations
+
+Equity: It is important to ensure that the test is equitable in relation to differences between some groups, such as cultural, gender, education, socioeconomic equity, etc. This may include adapting items for different groups or carefully evaluating the effects of sensitive group items. One way to do this is to exclude items that may be more difficult for a given gender or to check the equity of scores between genders through invariance analysis. Another example is using items that do not depend on specific prior knowledge or financial resources. Furthermore, when the test is administered in different languages, it is important to ensure that the translation is accurate and that linguistic differences between languages do not affect the results.
+
+Reliability: The reliability of the test must be rigorously evaluated, so that the results are consistent and reliable, whether over time, or between different evaluators, or even in a single application. Examples of single-application reliability analysis are Cronbach's Alpha, McDonald's Omega, Greatest Lower Bound, H Coefficient, and so on.
+
+Accessibility: Accessibility of psychological tests is an important concern, and it is necessary to ensure that tests are accessible to people with physical or sensory disabilities.
+
+Examination of response bias: Participants may respond in a biased or desirable manner on a psychological test, which can affect the validity of the results. It is important to examine response bias in a test and take steps to minimize it, such as including control items or reversed items.
+
+Well, I must point out that there may be more data collection involved, especially if the structure of the instrument is not so easy to find or if you want to consider these extra points. Additionally, you can further refine the instrument, if necessary, through Item Response Theory (when this model applies, among others).
+
+```{=html}
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('rafaelbastos', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support This',
+    'floating-chat.donateButton.background-color': '#5bc0de',
+    'floating-chat.donateButton.text-color': '#323842'
+  });
+</script>
+```
