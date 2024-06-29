@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.555">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="description" content="This is an educational resource, with content at the cutting edge of scientific knowledge. It aims to improve future research, by improving researchers knowledge in the statistical inferences made, planning better experiments and analyzing scientific research being carried out with more rigor and transparency.">
 <title>Advances in Psychometric Theory and Measurement for Psychological Sciences - 6&nbsp; Confirmatory Factor Analysis</title>
@@ -20,7 +20,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -80,7 +80,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -89,12 +95,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><script src="site_libs/kePrint-0.0.1/kePrint.js"></script><link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><link rel="stylesheet" href="include/booktem.css">
+}</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J4R1E10GWR"></script><script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-J4R1E10GWR', { 'anonymize_ip': true});
+</script><script src="site_libs/kePrint-0.0.1/kePrint.js"></script><link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script><link rel="stylesheet" href="include/booktem.css">
 <link rel="stylesheet" href="include/style.css">
 <link rel="stylesheet" href="include/webex.css">
 <meta name="twitter:title" content="Advances in Psychometric Theory and Measurement for Psychological Sciences - 6&nbsp; Confirmatory Factor Analysis">
@@ -107,25 +145,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-CFA.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Confirmatory Factor Analysis</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-CFA.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Confirmatory Factor Analysis</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
   </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Advances in Psychometric Theory and Measurement for Psychological Sciences</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/rafavsbastos/psychometrics_book" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/rafavsbastos/psychometrics_book" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
       <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -234,7 +272,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
     </ul>
 </div>
-</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
@@ -253,7 +291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
   <li><a href="#how-to-run-a-confirmatory-factor-analysis-in-r." id="toc-how-to-run-a-confirmatory-factor-analysis-in-r." class="nav-link" data-scroll-target="#how-to-run-a-confirmatory-factor-analysis-in-r."><span class="header-section-number">6.6</span> How to Run a Confirmatory Factor Analysis in R.</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.7</span> References</a></li>
-  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/rafavsbastos/psychometrics_book/edit/master/06-CFA.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/rafavsbastos/psychometrics_book/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/rafavsbastos/psychometrics_book/blob/master/06-CFA.qmd" class="toc-action">View source</a></p></div></div></nav>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/rafavsbastos/psychometrics_book/edit/master/06-CFA.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rafavsbastos/psychometrics_book/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/rafavsbastos/psychometrics_book/blob/master/06-CFA.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
@@ -269,6 +307,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     
   </div>
   
+
 
 </header><p>In this text, I will present the fundamentals of the Confirmatory Factor Analysis (CFA), and how it works, and we will compare CFA with Exploratory Factor Analysis.</p>
 <section id="what-is-it-and-when-do-we-apply-confirmatory-factor-analysis" class="level2" data-number="6.1"><h2 data-number="6.1" class="anchored" data-anchor-id="what-is-it-and-when-do-we-apply-confirmatory-factor-analysis">
@@ -327,30 +366,40 @@ E(\delta_j) = 0
 <p>We can think <span class="math inline">\(\eta_1\)</span> as an extroversion latent variable and <span class="math inline">\(\eta_2\)</span> as a neuroticism latent variable, where the first column of <span class="math inline">\(\lambda\)</span>’s are factor loadings (the direct structural relation between a latent and observed variable; may be viewed as regression coefficients) for extroversion, and the second column are factor loadings for neuroticism. The double subscript of <span class="math inline">\(\lambda_{i,j}\)</span> represent the row (item) and column (latent variable) positions. A zero in <span class="math inline">\(\lambda\)</span> represent that the corresponding observed variable is not influenced by the latent variable in that column.</p>
 </section><section id="differences-between-saturatedunrestricted-model-and-restricted-model" class="level2" data-number="6.3"><h2 data-number="6.3" class="anchored" data-anchor-id="differences-between-saturatedunrestricted-model-and-restricted-model">
 <span class="header-section-number">6.3</span> Differences Between Saturated/Unrestricted Model and Restricted Model</h2>
-<p>The EFA model can be called the saturated/unrestricted model. This is because all latent dimensions explain the variation in all items, as exemplified in the image below (<a href="#fig-efae">Figure&nbsp;<span>6.1</span></a>).</p>
+<p>The EFA model can be called the saturated/unrestricted model. This is because all latent dimensions explain the variation in all items, as exemplified in the image below (<a href="#fig-efae" class="quarto-xref">Figure&nbsp;<span>6.1</span></a>).</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="fig-efae" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure"><p><img src="06-CFA_files/figure-html/fig-efae-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;6.1: Exploratory Factor Analysis Model</figcaption></figure>
+<div id="fig-efae" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-efae-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="06-CFA_files/figure-html/fig-efae-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-efae-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.1: Exploratory Factor Analysis Model
+</figcaption></figure>
 </div>
 </div>
 </div>
-<p>As for the CFA, we can call it the Restricted Model, that is, we impose some restrictions on the model, for example, not having cross-loadings of a factor with items from another factor. The restricted model is exemplified in the image below (<a href="#fig-cfa">Figure&nbsp;<span>6.2</span></a>).</p>
+<p>As for the CFA, we can call it the Restricted Model, that is, we impose some restrictions on the model, for example, not having cross-loadings of a factor with items from another factor. The restricted model is exemplified in the image below (<a href="#fig-cfa" class="quarto-xref">Figure&nbsp;<span>6.2</span></a>).</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="fig-cfa" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure"><p><img src="06-CFA_files/figure-html/fig-cfa-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;6.2: Confirmatory Factor Analysis Model.</figcaption></figure>
+<div id="fig-cfa" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-cfa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="06-CFA_files/figure-html/fig-cfa-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cfa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.2: Confirmatory Factor Analysis Model.
+</figcaption></figure>
 </div>
 </div>
 </div>
-<p>Of course, there are some practical differences between one model and another. The first is that, generally, the output of the factor loadings from a CFA is different from the EFA. While in EFA we have cross loads on all factors, in the CFA some loadings are set at 0 (<a href="#tbl-floa">Table&nbsp;<span>6.1</span></a>).</p>
+<p>Of course, there are some practical differences between one model and another. The first is that, generally, the output of the factor loadings from a CFA is different from the EFA. While in EFA we have cross loads on all factors, in the CFA some loadings are set at 0 (<a href="#tbl-floa" class="quarto-xref">Table&nbsp;<span>6.1</span></a>).</p>
 <div class="cell">
+<div id="tbl-floa" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure"><figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-floa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.1: Factor Loadings of a CFA.
+</figcaption><div aria-describedby="tbl-floa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="tbl-floa" class="anchored">
-<table class="table table-striped table-sm small" data-quarto-postprocess="true">
-<caption>Table&nbsp;6.1: Factor Loadings of a CFA.</caption>
+<table class="table table-striped do-not-create-environment cell caption-top table-sm small" data-quarto-postprocess="true">
 <thead><tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">Items</th>
 <th style="text-align: center;" data-quarto-table-cell-role="th">Factor 1</th>
@@ -390,16 +439,18 @@ E(\delta_j) = 0
 </tbody>
 </table>
 </div>
-
-
+</div>
+</figure>
 </div>
 </div>
-<p>I made <a href="#tbl-diff">Table&nbsp;<span>6.2</span></a> that shows the differences between the unrestricted model (EFA) and the restricted model (CFA).</p>
+<p>I made <a href="#tbl-diff" class="quarto-xref">Table&nbsp;<span>6.2</span></a> that shows the differences between the unrestricted model (EFA) and the restricted model (CFA).</p>
 <div class="cell">
+<div id="tbl-diff" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure"><figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-diff-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.2: Differences Between EFA and CFA.
+</figcaption><div aria-describedby="tbl-diff-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="tbl-diff" class="anchored">
-<table class="table table-striped table-sm small" data-quarto-postprocess="true">
-<caption>Table&nbsp;6.2: Differences Between EFA and CFA.</caption>
+<table class="table table-striped do-not-create-environment cell caption-top table-sm small" data-quarto-postprocess="true">
 <thead><tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
 <th style="text-align: center;" data-quarto-table-cell-role="th">EFA</th>
@@ -454,8 +505,8 @@ E(\delta_j) = 0
 </tbody>
 </table>
 </div>
-
-
+</div>
+</figure>
 </div>
 </div>
 <p>We see in the table above that, for the confirmatory factor analysis, we need to have a defined hypothesis, that is, there must be a theory behind that will directly guide our analyses, we cannot just keep exploring without a proper justification. This is a little different from EFA, which has a theory behind the structure, but you test whether this structure will be corroborated in the data (through parallel analysis and the like). Of course, in EFA we can extract the factors based on theory, which, in a way, would resemble CFA in terms of the hypothesis guiding the analysis directly.</p>
@@ -463,12 +514,14 @@ E(\delta_j) = 0
 </section><section id="model-identification" class="level2" data-number="6.4"><h2 data-number="6.4" class="anchored" data-anchor-id="model-identification">
 <span class="header-section-number">6.4</span> Model Identification</h2>
 <p>We have to deal with a “problem” called model identification when we talk about a restricted model (Bollen, 1989). In other words, we need our data to have enough “information” to be able to do the necessary statistics.</p>
-<p>Imagine if we were to estimate a one-factor model with 4 items (for example, estimating depression with a 4-item questionnaire). We therefore estimate 4 factor loadings (one per item), 4 residues (one per item), that is, we have 8 “information” to be discovered/estimated. The information we actually have is the item scores (for example, people’s scores on items Item1, Item2, Item3, Item4) and the correlation between them. Count the cells of the correlation matrix between 4 items in <a href="#tbl-corr">Table&nbsp;<span>6.3</span></a>.</p>
+<p>Imagine if we were to estimate a one-factor model with 4 items (for example, estimating depression with a 4-item questionnaire). We therefore estimate 4 factor loadings (one per item), 4 residues (one per item), that is, we have 8 “information” to be discovered/estimated. The information we actually have is the item scores (for example, people’s scores on items Item1, Item2, Item3, Item4) and the correlation between them. Count the cells of the correlation matrix between 4 items in <a href="#tbl-corr" class="quarto-xref">Table&nbsp;<span>6.3</span></a>.</p>
 <div class="cell">
+<div id="tbl-corr" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure"><figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-corr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.3: Correlation Table Between Items1 to Item4.
+</figcaption><div aria-describedby="tbl-corr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="tbl-corr" class="anchored">
-<table class="table table-sm table-striped small">
-<caption>Table&nbsp;6.3: Correlation Table Between Items1 to Item4.</caption>
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
 <thead><tr class="header">
 <th style="text-align: left;"></th>
 <th style="text-align: left;">Item1</th>
@@ -508,6 +561,8 @@ E(\delta_j) = 0
 </tbody>
 </table>
 </div>
+</div>
+</figure>
 </div>
 </div>
 <p>Thus, we have 4 scores + 6 correlations = 10 pieces of information. In other words, with 4 items we can estimate the 8 pieces of factor loadings and residues since we have 10 pieces of information in our hands. Following this logic, it is easy to see that, in order to be able to identify the model, the minimum number of items is 3 items per latent factor. See, in a unifactorial model with 3 items, we will estimate 3 factor loadings + 3 residues = 6 necessary information. We have information for 3 items + 3 correlations = 6 information in our sleeve. So we will have 0 degrees of freedom (DF).</p>
@@ -1200,6 +1255,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
   }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
   const toggleColorMode = (alternate) => {
     // Switch the stylesheets
     const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
@@ -1266,13 +1348,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -1351,10 +1435,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1364,8 +1465,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1377,7 +1487,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1421,6 +1654,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1446,6 +1680,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1505,12 +1765,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
-      <a href="./05-EFA.html" class="pagination-link">
+      <a href="./05-EFA.html" class="pagination-link" aria-label="Exploratory Factor Analysis">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Exploratory Factor Analysis</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./07-EGA.html" class="pagination-link">
+      <a href="./07-EGA.html" class="pagination-link" aria-label="Exploratory Graph Analysis">
         <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Exploratory Graph Analysis</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -1522,8 +1782,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
-    <div class="nav-footer-right">Bastos, R. V. S. (2024). Advances in Psychometric Theory and Measurement for Psychological Sciences: With Tutorials in R. Retrieved from https://github.com/rafavsbastos/psychometrics_book.</div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rafavsbastos/psychometrics_book/edit/master/06-CFA.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rafavsbastos/psychometrics_book/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/rafavsbastos/psychometrics_book/blob/master/06-CFA.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Bastos, R. V. S. (2024). Advances in Psychometric Theory and Measurement for Psychological Sciences: With Tutorials in R. https://doi.org/10.5281/zenodo.11094831.</p>
+</div>
   </div>
 </footer>
 

@@ -34,7 +34,7 @@
 
 > How hard to be just what we are and see nothing but the visible! (Fernando Pessoa)
 
-Understanding the numerical representation of psychological constructs is essential for advancing the field of psychology. Classical measurement techniques provide a structured framework for assessing complex human behaviors and mental processes. By employing numerical representations, researchers can enhance the validity of their studies, leading to more accurate interpretations and meaningful insights into human cognition and behavior. In this blog post, I will tell you why we should care about measurement theory in psychology by telling you about:
+Understanding the numerical representation of psychological constructs is essential for advancing the field of psychology. Classical measurement techniques provide a structured framework for assessing complex human behaviors and mental processes. By employing numerical representations, researchers can enhance the validity of their studies, leading to more accurate interpretations and meaningful insights into human cognition and behavior. In this chapter, I will tell you why we should care about measurement theory in psychology by telling you about:
 - Psychometrics objective;
 - History of measurement;
 - How to move forward and define a quantity in psychology;

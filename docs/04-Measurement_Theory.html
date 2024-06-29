@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -85,7 +85,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -94,14 +100,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J4R1E10GWR"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-J4R1E10GWR', { 'anonymize_ip': true});
+</script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="include/booktem.css">
 <link rel="stylesheet" href="include/style.css">
@@ -119,12 +162,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04-Measurement_Theory.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Measurement Theory: Why it is Possible to Measure Psychological Phenomena</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04-Measurement_Theory.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Measurement Theory: Why it is Possible to Measure Psychological Phenomena</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -134,7 +177,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
@@ -142,7 +185,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Advances in Psychometric Theory and Measurement for Psychological Sciences</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/rafavsbastos/psychometrics_book" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/rafavsbastos/psychometrics_book" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
       <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -252,7 +295,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -273,7 +316,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#the-direct-test-of-conjoint-measurement-axioms" id="toc-the-direct-test-of-conjoint-measurement-axioms" class="nav-link" data-scroll-target="#the-direct-test-of-conjoint-measurement-axioms"><span class="header-section-number">4.6</span> The Direct Test of Conjoint Measurement Axioms</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.7</span> References</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/rafavsbastos/psychometrics_book/edit/master/04-Measurement_Theory.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/rafavsbastos/psychometrics_book/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/rafavsbastos/psychometrics_book/blob/master/04-Measurement_Theory.qmd" class="toc-action">View source</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/rafavsbastos/psychometrics_book/edit/master/04-Measurement_Theory.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rafavsbastos/psychometrics_book/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/rafavsbastos/psychometrics_book/blob/master/04-Measurement_Theory.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -293,7 +336,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
+
 
 <blockquote class="blockquote">
 <p>Sometimes, on days of perfect and exact light,</p>
@@ -346,7 +391,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <blockquote class="blockquote">
 <p>How hard to be just what we are and see nothing but the visible! (Fernando Pessoa)</p>
 </blockquote>
-<p>Understanding the numerical representation of psychological constructs is essential for advancing the field of psychology. Classical measurement techniques provide a structured framework for assessing complex human behaviors and mental processes. By employing numerical representations, researchers can enhance the validity of their studies, leading to more accurate interpretations and meaningful insights into human cognition and behavior. In this blog post, I will tell you why we should care about measurement theory in psychology by telling you about: - Psychometrics objective; - History of measurement; - How to move forward and define a quantity in psychology; - The additive conjoint measurement framework; - If Rasch Modeling Entail Measurement; - Provide the tools to test measurement axioms.</p>
+<p>Understanding the numerical representation of psychological constructs is essential for advancing the field of psychology. Classical measurement techniques provide a structured framework for assessing complex human behaviors and mental processes. By employing numerical representations, researchers can enhance the validity of their studies, leading to more accurate interpretations and meaningful insights into human cognition and behavior. In this chapter, I will tell you why we should care about measurement theory in psychology by telling you about: - Psychometrics objective; - History of measurement; - How to move forward and define a quantity in psychology; - The additive conjoint measurement framework; - If Rasch Modeling Entail Measurement; - Provide the tools to test measurement axioms.</p>
 <section id="the-objective-of-psychometrics" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="the-objective-of-psychometrics"><span class="header-section-number">4.1</span> The Objective of Psychometrics</h2>
 <p>Psychometrics is the branch of psychology that is concerned with quantifying and measuring mental attributes, behavior, performance, feelings, and the like. However, psychometrics does not shy away from criticism. As explained by Sijtsma (2012), on the one hand, we have Michell (2000, 2004, 2008) and Kyngdon (2008a, 2008b), who take the position that psychometrics is inadequate for measuring psychological attributes and should be replaced by the additive conjoint measurement (Luce &amp; Tukey, 1964). Still, according to Sijtsma (2012), this perspective requires much of contemporary psychology: its serious implementation would bring psychological research to pause. However, what is the problem with stopping psychological research to improve further such research?</p>
@@ -446,11 +491,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>the Archimedean condition;</p></li>
 </ol>
 <p>Suppose <span class="math inline">\(P\)</span> is performance on some task (say, the time it takes to run a maze), <span class="math inline">\(𝐴\)</span> is motivation, and <span class="math inline">\(𝑋\)</span> is the amount of prior practice. Of course, it would be a simple matter to order the performances and classify subjects according to motivation (e.g., duration of food or water deprivation) and number of previous practice attempts.</p>
-<p>Such conjoint systems are easily visually contemplated if they are thought of as composing a matrix where the rows are values of <span class="math inline">\(A\)</span>, the columns, values of 𝑋, and the cells, values of <span class="math inline">\(𝑃\)</span>. Let <span class="math inline">\(𝑎\)</span>, <span class="math inline">\(𝑏\)</span>, <span class="math inline">\(𝑐\)</span>,… etc. be values of <span class="math inline">\(𝐴\)</span>, <span class="math inline">\(𝑥\)</span>, <span class="math inline">\(𝑦\)</span>, <span class="math inline">\(𝑧\)</span>,… etc. be values of <span class="math inline">\(𝑋\)</span> and, since <span class="math inline">\(𝑃 = 𝑓(𝐴, 𝑋)\)</span>, the pairs, <span class="math inline">\(𝑎𝑥\)</span>, <span class="math inline">\(𝑎𝑦\)</span>,… , <span class="math inline">\(𝑐𝑦\)</span>, <span class="math inline">\(c𝑧\)</span>,… denote (possibly identical) values of <span class="math inline">\(P\)</span>. Such a matrix is schematically represented by <a href="#fig-conjoint">Figure&nbsp;<span>4.1</span></a> to help understand a visual representation of conditions (1) - (3).</p>
-<div id="fig-conjoint" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/conjoint.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;4.1: A schematic representation of a joint measurement matrix: … <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span> … are values of the variable <span class="math inline">\(A\)</span>, … <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>, <span class="math inline">\(z\)</span> . .. are values of the variable <span class="math inline">\(X\)</span> and … <span class="math inline">\(ax\)</span>, <span class="math inline">\(ay\)</span>, … , <span class="math inline">\(cy\)</span>, <span class="math inline">\(cz\)</span> … are values of the variable <span class="math inline">\(P\)</span> (<span class="math inline">\(ax\)</span> simply being that value of <span class="math inline">\(P\)</span> produced by the conjunction of <span class="math inline">\(a\)</span> and <span class="math inline">\(x\)</span>, etc.).</figcaption>
+<p>Such conjoint systems are easily visually contemplated if they are thought of as composing a matrix where the rows are values of <span class="math inline">\(A\)</span>, the columns, values of 𝑋, and the cells, values of <span class="math inline">\(𝑃\)</span>. Let <span class="math inline">\(𝑎\)</span>, <span class="math inline">\(𝑏\)</span>, <span class="math inline">\(𝑐\)</span>,… etc. be values of <span class="math inline">\(𝐴\)</span>, <span class="math inline">\(𝑥\)</span>, <span class="math inline">\(𝑦\)</span>, <span class="math inline">\(𝑧\)</span>,… etc. be values of <span class="math inline">\(𝑋\)</span> and, since <span class="math inline">\(𝑃 = 𝑓(𝐴, 𝑋)\)</span>, the pairs, <span class="math inline">\(𝑎𝑥\)</span>, <span class="math inline">\(𝑎𝑦\)</span>,… , <span class="math inline">\(𝑐𝑦\)</span>, <span class="math inline">\(c𝑧\)</span>,… denote (possibly identical) values of <span class="math inline">\(P\)</span>. Such a matrix is schematically represented by <a href="#fig-conjoint" class="quarto-xref">Figure&nbsp;<span>4.1</span></a> to help understand a visual representation of conditions (1) - (3).</p>
+<div id="fig-conjoint" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-conjoint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/conjoint.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-conjoint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.1: A schematic representation of a joint measurement matrix: … <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span> … are values of the variable <span class="math inline">\(A\)</span>, … <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>, <span class="math inline">\(z\)</span> . .. are values of the variable <span class="math inline">\(X\)</span> and … <span class="math inline">\(ax\)</span>, <span class="math inline">\(ay\)</span>, … , <span class="math inline">\(cy\)</span>, <span class="math inline">\(cz\)</span> … are values of the variable <span class="math inline">\(P\)</span> (<span class="math inline">\(ax\)</span> simply being that value of <span class="math inline">\(P\)</span> produced by the conjunction of <span class="math inline">\(a\)</span> and <span class="math inline">\(x\)</span>, etc.).
+</figcaption>
 </figure>
 </div>
 <section id="double-cancelation" class="level4" data-number="4.3.1.1">
@@ -480,18 +529,26 @@ a+y+b+z ≥ b+x+c+y
 <p><span class="math display">\[a + z ≥ c + x\]</span></p>
 <p>which, of course, is true if and only if</p>
 <p><span class="math display">\[az ≥ cx\]</span>.</p>
-<p>Despite its simplicity, double cancellation is a condition that has considerable power. It strongly restricts the order in <span class="math inline">\(P\)</span>. This can be illustrated in a <span class="math inline">\(3𝑋3\)</span> matrix. Let <span class="math inline">\(𝑎1\)</span>, <span class="math inline">\(𝑎2\)</span>, and <span class="math inline">\(𝑎3\)</span> be three values of <span class="math inline">\(𝐴\)</span> and <span class="math inline">\(𝑥1\)</span>, <span class="math inline">\(𝑥2\)</span> and <span class="math inline">\(𝑥3\)</span> be three values of <span class="math inline">\(𝑋\)</span>. The resulting conjoint matrix is illustrated in <a href="#fig-conjointmatrix">Figure&nbsp;<span>4.2</span></a>.</p>
-<div id="fig-conjointmatrix" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/conjoint_matrix.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;4.2: Conjoint 3 x 3 Matrix</figcaption>
+<p>Despite its simplicity, double cancellation is a condition that has considerable power. It strongly restricts the order in <span class="math inline">\(P\)</span>. This can be illustrated in a <span class="math inline">\(3𝑋3\)</span> matrix. Let <span class="math inline">\(𝑎1\)</span>, <span class="math inline">\(𝑎2\)</span>, and <span class="math inline">\(𝑎3\)</span> be three values of <span class="math inline">\(𝐴\)</span> and <span class="math inline">\(𝑥1\)</span>, <span class="math inline">\(𝑥2\)</span> and <span class="math inline">\(𝑥3\)</span> be three values of <span class="math inline">\(𝑋\)</span>. The resulting conjoint matrix is illustrated in <a href="#fig-conjointmatrix" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>.</p>
+<div id="fig-conjointmatrix" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-conjointmatrix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/conjoint_matrix.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-conjointmatrix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.2: Conjoint 3 x 3 Matrix
+</figcaption>
 </figure>
 </div>
-<p>Now, because <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span> in the double cancellation condition are any values of <span class="math inline">\(A\)</span>, then <span class="math inline">\(a1\)</span>, <span class="math inline">\(a2\)</span> and <span class="math inline">\(a3\)</span> can be substituted for them in any of the 3! (= 6) different possible ways. Similarly, <span class="math inline">\(x1\)</span>, <span class="math inline">\(x2\)</span> and <span class="math inline">\(x3\)</span> can be replaced by <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> and <span class="math inline">\(z\)</span> in 6 different ways. This produces 6 x 6 (= 36) different substitution instances of the double cancellation condition in the 3 x 3 matrix shown above (or in any 3 x 3 conjoint matrix). These 36 different replacement instances are shown in <a href="#fig-cancelation">Figure&nbsp;<span>4.3</span></a>.</p>
-<div id="fig-cancelation" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/double_cancelation.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;4.3: Double Cancelation</figcaption>
+<p>Now, because <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span> in the double cancellation condition are any values of <span class="math inline">\(A\)</span>, then <span class="math inline">\(a1\)</span>, <span class="math inline">\(a2\)</span> and <span class="math inline">\(a3\)</span> can be substituted for them in any of the 3! (= 6) different possible ways. Similarly, <span class="math inline">\(x1\)</span>, <span class="math inline">\(x2\)</span> and <span class="math inline">\(x3\)</span> can be replaced by <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> and <span class="math inline">\(z\)</span> in 6 different ways. This produces 6 x 6 (= 36) different substitution instances of the double cancellation condition in the 3 x 3 matrix shown above (or in any 3 x 3 conjoint matrix). These 36 different replacement instances are shown in <a href="#fig-cancelation" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>.</p>
+<div id="fig-cancelation" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cancelation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/double_cancelation.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cancelation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.3: Double Cancelation
+</figcaption>
 </figure>
 </div>
 <p>They are not all logically independent of each other. In this, they are in six different sets, each with six. Within each set, the relevant order relations are between the same three values of <span class="math inline">\(𝑃\)</span> (or matrix cells). Arrows have been used to indicate these relationships (i.e., <span class="math inline">\(𝑎𝑥 ≥ 𝑏𝑦\)</span> is represented by <span class="math inline">\(ax\)</span> -&gt; <span class="math inline">\(by\)</span> , the single-line arrows represent the antecedent orders and double-line arrows represent the consequent order.</p>
@@ -875,6 +932,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
   }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
   const toggleColorMode = (alternate) => {
     // Switch the stylesheets
     const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
@@ -941,13 +1025,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -1026,10 +1112,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1039,8 +1142,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1052,7 +1164,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1096,6 +1331,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1121,6 +1357,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1182,12 +1444,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./03-Latent_Variable.html" class="pagination-link">
+      <a href="./03-Latent_Variable.html" class="pagination-link" aria-label="Theory of Latent Variables in Psychometrics">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Theory of Latent Variables in Psychometrics</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./05-EFA.html" class="pagination-link">
+      <a href="./05-EFA.html" class="pagination-link" aria-label="Exploratory Factor Analysis">
         <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Exploratory Factor Analysis</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -1200,10 +1462,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
-    <div class="nav-footer-right">Bastos, R. V. S. (2024). Advances in Psychometric Theory and Measurement for Psychological Sciences: With Tutorials in R. Retrieved from https://github.com/rafavsbastos/psychometrics_book.</div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rafavsbastos/psychometrics_book/edit/master/04-Measurement_Theory.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rafavsbastos/psychometrics_book/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/rafavsbastos/psychometrics_book/blob/master/04-Measurement_Theory.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Bastos, R. V. S. (2024). Advances in Psychometric Theory and Measurement for Psychological Sciences: With Tutorials in R. https://doi.org/10.5281/zenodo.11094831.</p>
+</div>
   </div>
 </footer>
+
 
 
 
