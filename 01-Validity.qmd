@@ -77,7 +77,7 @@ Example: In a paper, Bastos et al. (2022) created a measure of self-perception o
 
 5. Based on the proportion of agreement, the authors selected nine items for future analysis.
 
-### Evidence Vased on Response Processes
+### Evidence Based on Response Processes
 
 You will collect data on the mental processes involved in performing certain tasks. Normally this is an individual response process, and researchers ask the person being evaluated about the cognitive path used to reach a certain result. As an example, we can see that Noble et al. (2014) sought this type of validity with their study. They found that English language learners (ELL) students had lower scores on high-stakes tests compared to non-English language learners. Based on the interview, they found that
 
