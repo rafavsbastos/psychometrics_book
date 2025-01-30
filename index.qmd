@@ -4,11 +4,11 @@
 
 Psychometrics is an area that is growing rapidly worldwide: while many still measure psychological phenomena without having evidence that the measurement has some quality or validity evidence, others continue on the more difficult, but much more precise and scientific, path. The book ***Advances in Psychometric Theory and Measurement for Psychological Sciences: With Tutorials in R*** is the first book that makes psychometric science and measurement theory more accessible to you, the reader. Covering classical and modern views on psychometrics, I introduce concepts crucial to understanding psychometrics. This book is aimed at students and teachers who wish to use and understand psychometrics in depth. It's a great resource for studying alone or for study groups.
 
-In this book I teach the theory behind the concept of the analysis, but I also teach how to run the analysis in the R programming language. We use R because it is free, accessible, and easy to use. I know you're afraid of using R, but I'll do everything I can to make sure you understand what you're going to do in your analyses.
+In this book I teach the theory behind the concept of the analysis, but I also teach how to run the analysis in R programming language. We use R because it is free, accessible, and easy to use.
 
-This book is intended to be an educational resource for everyone. The content is written in an accessible way and it is possible to deduce conclusions, without being shallow or wrong.
+This book is intended to be an educational resource for everyone. The content is written in an accessible way and it is possible to deduce conclusions, without being shallow.
 
-This book integrates information from my [website](https://www.consultoriapsicometria.com/en), my PT-Br [Udemy Course](https://www.udemy.com/course/psicometria/?referralCode=C40C721BB97AEA36D8AC) my [scientific work](https://scholar.google.com.br/citations?user=xCjGr7AAAAJ&hl=en), in addition to several other works that are at the cutting edge of knowledge. The purpose of this book being online is to make the information more accessible and easier to update in the future.
+This book integrates information from my [website](https://www.psychometricsconsultancy.com/) and my [scientific work](https://scholar.google.com.br/citations?user=xCjGr7AAAAJ&hl=en), in addition to several other works that are at the cutting edge of knowledge. The purpose of this book being online is to make the information more accessible and easier to update in the future.
 
 ## Suggest Edits and Improvements
 
@@ -43,12 +43,13 @@ Bastos, R. V. S. (2024). *Advances in Psychometric Theory and Measurement for Ps
 
 ## About the Author {.unnumbered}
 
-The current maintainer of the book is [Rafael Valdece Sousa Bastos](https://www.consultoriapsicometria.com/en), the creator of this educational resource. I hold a Master's degree (M.Sc.) in Psychology, specializing in the construction, validation, and standardization of measurement instruments from São Francisco University. Additionally, I have a Bachelor's in Psychology from the Pontifical Catholic University of Rio de Janeiro (PUC-RIO). My expertise spans across various domains within psychology, with a primary focus on the following areas:
+The current maintainer of the book is [Rafael Valdece Sousa Bastos](https://www.consultoriapsicometria.com/en), the creator of this educational resource. I'm a PhD Candidate and hold a Master's degree (M.Sc.) in Psychology, specializing in Psychological Assessment from São Francisco University (Campinas - Brazil). Additionally, I have a Bachelor's in Psychology from the Pontifical Catholic University of Rio de Janeiro (PUC-RIO). My expertise spans across various domains within psychology, with a primary focus on the following areas:
 
 -   Psychometrics
+-   Mental Health
 -   Meta-Science
 -   Quantitative Methods
--   Measurement Theory
+-   Construction of Instruments
 
 ![Photo of the author Rafael Valdece Sousa Bastos](images/me.png){fig-alt="Photo of the author Rafael Valdece Sousa Bastos" natwidth="300" fig-align="center" width="300"}
 
